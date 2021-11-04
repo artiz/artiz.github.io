@@ -18,14 +18,16 @@
 
 Carrier start - 2002
 
-JavaScript: from 2002 and IE 5 till now
+Performed 500+ techical interviews in JavaScript, .NET, and golang
+
+JavaScript (Web): from 2002 and IE 5 till now
 
 C++: from 2001 and Visual Studio 6/MFC till C++14
 
 ### Languages/Techologies
 
 * ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest
-* Go, grpc, protobuf, excelize
+* Golang, grpc, protobuf, excelize
 * CSS 1/2/3, SASS, LESS, PostCSS
 * C++/C++14/17 (Windows/Linux), MFC/COM/ATL, OpenGL, STL, sockets, boost, pthreads, MySQL C++ API, Internet Explorer extensions, ActiveMQ
 * Medicine: DICOM, EDF, HL7, ISHNE
