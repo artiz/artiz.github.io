@@ -19,7 +19,10 @@
 Carrier start - 2002
 
 JavaScript: from 2002 and IE 5 till now
+
 C++: from 2001 and Visual Studio 6/MFC till C++14
+
+### Languages/Techologies
 
 * ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest
 * Go, grpc, protobuf, excelize
