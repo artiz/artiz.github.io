@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+# Artem Kustikov
 
-You can use the [editor on GitHub](https://github.com/artiz/artiz.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[![Photo](photo-preview.jpg)](photo.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+-------------------
 
-### Markdown
+https://www.linkedin.com/in/artem-kustikov-2635917/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Languages
 
-```markdown
-Syntax highlighted code block
+    * Russian (native)
+    * English (full professional)
 
-# Header 1
-## Header 2
-### Header 3
+-------------------
 
-- Bulleted
-- List
+## Skills 
+---------
 
-1. Numbered
-2. List
+Carrier start - 2002
 
-**Bold** and _Italic_ and `Code` text
+* ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest
+* Go, grpc, protobuf, excelize
+* CSS 1/2/3, SASS, LESS, PostCSS
+* C++/C++14/17 (Windows/Linux), MFC/COM/ATL, OpenGL, STL, sockets, boost, pthreads, MySQL C++ API, Internet Explorer extensions, ActiveMQ
+* Medicine: DICOM, EDF, HL7, ISHNE
+* ASP 3.0, VBScript, JScript, powershell scripting
+* .NET, C# 1.0/7.0, Managed C++, ASP.NET Web Forms, ASP.NET MVC (1.0-5.0), MVC WebAPI, WCF/WCF.Extras, SignalR, OWIN, Nancy, WPF/WinForms, Unity, Entity Framework
+* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange
+* IIS5/8, Apache, nginx, Dropbox API, box,com API, ApparelMagic API, RLM API
+* Java 1.3/SE 6, applets, servlets, Struts/FOP/JSTL/POI, JBoss, Tomcat
+* Python, Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, robot framework
+* MS Access, MS SQL, MySQL, PostgreSQL, Oracle, MongoDB, Redis, DynamoDB, ElasticSearch
+* PHP 3/5, OpenCommerce, Zend, Joomla
+* Cordova, PhoneGap, Safari Extensions
+* Docker, Helm, Kubernetes
+* AWS: EC2, ElacticBeanstalk, RDS, Route 53, CloudFront, SQS
+* Google Cloud: BigTable, PubSub, Stackdriver
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Education
 
-### Jekyll Themes
+*1997-2002*
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/artiz/artiz.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Belarussian National Technical University
 
-### Support or Contact
+Place: Minsk, Belarus
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Profession: Computer Science, Robotics
+
+Additional certificates: Several publications in student conferences papers concerning robotics simulation and off-line programming
+
+
+## Certifications
+
+*Nov 2004*
+
+Robotics exhibition at VVC (All-russian exhibition centre) - Presented own robot simulation system on "Robotics and mechatronics" conference
+
+*Feb 2013*
+
+MCSD: Web Applications (Microsoft)
+
+Credential ID: *9631446*
+
+Expired: Feb 2015
+
+*Apr 2013*
+
+Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis))
+
+Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
