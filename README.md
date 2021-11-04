@@ -4,12 +4,12 @@
 
 -------------------
 
-https://www.linkedin.com/in/artem-kustikov-2635917/
+[https://www.linkedin.com/in/artem-kustikov-2635917/](https://www.linkedin.com/in/artem-kustikov-2635917/)
 
 ### Languages
 
-    * Russian (native)
-    * English (full professional)
+* Russian (native)
+* English (full professional)
 
 -------------------
 
@@ -18,6 +18,9 @@ https://www.linkedin.com/in/artem-kustikov-2635917/
 
 Carrier start - 2002
 
+JavaScript: from 2002 and IE 5 till now
+C++: from 2001 and Visual Studio 6/MFC till C++14
+
 * ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest
 * Go, grpc, protobuf, excelize
 * CSS 1/2/3, SASS, LESS, PostCSS
@@ -25,7 +28,7 @@ Carrier start - 2002
 * Medicine: DICOM, EDF, HL7, ISHNE
 * ASP 3.0, VBScript, JScript, powershell scripting
 * .NET, C# 1.0/7.0, Managed C++, ASP.NET Web Forms, ASP.NET MVC (1.0-5.0), MVC WebAPI, WCF/WCF.Extras, SignalR, OWIN, Nancy, WPF/WinForms, Unity, Entity Framework
-* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange
+* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange, ApparelMagic, Oracle NetSuite
 * IIS5/8, Apache, nginx, Dropbox API, box,com API, ApparelMagic API, RLM API
 * Java 1.3/SE 6, applets, servlets, Struts/FOP/JSTL/POI, JBoss, Tomcat
 * Python, Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, robot framework
@@ -69,3 +72,17 @@ Expired: Feb 2015
 Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis))
 
 Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
+
+
+## Articles 
+
+[Small and Reliable C++ HTTP Server with Complete ASP.NET Support](https://www.codeproject.com/Articles/33141/Small-and-Reliable-C-HTTP-Server-with-Complete-ASP)
+
+[AWUI - a simple web user interface library with AJAX support](https://www.codeproject.com/Articles/17459/AWUI-a-simple-web-user-interface-library-with-AJAX)
+
+
+## Interests
+
+* Family
+* Reading
+* Whisky
