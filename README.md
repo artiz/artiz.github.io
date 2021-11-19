@@ -8,7 +8,7 @@
 
 [https://github.com/artiz](https://github.com/artiz)
 
-E-mail: [mailto:artem.kustikov@gmail.com](artem.kustikov@gmail.com)
+E-mail: [artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com)
 
 
 ### Languages
