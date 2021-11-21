@@ -122,7 +122,7 @@ Tasks:
 * Designed Video streaming platform based on Amazon S3/CloudFront
 
 
-**MicroSoft Exchange integration software*
+**MicroSoft Exchange integration software**
 
 Set of several e-mail archiving/processing software projects integrated with MS Exchange, MS Outlook, Veritas Enterprise Vault, and AWS
 
