@@ -264,7 +264,7 @@ Position: Software Developer
 
 Technologies: .NET, C#, C++, ATL/MFC, JavaScript/AJAX, Java, ColdFusion
 
-Worked on UI and SDK for GoldFire Innovator (Goldfire Cognitive Search) https://ihsmarkit.com/products/enterprise-knowledge.html 
+Worked on UI and SDK for [GoldFire Innovator (Goldfire Cognitive Search)](https://ihsmarkit.com/products/enterprise-knowledge.html )
 
 Tasks:
 * MS SharePoint Portal Connector to enumerate document libraries/folders and download documents/metadata from SharePoint storage using WSS SOAP web-services
@@ -307,11 +307,6 @@ Cross-platform (Windows/Linux) server application for search engines optimizatio
 * Web-interface for server was implemented on PHP
 
 Stack: C++ (gcc/MSVS); Sockets; boost; zlib; MySQL C++ API; pthread; TCP/IP, HTTP protocols
-
-Tasks:
-* CSRF prevention module based on COM component to use it from ASP pages
-* Documents parser that renders HTML preview for uploaded documents in different formats (MS Word 97, MS Excel 97, MS PowerPoint, ZIP archives and so on)
-* Request Tracking module with rich UI (AJAX, DHTML)
 
 
 ### Dec 2002 - Jun 2004
