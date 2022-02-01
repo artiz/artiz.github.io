@@ -21,7 +21,7 @@ E-mail: [artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com)
 ## Skills 
 ---------
 
-Carrier start - 2002
+Career start - 2002
 
 Performed 500+ technical interviews in JavaScript, .NET, and golang
 
