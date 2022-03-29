@@ -14,7 +14,7 @@ E-mail: [artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com)
 ### Languages
 
 * Russian (native)
-* English (full professional)
+* English (full professional), IELTS 6.5, CEFR B2
 
 -------------------
 
