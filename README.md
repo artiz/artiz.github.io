@@ -66,7 +66,7 @@ Additional certificates: Several publications in student conference's materials 
 ## Experience
 
 
-### May 2018 - Present
+### May 2018 - Feb 2022
 
 [Intetics](https://intetics.com/)
 
@@ -122,14 +122,14 @@ Tasks:
 * Designed Video streaming platform based on Amazon S3/CloudFront
 
 
-**MicroSoft Exchange integration software**
+**Microsoft Exchange integration software**
 
 Set of several e-mail archiving/processing software projects integrated with MS Exchange, MS Outlook, Veritas Enterprise Vault, and AWS
 
 Stack: .NET (C#), ASP.NET MVC 5.0, Knockout.js,  COM, MAPI, WinAPI
 
 Tasks: 
-* Profiled and optimized custom MicroSoft Compound File reader/writer based on MCDF (.NET ) 
+* Profiled and optimized custom Microsoft Compound File reader/writer based on MCDF (.NET ) 
 * Designed and implemented rich UI features in admin web-project (ASP.NET MVC, knockout.js)
 
 
@@ -327,20 +327,34 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 *Nov 2004*
 
-Robotics exhibition at VVC (All-russian exhibition centre) - Presented own robot simulation system on "Robotics and mechatronics" conference
+* Robotics exhibition at VVC (All-russian exhibition centre) - Presented own robot simulation system on "Robotics and mechatronics" conference
+
+*Dec 2012*
+
+* Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3
+(Certification Number: E106-1057)
+* Microsoft Certified Professional: Microsoft Certified Professional
+(Certification Number: E106-1062)
 
 *Feb 2013*
 
-MCSD: Web Applications (Microsoft)
+* Microsoft Exam #487 Developing Microsoft Azure and Web Services
+* Microsoft Exam #486 Developing ASP.NET MVC Web Applications
+* Microsoft Exam #480 Programming in HTML5 with JavaScript and CSS3
 
-Credential ID: *9631446*
+* Microsoft Certified Solutions Developer: Web Applications
+(Certification Number: G091-4454)
 
-Expired: Feb 2015
+*Sep 2016*
 
-*Apr 2013*
+* Microsoft Certified Solutions Associate: Web Applications (Certification Number: [F810-0741](MCSA_Web_Applications.pdf))
 
-Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis))
+![MCSA Web Applications](MCSA_Web_Applications.png)
 
+
+*Apr 2017*
+
+* Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis)). Diploma project, Sentiment Analysis App: [https://mipt-6-sa.herokuapp.com/](https://mipt-6-sa.herokuapp.com/).
 Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
 
 ## Articles 
@@ -352,4 +366,6 @@ Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/s
 ## Interests
 * Family
 * Reading
-* Whisky collecting
+* Politics
+
+
