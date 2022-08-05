@@ -75,7 +75,7 @@
 * Medicine: ECG, DICOM, EDF, HL7, ISHNE
 * ASP 3.0, VBScript, JScript, powershell scripting
 * .NET, C# 1.0/7.0, Managed C++, ASP.NET Web Forms, ASP.NET MVC (1.0-5.0), MVC WebAPI, WCF/WCF.Extras, SignalR, OWIN, Nancy, WPF/WinForms, Unity, Entity Framework
-* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange, Dropbox API, box,com API, ApparelMagic API, RLM API
+* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange, Dropbox API, box.com API, ApparelMagic API, RLM API
 * IIS5/8, Apache, nginx
 * Java 1.3/SE 6, applets, servlets, Struts/FOP/JSTL/POI, JBoss, Tomcat
 * Python, Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, robot framework
@@ -112,7 +112,7 @@ _Outstaff Software Development Company_
 
 Position: System Architect/Senior FullStack Software Developer
 
-Work on large b2b project in fashion industry evaluated as #1 on US Market. 
+Worked on large b2b project in fashion industry evaluated as #1 on US Market. 
 Participated in different integration tasks and custom ETL (extract, transform, load) engine development.
 Worked on migration of legacy frontend application from Ampersand.JS based framework to ReactJS.
 
