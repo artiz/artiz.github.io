@@ -83,11 +83,9 @@
 * PHP 3/5, OpenCommerce, Zend, Joomla
 * Cordova, PhoneGap, Safari Extensions
 * Docker, Helm, Kubernetes
-* AWS: EC2, ElacticBeanstalk, RDS, Route 53, CloudFront, SQS
+* AWS: EC2, ElacticBeanstalk, RDS, Route 53, CloudFront, SQS, CloudFormation, S3, ECS
 * Google Cloud: BigTable, PubSub, StackDriver
-* Azure: Virtual machines, SQL Databases
-
-
+* Azure: Virtual machines, SQL Databases, Monitor, Kubernetes
 ## Education
 
 *1997-2002*
@@ -103,6 +101,22 @@ Additional certificates: Several publications in student conference's materials 
 ------------------------------------------------------------------------------------------------------------
 ## Experience
 
+
+### Aug 2022 - Current
+
+[Reply ML](https://www.reply.com/machine-learning-reply/de/)
+
+_Software company in Vienna, Austria_
+
+Position: Senior Consultant/Senior FullStack Software Developer
+
+#### Technologies 
+
+* Nodejs, Typescript
+* Java, Spring Boot, PostgreSQL
+* Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis
+* AWS: CloudFormation, RDS, EC2, S3
+* Terraform, Helm, Kubernetes
 
 ### May 2018 - Feb 2022
 
@@ -394,6 +408,14 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 * Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis)). Diploma project, Sentiment Analysis App: [https://mipt-6-sa.herokuapp.com/](https://mipt-6-sa.herokuapp.com/).
 Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
+
+*Aug 2022*
+
+* DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)). 
+Credential ID: [E7P44QJ7Q5YY](https://www.coursera.org/account/accomplishments/specialization/certificate/E7P44QJ7Q5YY)
+
+
+
 
 ## Articles 
 
