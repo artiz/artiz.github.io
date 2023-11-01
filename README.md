@@ -414,8 +414,11 @@ Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/s
 * DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)). 
 Credential ID: [E7P44QJ7Q5YY](https://www.coursera.org/account/accomplishments/specialization/certificate/E7P44QJ7Q5YY)
 
+*Oct 2023*
 
+* AWS Certified Solutions Architect – Associate
 
+[![AWS Certified Solutions Architect – Associate](AWS_Certified_Solutions_Architect-Associate.png)](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
 
 ## Articles 
 
