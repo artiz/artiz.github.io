@@ -54,7 +54,7 @@
 
 🇬🇧 English (full professional), IELTS 6.5, CEFR B2
 
-🇩🇪 German (basic), A1
+🇩🇪 German (basic), OIF Integrationsprüfung B1 
 
 -------------------
 
@@ -64,7 +64,7 @@
 * JavaScript (Web, Full Stack): from 2002 and IE 5 till now
 * .NET: from 2002 with ASP.NET Forms and Microsoft SharePoint to MCSA: Web Applications in 2016
 * C++: from 2001 and Visual Studio 6/MFC till C++14
-* Performed 500+ technical interviews in JavaScript, .NET, and golang
+* Performed 500+ technical interviews in JavaScript, .NET, and Golang
 
 ### Platforms/Techologies
 
@@ -113,7 +113,8 @@ Position: Senior Consultant/Senior FullStack Software Developer
 #### Technologies 
 
 * Nodejs, Typescript
-* Java, Spring Boot, PostgreSQL
+* Java, Spring Boot
+* PostgreSQL, MS SQL Server
 * Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis
 * AWS: CloudFormation, RDS, EC2, S3
 * Terraform, Helm, Kubernetes
