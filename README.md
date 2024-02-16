@@ -116,8 +116,26 @@ Position: Senior Consultant/Senior FullStack Software Developer
 * Java, Spring Boot
 * PostgreSQL, MS SQL Server
 * Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis
-* AWS: CloudFormation, RDS, EC2, S3
-* Terraform, Helm, Kubernetes
+* AWS: CloudFormation, RDS, EC2, S3, EKS
+* Terraform, Helm, Kubernetes, Docker
+
+#### Projects
+
+📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer​*
+
+* Refactor existing microservices written on Java (Spring Boot), Python (FastAPI), and R (plumber) to support scaling in k8s. Optimize Docker images build and versioning, add health checks and external configuration. Develop CI/CD framework based on Github actions. Implement custom Github action to perform HTTP polling.​
+* Migrate legacy infrastructure from AWS (RDS and EC2 managed with CloudFormation) to private OpenShift cluster. Setup continuous deployment system based on Helm charts/templates and Tekton triggers and pipelines.​
+
+🏪 *Сashier-free store backend/infrastructure – Full-Stack/DevOps*
+
+* Integrate external in-store computer vision system to supports customer's shopping journey. Integrate external payment providers: Fiserv, Adyen, PayPal. Design and implement custom whitelist system to block unsupported payment methods.​
+
+* Work on backend microservices deployment (Azure Kubernetes Service, Terraform, Helm) and performance issues, Elasticsearch integration and on-site analytics system development.​
+
+* Participate in backend microservices refactoring, implement distributed DB migrations k8s jobs system to avoid data modification and DB structure conflicts at parallel microservices deployments using init-containers. ​
+
+* Integrate Snyk Code and Snyk Container static application security testing into Azure DevOps CI pipeline.​
+
 
 ### May 2018 - Feb 2022
 
