@@ -32,7 +32,7 @@
 <path d="m1187.9 1187.9h-1187.9v-1187.9h1187.9z" fill="#f1511b"/><path d="m2499.6 1187.9h-1188v-1187.9h1187.9v1187.9z" fill="#80cc28"/><path d="m1187.9 2500h-1187.9v-1187.9h1187.9z" fill="#00adef"/><path d="m2499.6 2500h-1188v-1187.9h1187.9v1187.9z" fill="#fbbc09"/>
 </svg>
 </a>
-<a href="Artem%20Kustikov%20-%20CV.pdf" title="PDF version" download>
+<a href="README.pdf" title="PDF version" download="Artem Kustikov - CV.pdf">
 <svg viewBox="0 0 14 16"  width="32" height="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
 <g transform="matrix(.04589 0 0 .04589 -.66877 -.73379)">
 	<polygon points="51.791 356.65 51.791 23.99 204.5 23.99 282.65 102.07 282.65 356.65" fill="#fff" stroke-width="212.65"/>
@@ -83,33 +83,34 @@
 ## Skills 
 
 * JavaScript (Web, Full Stack): from 2002 and IE 5 till now
-* DevOps: Docker, Terraform, Kubernetes, AWS, Azure, GCP - from 2015 till now
+* DevOps: Docker, Terraform, Kubernetes, AWS, Azure, GCP, Gitlab - from 2015 till now
 * Python: Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, Pandas, Robot framework, FastAPI - from 2008 till now
-* .NET: from 2002 with ASP.NET Forms and Microsoft SharePoint to MCSA: Web Applications in 2016
-* C++: from 2001 and Visual Studio 6/MFC till C++17
+* .NET: from 2002 with ASP.NET Forms and Microsoft SharePoint to `MCSA: Web Applications` in 2016
+* C++: from 2001 and Visual Studio 6/MFC till C++20
+* Java: from Java 1.3 and Struts till Spring Boot/Quarkus now
 * Performed 500+ technical interviews in JavaScript, .NET, and Golang
 
 ### Platforms/Techologies
 
 * JavaScript/TypeScript, ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest, Cypress
 * Go, GRPC, protobuf, excelize
-* CSS 1/2/3, SASS, LESS, PostCSS
 * C++/C++14/17 (Windows/Linux), MFC/COM/ATL, OpenGL, STL, sockets, boost, pthreads, MySQL C++ API, Internet Explorer extensions, ActiveMQ
-* Medicine: ECG, DICOM, EDF, HL7, ISHNE
+* Python, Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, robot framework
+* Docker, Helm, Kubernetes, Terraform, Kustomize
+* Java 1.3/21, applets, servlets, Struts/FOP/JSTL/POI, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle
 * ASP 3.0, VBScript, JScript, powershell scripting
 * .NET, C# 1.0/7.0, Managed C++, ASP.NET Web Forms, ASP.NET MVC (1.0-5.0), MVC WebAPI, WCF/WCF.Extras, SignalR, OWIN, Nancy, WPF/WinForms, Unity, Entity Framework
-* Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange, Dropbox API, box.com API, ApparelMagic API, RLM API
-* IIS5/8, Apache, nginx
-* Java 1.3/SE 6, applets, servlets, Struts/FOP/JSTL/POI, JBoss, Tomcat
-* Python, Django, Flask, SQLAlchemy, NumPy, nltk, scikit-learn, robot framework
 * MS Access, MS SQL, MySQL, PostgreSQL, Oracle, MongoDB, Redis, DynamoDB, ElasticSearch
+* Apache Kafka, Flink, Redpanda, Confluent
+* Medicine: ECG, DICOM, EDF, HL7, ISHNE
+* Document Storage: MS Sharepoint, MOSS/WSS, Aconex, Primavera, Documentum, EnterpriseVault, MS Exchange, Dropbox, box.com, ApparelMagic, RLM, SAP
+* IIS5/8, Apache, nginx
 * PHP 3/5, OpenCommerce, Zend, Joomla
+* CSS 1/2/3, SASS, LESS, PostCSS
 * Cordova, PhoneGap, Safari Extensions
-* Docker, Helm, Kubernetes, Terraform
 * AWS: EC2, ElacticBeanstalk, RDS, Route 53, CloudFront, SQS, CloudFormation, S3, ECS
 * Google Cloud: BigTable, PubSub, StackDriver
 * Azure: Virtual machines, SQL Databases, Monitor, Kubernetes
-
 
 ## Education
 
@@ -137,13 +138,21 @@ Position: Senior Consultant/Senior FullStack Software Developer
 #### Technologies 
 
 * Nodejs, Typescript, React
-* Java, Spring Boot
+* Java, Spring Boot, Quarkus, Gradle, Flyway
 * PostgreSQL, MS SQL Server
-* Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis
+* Apache Kafka, Flink, Redpanda, Confluent
+* Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis, API Management
 * AWS: CloudFormation, RDS, EC2, S3, EKS
 * Terraform, Helm, Kubernetes, Docker
 
 #### Projects
+
+🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
+
+* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform) ​
+* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Introduce NIST 8000 security framework requirements with automatic Confluence pages generation. ​
+* Develop secured integration with external REST APIs for vehicle data providers with Azure SPN authentication​
+
 
 📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer​*
 
