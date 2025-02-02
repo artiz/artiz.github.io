@@ -133,7 +133,7 @@ Additional certificates: Several publications in student conference's materials 
 
 _Software company in Vienna, Austria_
 
-Position: Principal Consultant/Cloud/FullStack Software Developer
+Position: Principal Consultant/AI/Cloud/FullStack Software Developer
 
 #### Technologies 
 
