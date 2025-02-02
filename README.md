@@ -133,7 +133,7 @@ Additional certificates: Several publications in student conference's materials 
 
 _Software company in Vienna, Austria_
 
-Position: Senior Consultant/Senior FullStack Software Developer
+Position: Principal Consultant/Cloud/FullStack Software Developer
 
 #### Technologies 
 
@@ -142,10 +142,19 @@ Position: Senior Consultant/Senior FullStack Software Developer
 * PostgreSQL, MS SQL Server
 * Apache Kafka, Flink, Redpanda, Confluent
 * Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis, API Management
-* AWS: CloudFormation, RDS, EC2, S3, EKS
+* AWS: CloudFormation, RDS, EC2, S3, EKS, CodeBuild/CodePipeline/CodeDeploy
 * Terraform, Helm, Kubernetes, Docker
 
 #### Projects
+
+
+🤖 *Web-client for artificial intelligence chatbot system*
+
+* Implement pluggable AI models support, AWS Bedrock, Open AI. Client-side maintaining of miscellaneous AI models plugins like images processing, RAG, code interpretation.​
+* Introduce seamless users authentication and role-based authorization against AWS Cognito​.
+* Perform performance testing and source code quality review to guarantee excellent application performance, security and robustness.​
+* Develop robust and resilient CI/CD platform with integrated Unit Testing.​
+* Work on support of collaborative chats, workspaces, documents based on WebSockets and WebRTC.​
 
 🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
 
@@ -162,11 +171,8 @@ Position: Senior Consultant/Senior FullStack Software Developer
 🏪 *Сashier-free store backend/infrastructure – Full-Stack/DevOps*
 
 * Integrate external in-store computer vision system to supports customer's shopping journey. Integrate external payment providers: Fiserv, Adyen, PayPal. Design and implement custom whitelist system to block unsupported payment methods.​
-
 * Work on backend microservices deployment (Azure Kubernetes Service, Terraform, Helm) and performance issues, Elasticsearch integration and on-site analytics system development.​
-
 * Participate in backend microservices refactoring, implement distributed DB migrations k8s jobs system to avoid data modification and DB structure conflicts at parallel microservices deployments using init-containers. ​
-
 * Integrate Snyk Code and Snyk Container static application security testing into Azure DevOps CI pipeline.​
 
 
