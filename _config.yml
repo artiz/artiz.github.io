@@ -1,6 +1,6 @@
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme
 title: Artem Kustikov - CV
 page.title: Artem Kustikov
-description: Principal Consultant/AI/Cloud/FullStack Software Developer
+description: Principal Consultant. AI/Cloud/FullStack Developer. Vibe Code Cleanup Master
