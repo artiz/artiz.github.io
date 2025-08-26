@@ -19,7 +19,7 @@ Wien ¤ Österreich <br/>
     </div>
 </div>
 
-**Stack**: Node.js, React | Java, Quarkus, Flyway | PostgreSQL, Redis | Apache Kafka, Flink, Confluent | Terraform, Kubernetes, Helm | AWS, Azure
+**Stack**: Node.js, React • Java, Quarkus, Flyway • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • Terraform, Kubernetes, Helm • AWS, Azure
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*<br/>
 • Entwicklung einer robusten und widerstandsfähigen CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.​<br/>
