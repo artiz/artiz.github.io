@@ -116,11 +116,11 @@ Worked on robot simulation and analytical programming system – complex compute
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Computer Science, Robotics
 
 ### Certifications
-* May 2024: HashiCorp Certified: Terraform Associate (003)
-* Oct 2023: AWS Certified Solutions Architect – Associate
-* Aug 2022: DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)) 
-* Apr 2017: Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis)). 
-* Sep 2016: Microsoft Certified Solutions Associate: Web Applications (Certification Number: [F810-0741](MCSA_Web_Applications.pdf))
+* May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
+* Oct 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
+* Aug 2022: [DevOps on AWS](https://www.coursera.org/account/accomplishments/specialization/certificate/E7P44QJ7Q5YY)
+* Apr 2017: [Machine Learning and Data Analysis from MIPT/Yandex](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
+* Sep 2016: [Microsoft Certified Solutions Associate](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc): [Web Applications](assets/MCSA_Web_Applications.pdf)
 * Feb 2013: Microsoft Certified Solutions Developer: Web Applications
 
 ### Languages

@@ -2,7 +2,7 @@
 
 Vienna ¤ Austria
 
-[📧 artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com) | [+43 664 9310 6218](tel:+4366493106218) 
+[Back to main](README.md) | [📧 artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com) | [+43 664 9310 6218](tel:+4366493106218) 
 
 
 ## Skills 
