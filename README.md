@@ -116,6 +116,7 @@ Worked on robot simulation and analytical programming system – complex compute
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Computer Science, Robotics
 
 ### Certifications
+* Oct 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
 * May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
 * Oct 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
 * Aug 2022: [DevOps on AWS](https://www.coursera.org/account/accomplishments/specialization/certificate/E7P44QJ7Q5YY)

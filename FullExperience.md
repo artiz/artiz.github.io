@@ -346,6 +346,13 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 ## Certifications
 
+*October 2025*
+
+* Confluent Certified Developer for Apache Kafka 
+
+[![CCDAK](assets/CCDAK.png)](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
+
+
 *May 2024*
 
 * HashiCorp Certified: Terraform Associate (003)
