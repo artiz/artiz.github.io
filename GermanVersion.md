@@ -32,7 +32,7 @@ Wien ¤ Österreich <br/>
 • Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung​.​<br/>
 
 **DevOps Engineer/Senior Entwickler​** - *Online Sales Forecasting Tool*<br/>
-• Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Optimierung des Docker-Image-Builds und Versionierung, Hinzufügen von Health Checks und externer Konfiguration. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions. Implementierung einer benutzerdefinierten Github Action für HTTP-Polling.​<br/>
+• Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions. 
 • Migration der Legacy-Infrastruktur von AWS (RDS und EC2 verwaltet mit CloudFormation) zu privatem OpenShift-Cluster. Einrichtung eines kontinuierlichen Deployment-Systems basierend auf Helm-Charts/Templates und Tekton-Triggers und Pipelines.​<br/>
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
@@ -46,11 +46,10 @@ Wien ¤ Österreich <br/>
 
 Arbeit an großem B2B-Projekt in der Modebranche, bewertet als #1 auf dem US-Markt.
 Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerdefinierten ETL-Engine (Extract, Transform, Load).
-Migration der Legacy-Frontend-Anwendung von Ampersand.JS-basiertem Framework zu ReactJS.
 
 • Profiling und Refactoring von Node.js-Microservices.<br/>
 • Entwicklung einer interaktiven UI für ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC<br/>
-• Design und Implementierung von [Box.com](https://www.box.com/) und [Dropbox](https://www.dropbox.com/) Konnektoren für ETL-Engine (Go lang).<br/>
+• Design und Implementierung von [Box.com](https://www.box.com/) und [Dropbox](https://www.dropbox.com/) Konnektoren für ETL-Engine (Golang).<br/>
 • Integration der excelize-Bibliothek in den ETL-Engine-XSL-Prozessor (Go lang), Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
 • Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit benutzerdefiniertem React-Komponenten.<br/>
 
@@ -113,12 +112,15 @@ Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rec
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informatik, Robotik
 
 ### Zertifikate
-* Mai 2024: HashiCorp Certified: Terraform Associate (003)
-* Okt 2023: AWS Certified Solutions Architect – Associate
-* Aug 2022: DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)) 
-* Apr 2017: Machine Learning and Data Analysis von MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis)). 
-* Sep 2016: Microsoft Certified Solutions Associate: Web Applications (Zertifikatsnummer: [F810-0741](MCSA_Web_Applications.pdf))
+* Jan 2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
+* Oct 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
+* May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
+* Oct 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
+* Aug 2022: [DevOps on AWS](https://coursera.org/share/245636d69ad3646f868b10d707509883)
+* Apr 2017: [Machine Learning and Data Analysis from MIPT/Yandex](https://coursera.org/share/c643a772fe5ce8a01738afd8aff29a93)
+* Sep 2016: [Microsoft Certified Solutions Associate](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc): [Web Applications](assets/MCSA_Web_Applications.pdf)
 * Feb 2013: Microsoft Certified Solutions Developer: Web Applications
+
 
 ### Sprachen
 Russisch (Muttersprache) ¤ Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 ¤ Deutsch (beruflich), OIF Integrationsprüfung B1

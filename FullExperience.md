@@ -346,19 +346,21 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 ## Certifications
 
+*Jan 2026*
+
+* AWS Generative AI Applications ([Coursera](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)).
+
 *October 2025*
 
 * Confluent Certified Developer for Apache Kafka 
 
 [![CCDAK](assets/CCDAK.png)](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
 
-
 *May 2024*
 
 * HashiCorp Certified: Terraform Associate (003)
 
 [![HashiCorp Certified: Terraform Associate (003)](assets/Terraform-Associate.png)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
-
 
 *Oct 2023* 
 
@@ -370,7 +372,7 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 *Aug 2022*
 
 * DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)). 
-Credential ID: [E7P44QJ7Q5YY](https://www.coursera.org/account/accomplishments/specialization/certificate/E7P44QJ7Q5YY)
+Credential ID: [E7P44QJ7Q5YY](https://coursera.org/share/245636d69ad3646f868b10d707509883)
 
 
 *Apr 2017* 
