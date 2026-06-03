@@ -11,9 +11,11 @@ set -e
 pandoc README.md \
     --pdf-engine=weasyprint \
     --css=cv.css \
+    --variable pagetitle="Artem Kustikov - CV" \
     -o Artem_Kustikov_CV.pdf
 
 pandoc GermanVersion.md \
     --pdf-engine=weasyprint \
     --css=cv.css \
+    --variable pagetitle="Artem Kustikov - Lebenslauf" \
     -o Artem_Kustikov_CV_DE.pdf
