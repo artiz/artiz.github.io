@@ -1,102 +1,131 @@
 # Artem Kustikov
-[![Foto](assets/photo-preview-128.png)](assets/photo.jpg)
 
-**Principal Consultant, KI/DevOps/FullStack Softwareentwickler**<br/>
+### Principal Consultant, KI/DevOps/FullStack Softwareentwickler
+
+<div style="display: flex; flex-direction: row; justify-content: flex-start">
+<div style="width: 160px">
+<a href="assets/photo.jpg" target="_blank"><img src="assets/photo-preview-128.png" /></a>
+</div>
+<div>
+<a href="https://www.linkedin.com/in/artem-kustikov-2635917/">LinkedIn</a>
+| <a href="https://github.com/artiz/">GitHub</a>
+| <a href="https://www.credly.com/users/artem-kustikov/badges">Credly</a>
+| <a href="https://docs.microsoft.com/en-us/users/artemkustikov-7649/">Microsoft Learning</a>
+<span class="hide-in-pdf">
+| <a href="Artem_Kustikov_CV_DE.pdf">PDF</a>
+| <a href="README.md">English Version</a>
+</span>
+<br/>
 Wien ¤ Österreich <br/>
-[LinkedIn](https://www.linkedin.com/in/artem-kustikov-2635917/)
-| [GitHub](https://github.com/artiz/)
-| [Credly](https://www.credly.com/users/artem-kustikov/badges)
-| [Microsoft Learning](https://docs.microsoft.com/en-us/users/artemkustikov-7649/)
-| [PDF](Artem_Kustikov_CV_DE.pdf)
-| [English Version](README.md) <br/>
-[artem.kustikov@gmail.com](mailto:artem.kustikov@gmail.com) ¤ [+43 664 9310 6218](tel:+4366493106218)
+<a href="mailto:artem.kustikov@gmail.com">artem.kustikov@gmail.com</a> ¤ <a href="tel:+4366493106218">+43 664 9310 6218</a>
 
-### Erfahrung
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap:1rem">
-    <div>Aug 2022 - Heute<br/><b>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</b></div>
-    <div>
-    <a href="https://www.reply.com/machine-learning-reply/de">Machine Learning Reply</a>  <i>Wien, Österreich</i>
-    </div>
+</div>
 </div>
 
-**Stack**: Node.js, React • Java, Quarkus, Flyway • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • Terraform, Kubernetes, Helm • AWS, Azure
+Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: Solution- und Microservices-Architektur, Cloud-Infrastruktur (AWS, Azure, GCP), DevOps und Platform Engineering (Kubernetes, Terraform, CI/CD) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
 
-**Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*<br/>
-• Entwicklung einer robusten und widerstandsfähigen CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.​<br/>
-• Einführung nahtloser Benutzer-Authentifizierung und rollenbasierter Autorisierung gegen AWS Cognito​.<br/>
-• Unterstützung von kollaborativen Chats, Arbeitsbereichen, Dokumenten basierend auf WebSockets und WebRTC.​<br/>
+### [Erfahrung](FullExperience.md)
+<div style="display: flex; flex-direction: row; justify-content: space-between">
+<div>Aug 2022 - Heute<br/><b>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</b></div>
+<div>
+<a href="https://www.reply.com/machine-learning-reply/de">Machine Learning Reply</a>  <i>Wien, Österreich</i>
+</div>
+</div>
 
-**Senior Java Entwickler/DevOps** - *Plattform für einheitliches Fahrzeugdaten-Streaming*<br/>
-• Backend-Microservices-Design, Entwicklung und Bereitstellung (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)​<br/>​
-• Design und Implementierung einer hochsicheren Java REST API auf Basis von Confluent Kafka und Flink-Pipelines. Einführung von NIST 8000 Sicherheitsanforderungen mit automatischer Confluence-Seitengenerierung.​<br/> ​
-• Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung​.​<br/>
+*Stack*: Node.js, React • Java, Quarkus, Flyway • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • Terraform, Kubernetes, Helm • AWS, Azure
 
-**DevOps Engineer/Senior Entwickler​** - *Online Sales Forecasting Tool*<br/>
-• Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions. 
-• Migration der Legacy-Infrastruktur von AWS (RDS und EC2 verwaltet mit CloudFormation) zu privatem OpenShift-Cluster. Einrichtung eines kontinuierlichen Deployment-Systems basierend auf Helm-Charts/Templates und Tekton-Triggers und Pipelines.​<br/>
+**Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
+
+* Entwicklung einer robusten und widerstandsfähigen CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.
+* Einführung nahtloser Benutzer-Authentifizierung und rollenbasierter Autorisierung gegen AWS Cognito.
+* Unterstützung von kollaborativen Chats, Arbeitsbereichen, Dokumenten basierend auf WebSockets und WebRTC.
+
+**Senior Java Entwickler/DevOps** - *Plattform für einheitliches Fahrzeugdaten-Streaming*
+
+* Backend-Microservices-Design, Entwicklung und Bereitstellung (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
+* Design und Implementierung einer hochsicheren Java REST API auf Basis von Confluent Kafka und Flink-Pipelines. Einführung von NIST 8000 Sicherheitsanforderungen mit automatischer Confluence-Seitengenerierung.
+* Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung.
+
+**DevOps Engineer/Senior Entwickler​** - *Online Sales Forecasting Tool*
+
+* Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions.
+* Migration der Legacy-Infrastruktur von AWS (RDS und EC2 verwaltet mit CloudFormation) zu privatem OpenShift-Cluster. Einrichtung eines kontinuierlichen Deployment-Systems basierend auf Helm-Charts/Templates und Tekton-Triggers und Pipelines.
+
+---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-    <div>Mai 2018 - Feb 2022<br/><b>Systemarchitekt/Senior FullStack Softwareentwickler</b></div>
-    <div>
-    <a href="https://intetics.com/">Intetics</a>  <i>Minsk, Belarus</i>
-    </div>
+<div>Mai 2018 - Feb 2022<br/><b>Systemarchitekt/Senior FullStack Softwareentwickler</b></div>
+<div>
+<a href="https://intetics.com/">Intetics</a>  <i>Minsk, Belarus</i>
+</div>
 </div>
 
-**Stack**: Node.js (express, restify), ReactJS (TypeScript, redux, lerna, grpc-web), Go lang (GRPC, protobuf), Threedium, Rust, Docker, Kubernetes, Google Cloud Platform, MongoDB, PostgreSQL, Bigtable
+*Stack*: Node.js (express, restify), ReactJS (TypeScript, redux, lerna, grpc-web), Go lang (GRPC, protobuf), Threedium, Rust, Docker, Kubernetes, Google Cloud Platform, MongoDB, PostgreSQL, Bigtable
 
 Arbeit an großem B2B-Projekt in der Modebranche, bewertet als #1 auf dem US-Markt.
 Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerdefinierten ETL-Engine (Extract, Transform, Load).
 
-• Profiling und Refactoring von Node.js-Microservices.<br/>
-• Entwicklung einer interaktiven UI für ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC<br/>
-• Design und Implementierung von [Box.com](https://www.box.com/) und [Dropbox](https://www.dropbox.com/) Konnektoren für ETL-Engine (Golang).<br/>
-• Integration der excelize-Bibliothek in den ETL-Engine-XSL-Prozessor (Go lang), Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
-• Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit benutzerdefiniertem React-Komponenten.<br/>
+* Profiling und Refactoring von Node.js-Microservices.
+* Entwicklung einer interaktiven UI für ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC.
+* Design und Implementierung von [Box.com](https://www.box.com/) und [Dropbox](https://www.dropbox.com/) Konnektoren für ETL-Engine (Golang).
+* Integration der excelize-Bibliothek in den ETL-Engine-XSL-Prozessor (Go lang), Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
+* Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit benutzerdefiniertem React-Komponenten.
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap:1rem">
-    <div>Okt 2008 - Mai 2018<br/><b>Systemarchitekt/Senior Softwareentwickler</b></div>
-    <div>
-    <a href="https://www.effectivesoft.com/">EffectiveSoft</a>  <i>Minsk, Belarus</i>
-    </div>
+---
+
+<div style="display: flex; flex-direction: row; justify-content: space-between">
+<div>Okt 2008 - Mai 2018<br/><b>Systemarchitekt/Senior Softwareentwickler</b></div>
+<div>
+<a href="https://www.effectivesoft.com/">EffectiveSoft</a>  <i>Minsk, Belarus</i>
+</div>
 </div>
 
-Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.<br/>
-**Stack**: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElacticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
+Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 
-**Crowdfunding-Software** - B2B-Software zur Unterstützung lokaler Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems.<br/>
-• Architektur des Web-Clients/Admin-App<br/>
-• Node.js-Background-Worker-Service für Geldtransfers, Zinsberechnung und Finanzprüfung<br/>
-• Gemeinsames UT-System für Client/Server, CI-Setup (Bitbucket Pipelines, AWS CloudFormation)<br/>
+*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElacticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
 
-**Medizin: DICOM/ECG-Dateien Parsen und Analyse**<br/>
-• Implementierung neuer ECG-Dateiformate (Physionet, EFS, ISHNE, HL7)<br/>
-• Refactoring der gesamten ECG-Dateiverarbeitungslogik durch Einführung eines universellen Datenladers anstelle von Duplikaten<br/>
-• Web-Client zum Hochladen/Anzeigen von DICOM-Bildern, die serverseitig in PNG konvertiert werden (durch C++ CGI). Web-Client verwendet HTML-Canvas-Elemente zur Anzeige und einfachen Bearbeitung: Zoom, WL-Transformation, interaktive Größenmessung<br/>
-• Entwicklung eines plattformübergreifenden Intranet-Klinik-Personalsynchronisationstools mit ASP.NET MVC/SignalR<br/>
+**Crowdfunding-Software** - B2B-Software zur Unterstützung lokaler Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems.
+
+* Architektur des Web-Clients/Admin-App
+* Node.js-Background-Worker-Service für Geldtransfers, Zinsberechnung und Finanzprüfung
+* Gemeinsames UT-System für Client/Server, CI-Setup (Bitbucket Pipelines, AWS CloudFormation)
+
+**Medizin: DICOM/ECG-Dateien Parsen und Analyse**
+
+* Implementierung neuer ECG-Dateiformate (Physionet, EFS, ISHNE, HL7)
+* Refactoring der gesamten ECG-Dateiverarbeitungslogik durch Einführung eines universellen Datenladers anstelle von Duplikaten
+* Web-Client zum Hochladen/Anzeigen von DICOM-Bildern, die serverseitig in PNG konvertiert werden (durch C++ CGI). Web-Client verwendet HTML-Canvas-Elemente zur Anzeige und einfachen Bearbeitung: Zoom, WL-Transformation, interaktive Größenmessung
+* Entwicklung eines plattformübergreifenden Intranet-Klinik-Personalsynchronisationstools mit ASP.NET MVC/SignalR
+
+---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-    <div>Okt 2006 - Okt 2008<br/><b>Senior Softwareentwickler</b></div>
-    <div>
-    InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Belarus</i>
-    </div>
+<div>Okt 2006 - Okt 2008<br/><b>Senior Softwareentwickler</b></div>
+<div>
+InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Belarus</i>
+</div>
 </div>
 
-**Stack**: .NET, C#, C++, ATL/MFC, JavaScript/AJAX, Java, ColdFusion
+*Stack*: .NET, C#, C++, ATL/MFC, JavaScript/AJAX, Java, ColdFusion
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap:1rem">
-    <div>Jun 2004 - Sep 2006<br/><b>Softwareentwickler</b></div>
-    <div>
-        <a href="https://scand.com/">SCAND</a>  <i>Minsk, Belarus</i>
-    </div>
+---
+
+<div style="display: flex; flex-direction: row; justify-content: space-between">
+<div>Jun 2004 - Sep 2006<br/><b>Softwareentwickler</b></div>
+<div>
+<a href="https://scand.com/">SCAND</a>  <i>Minsk, Belarus</i>
+</div>
 </div>
 
-**Stack**: ASP 3.0 (VBScript), JavaScript/AJAX, C#, C++/boost/pthread, Java/Spring, MS SQL Server, Oracle
+*Stack*: ASP 3.0 (VBScript), JavaScript/AJAX, C#, C++/boost/pthread, Java/Spring, MS SQL Server, Oracle
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap:1remrem">
-    <div>Dez 2002 - Jun 2004<br/><b>Postgraduierter Student, Lehrer</b></div>
-    <div>
-        Belarusian National Technical University  <i>Minsk, Belarus</i>
-    </div>
+---
+
+<div style="display: flex; flex-direction: row; justify-content: space-between">
+<div>Dez 2002 - Jun 2004<br/><b>Postgraduierter Student, Lehrer</b></div>
+<div>
+Belarusian National Technical University  <i>Minsk, Belarus</i>
+</div>
 </div>
 
 Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rechnergestütztes Modellierungssystem zur Simulation realer Industrieroboter und ihrer Umgebung, Berechnung der Roboterkinematik, Kollisionsdetektion und analytische Programmierung. Außerdem als Dozent an der BNTU tätig und mehrere IT-bezogene Kurse unterrichtet: Grundlagen der Computernetzwerke, Mathematische Grundlagen der Roboterprogrammierung.
@@ -112,6 +141,7 @@ Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rec
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informatik, Robotik
 
 ### Zertifikate
+* Jun 2026: [Microsoft AI & ML Engineering](https://coursera.org/share/74587132d2c51255514620c6791a190bs)
 * Jan 2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
 * Oct 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
 * May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
@@ -121,6 +151,8 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informa
 * Sep 2016: [Microsoft Certified Solutions Associate](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc): [Web Applications](assets/MCSA_Web_Applications.pdf)
 * Feb 2013: Microsoft Certified Solutions Developer: Web Applications
 
-
 ### Sprachen
-Russisch (Muttersprache) ¤ Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 ¤ Deutsch (beruflich), OIF Integrationsprüfung B1
+
+* Russisch (Muttersprache)
+* Englisch (verhandlungssicher), IELTS 6.5, CEFR B2
+* Deutsch (beruflich), OIF Integrationsprüfung B1
