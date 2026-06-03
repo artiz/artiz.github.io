@@ -26,7 +26,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 ### [Erfahrung](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Aug 2022 - Heute<br/><b>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</b></div>
+<div>Aug 2022 - Heute<br/><strong>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</strong></div>
 <div>
 <a href="https://www.reply.com/machine-learning-reply/de">Machine Learning Reply</a>  <i>Wien, Österreich</i>
 </div>
@@ -54,7 +54,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-<div>Mai 2018 - Feb 2022<br/><b>Systemarchitekt/Senior FullStack Softwareentwickler</b></div>
+<div>Mai 2018 - Feb 2022<br/><strong>Systemarchitekt/Senior FullStack Softwareentwickler</strong></div>
 <div>
 <a href="https://intetics.com/">Intetics</a>  <i>Minsk, Belarus</i>
 </div>
@@ -74,7 +74,7 @@ Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerde
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Okt 2008 - Mai 2018<br/><b>Systemarchitekt/Senior Softwareentwickler</b></div>
+<div>Okt 2008 - Mai 2018<br/><strong>Systemarchitekt/Senior Softwareentwickler</strong></div>
 <div>
 <a href="https://www.effectivesoft.com/">EffectiveSoft</a>  <i>Minsk, Belarus</i>
 </div>
@@ -100,7 +100,7 @@ Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-<div>Okt 2006 - Okt 2008<br/><b>Senior Softwareentwickler</b></div>
+<div>Okt 2006 - Okt 2008<br/><strong>Senior Softwareentwickler</strong></div>
 <div>
 InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Belarus</i>
 </div>
@@ -111,7 +111,7 @@ InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Bela
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Jun 2004 - Sep 2006<br/><b>Softwareentwickler</b></div>
+<div>Jun 2004 - Sep 2006<br/><strong>Softwareentwickler</strong></div>
 <div>
 <a href="https://scand.com/">SCAND</a>  <i>Minsk, Belarus</i>
 </div>
@@ -122,7 +122,7 @@ InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Bela
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Dez 2002 - Jun 2004<br/><b>Postgraduierter Student, Lehrer</b></div>
+<div>Dez 2002 - Jun 2004<br/><strong>Postgraduierter Student, Lehrer</strong></div>
 <div>
 Belarusian National Technical University  <i>Minsk, Belarus</i>
 </div>
