@@ -141,7 +141,7 @@ Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rec
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informatik, Robotik
 
 ### Zertifikate
-* Jun 2026: [Microsoft AI & ML Engineering](https://coursera.org/share/74587132d2c51255514620c6791a190bs)
+* Jun 2026: [Microsoft AI & ML Engineering](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)
 * Jan 2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
 * Oct 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
 * May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
