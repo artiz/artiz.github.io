@@ -14,7 +14,7 @@
 | <a href="https://docs.microsoft.com/en-us/users/artemkustikov-7649/">Microsoft Learning</a>
 <span class="hide-in-pdf">
 | <a href="Artem_Kustikov_CV.pdf">PDF</a>
-| <a href="GermanVersion.md">Deutsche Version</a>
+| <a href="GermanVersion.html">Deutsche Version</a>
 </span>
 <br/>
 Vienna ¤ Austria <br/>
