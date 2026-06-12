@@ -15,7 +15,7 @@ Vienna ¤ Austria
 * *Java*: from Java 1.3 (2004) and Struts till Spring Boot/Quarkus now
 * Performed 500+ technical interviews in JavaScript, DevOps, .NET, and Golang
 
-### Platforms/Techologies
+### Platforms/Technologies
 
 * JavaScript/TypeScript, ECMA-262/ES6/ES2015-20XX, AJAX, websockets, XML/XSLT, JSON/JSONP, Promise, co, jQuery, jQuery UI, Ext.js 4/5, Twitter Bootstrap 2/3, Backbone.js, Meteor.js, AngularJS, Angular, React/redux, knockoutjs, Node.js, express, koa, passport, cluster, AFrame, grunt, THREE.js, gulp, bower, webpack, yarn, phantomjs, karma, lerna, jest, Cypress
 * Docker, Helm, Kubernetes, Terraform, Kustomize
@@ -33,7 +33,7 @@ Vienna ¤ Austria
 * PHP 3/5, OpenCommerce, Zend, Joomla
 * CSS 1/2/3, SASS, LESS, PostCSS
 * Cordova, PhoneGap, Safari Extensions
-* AWS: EC2, ElacticBeanstalk, RDS, Route 53, CloudFront, SQS, CloudFormation, S3, ECS
+* AWS: EC2, ElasticBeanstalk, RDS, Route 53, CloudFront, SQS, CloudFormation, S3, ECS
 * Google Cloud: BigTable, PubSub, StackDriver
 * Azure: Virtual machines, SQL Databases, Monitor, Kubernetes
 
@@ -42,15 +42,16 @@ Vienna ¤ Austria
 
 ### Aug 2022 - Current
 
-[Reply ML](https://www.reply.com/machine-learning-reply/de/)
+[Machine Learning Reply](https://www.reply.com/machine-learning-reply/de/)
 
 _Software company in Vienna, Austria_
 
-Position: Principal Consultant/AI/Cloud/FullStack Software Developer
+Position: Principal Consultant, AI/DevOps/FullStack Software Developer
 
 #### Technologies 
 
 * Nodejs, Typescript, React
+* Python, AWS Bedrock, Langfuse, MCP
 * Java, Spring Boot, Quarkus, Gradle, Flyway
 * PostgreSQL, MS SQL Server
 * Apache Kafka, Flink, Redpanda, Confluent
@@ -61,32 +62,37 @@ Position: Principal Consultant/AI/Cloud/FullStack Software Developer
 #### Projects
 
 
+🧠 *GenAI demonstrators for sales and offer processes – AI/ML Engineer*
+
+* Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
+* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate — reusable across regions and channels.
+
 🤖 *Web-client for artificial intelligence chatbot system*
 
-* Implement pluggable AI models support, AWS Bedrock, Open AI. Client-side maintaining of miscellaneous AI models plugins like images processing, RAG, code interpretation.​
-* Introduce seamless users authentication and role-based authorization against AWS Cognito​.
-* Perform performance testing and source code quality review to guarantee excellent application performance, security and robustness.​
-* Develop robust and resilient CI/CD platform with integrated Unit Testing.​
-* Work on support of collaborative chats, workspaces, documents based on WebSockets and WebRTC.​
+* Implement pluggable AI models support, AWS Bedrock, Open AI. Client-side maintaining of miscellaneous AI models plugins like images processing, RAG, code interpretation.
+* Introduce seamless users authentication and role-based authorization against AWS Cognito.
+* Perform performance testing and source code quality review to guarantee excellent application performance, security and robustness.
+* Develop robust and resilient CI/CD platform with integrated Unit Testing.
+* Work on support of collaborative chats, workspaces, documents based on WebSockets and WebRTC.
 
 🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform) ​
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Introduce NIST 8000 security framework requirements with automatic Confluence pages generation. ​
-* Develop secured integration with external REST APIs for vehicle data providers with Azure SPN authentication​
+* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform) 
+* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Introduce NIST 8000 security framework requirements with automatic Confluence pages generation. 
+* Develop secured integration with external REST APIs for vehicle data providers with Azure SPN authentication
 
 
-📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer​*
+📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer*
 
-* Refactor existing microservices written on Java (Spring Boot), Python (FastAPI), and R (plumber) to support scaling in k8s. Optimize Docker images build and versioning, add health checks and external configuration. Develop CI/CD framework based on Github actions. Implement custom Github action to perform HTTP polling.​
-* Migrate legacy infrastructure from AWS (RDS and EC2 managed with CloudFormation) to private OpenShift cluster. Setup continuous deployment system based on Helm charts/templates and Tekton triggers and pipelines.​
+* Refactor existing microservices written on Java (Spring Boot), Python (FastAPI), and R (plumber) to support scaling in k8s. Optimize Docker images build and versioning, add health checks and external configuration. Develop CI/CD framework based on Github actions. Implement custom Github action to perform HTTP polling.
+* Migrate legacy infrastructure from AWS (RDS and EC2 managed with CloudFormation) to private OpenShift cluster. Setup continuous deployment system based on Helm charts/templates and Tekton triggers and pipelines.
 
-🏪 *Сashier-free store backend/infrastructure – Full-Stack/DevOps*
+🏪 *Cashier-free store backend/infrastructure – Full-Stack/DevOps*
 
-* Integrate external in-store computer vision system to supports customer's shopping journey. Integrate external payment providers: Fiserv, Adyen, PayPal. Design and implement custom whitelist system to block unsupported payment methods.​
-* Work on backend microservices deployment (Azure Kubernetes Service, Terraform, Helm) and performance issues, Elasticsearch integration and on-site analytics system development.​
-* Participate in backend microservices refactoring, implement distributed DB migrations k8s jobs system to avoid data modification and DB structure conflicts at parallel microservices deployments using init-containers. ​
-* Integrate Snyk Code and Snyk Container static application security testing into Azure DevOps CI pipeline.​
+* Integrate external in-store computer vision system to support customer's shopping journey. Integrate external payment providers: Fiserv, Adyen, PayPal. Design and implement custom whitelist system to block unsupported payment methods.
+* Work on backend microservices deployment (Azure Kubernetes Service, Terraform, Helm) and performance issues, Elasticsearch integration and on-site analytics system development.
+* Participate in backend microservices refactoring, implement distributed DB migrations k8s jobs system to avoid data modification and DB structure conflicts at parallel microservices deployments using init-containers. 
+* Integrate Snyk Code and Snyk Container static application security testing into Azure DevOps CI pipeline.
 
 
 ### May 2018 - Feb 2022
@@ -125,7 +131,7 @@ Participated in 20+ projects including NLP and text mining tool Intellexer
 
 b2b crowdfunding software to support local businesses with tight integration with [Dwolla](https://www.dwolla.com/) payments service 
 
-Stack: Node.js (express), React, AWS (EC2, ElacticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, AWS RDS (MySQL), Redis
+Stack: Node.js (express), React, AWS (EC2, ElasticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, AWS RDS (MySQL), Redis
 
 Tasks:
 * Designed web client/admin app architecture
@@ -219,7 +225,7 @@ Stack: C++/MFC, C# 4.0, ASP.NET MVC 4, SignalR, jQuery/canvas/Twitter Bootsrap, 
 Tasks:
 * Web-client to upload/view DICOM images converted to PNG on server-side (by C++ CGI). Web-client uses HTML canvas elements to display converted images and apply simple modifications to them: zoom, WL-transformation, interactive size measuring
 * Optimize existing C++ CGI application to increase images generation performance and quality
-* Developed multi-platform intranet clinic personal synchronization tool on ASP.NET MVC/SignalR
+* Developed multi-platform intranet clinic personnel synchronization tool on ASP.NET MVC/SignalR
 * Implemented company site using Twitter Bootstrap, integrated online licensing tool
 
 
@@ -244,7 +250,7 @@ Team Size: 10
 Stack: C# 4.0, ASP.NET MVC 2, JavaScript, jQuery, LINQ (Objects, SQL), TFS, MS Unit Test, Spring framework.
 
 Tasks:
-* Participated in migration of compleх insurance software to new application framework.
+* Participated in migration of complex insurance software to new application framework.
 * Developed several rich-UI Javascript controls to use in application framework.
 * Developed NAnt script as part of continuous build on TFS server
 * Worked on implementation of several new insurance products within system.
@@ -273,7 +279,7 @@ Stack: PHP, Zend framework, Doctrine, jQuery, Python, sqlalchemy, subprocess, bo
 
 Tasks:
 * Implemented set of books/ebooks information loading scripts implemented on Python. These scripts used to download products lists from books suppliers FTP servers in different formats, parse these files and insert/update products data in application database (MySQL).
-* Refactored lots а legacy tools/modules to Zend MVC modules.
+* Refactored lots of legacy tools/modules to Zend MVC modules.
 * Participated in performance optimization, implemented caching of business entities, optimized SQL queries
 
 
@@ -345,6 +351,10 @@ Worked on robot simulation and analytical programming system – complex compute
 Also worked as teacher in the staff of BNTU and taught several IT-related courses: Computer Networking Fundamentals, Mathematical Fundamentals of Programming of Robots.
 
 ## Certifications
+
+*Jun 2026*
+
+* Microsoft AI & ML Engineering ([Coursera](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)).
 
 *Jan 2026*
 

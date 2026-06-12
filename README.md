@@ -23,7 +23,7 @@ Vienna ¤ Austria <br/>
 </div>
 </div>
 
-Principal consultant and hands-on software architect with 20+ years of experience designing and delivering scalable, cloud-native systems end to end. I lead architecture and engineering across **AI/LLM-powered applications**, **distributed event-driven platforms**, and **full-stack web products**, translating business goals into resilient, well-governed solutions. Core focus areas: solution and microservices architecture, cloud infrastructure (AWS, Azure, GCP), DevOps and platform engineering (Kubernetes, Terraform, CI/CD), and real-time data streaming (Kafka, Flink). I pair technical leadership with deep delivery experience — mentoring teams, driving engineering best practices, and shipping production systems that scale.
+Principal consultant and hands-on software architect with 20+ years of experience designing and delivering scalable, cloud-native systems end to end. I lead architecture and engineering across **AI/LLM-powered applications**, **distributed event-driven platforms**, and **full-stack web products**, translating business goals into resilient, well-governed solutions. Core focus areas: GenAI and agentic systems (LLM agents, evaluation and observability, MCP), solution and microservices architecture, cloud infrastructure (AWS, Azure, GCP), DevOps and platform engineering (Kubernetes, Terraform, CI/CD), and real-time data streaming (Kafka, Flink). I pair technical leadership with deep delivery experience — mentoring teams, driving engineering best practices, and shipping production systems that scale.
 
 ### [Experience](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
@@ -33,7 +33,12 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 </div>
 </div>
 
-*Stack*: Node.js, React • Java, Quarkus, Flyway • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • Terraform, Kubernetes, Helm • AWS, Azure
+*Stack*: Node.js, React • Java, Quarkus, Flyway • Python • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+
+**AI/ML Engineer** - *GenAI demonstrators for sales and offer processes*
+
+* Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
+* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate — reusable across regions and channels.
 
 **Senior DevOps/FullStack** - *Web-client for artificial intelligence chatbot system*
 
@@ -43,13 +48,13 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Senior Java Developer/DevOps** - *Unified vehicles data streaming platform*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)​​
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Automate Flink pipelines deployement and monitoring.<
+* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
+* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Automate Flink pipelines deployment and monitoring.
 
-**DevOps Engineer/Senior Developer​** - *Online Sales Forecasting Tool*
+**DevOps Engineer/Senior Developer** - *Online Sales Forecasting Tool*
 
-* Refactor existing microservices written on Java (Spring Boot), Python (FastAPI), and R (plumber) to support scaling in k8s. Optimize Docker images build and versioning, add health checks and external configuration. Develop CI/CD framework based on Github actions. Implement custom Github action to perform HTTP polling.​
-* Migrate legacy infrastructure from AWS (RDS and EC2 managed with CloudFormation) to private OpenShift cluster. Setup continuous deployment system based on Helm charts/templates and Tekton triggers and pipelines.​​
+* Refactor existing API and ML inference microservices written on Java (Spring Boot), Python (FastAPI), and R (plumber) to support deployment into k8s. Optimize Docker images build and versioning, add health checks and external configuration. Develop CI/CD framework based on Github actions. Implement custom Github action to perform HTTP polling.
+* Migrate legacy infrastructure from AWS (RDS and EC2 managed with CloudFormation) to private OpenShift cluster. Setup continuous deployment system based on Helm charts/templates and Tekton triggers and pipelines.
 
 ---
 
@@ -93,7 +98,7 @@ Participated in 20+ projects including NLP and text mining tool Intellexer.
 **Medicine: DICOM/ECG files parsing and analysis**
 
 * Implemented new ECG formats files loading (Physionet, EFS, ISHNE, HL7), introduced universal data loader instead of set of duplicate implementations
-* Web client to upload/view DICOM images with convertion to PNG. The web client uses HTML canvas elements to display converted images and apply simple modifications to them: zoom, WL-transformation, interactive size measuring.
+* Web client to upload/view DICOM images with conversion to PNG. The web client uses HTML canvas elements to display converted images and apply simple modifications to them: zoom, WL-transformation, interactive size measuring.
 * Developed a multi-platform intranet clinic personnel synchronization tool on ASP.NET MVC/SignalR.
 
 ---
@@ -130,7 +135,7 @@ Belarusian National Technical University  <i>Minsk, Belarus</i>
 Worked on robot simulation and analytical programming system – complex computer-aided modeling system for simulation of real industrial robots and their environment, calculation of robot kinematics, collision detection and analytical programming. Also worked as teacher in the staff of BNTU and taught several IT-related courses: Computer Networking Fundamentals, Mathematical Fundamentals of Programming of Robots.
 
 ### Skills
-- **JavaScript Full Stack**: (2002-now), TypeScript, React/redux, Angular, Node.js, Express, Next.js, REST/GraphQL 
+- **JavaScript Full Stack**: (2002-now) TypeScript, React/redux, Angular, Node.js, Express, Next.js, REST/GraphQL
 - **DevOps**: (2015-now) Docker, Terraform, Kubernetes, AWS, Azure, GCP, Gitlab
 - **Python**: (2008-now) Django, Flask, FastAPI, SQLAlchemy, Celery, NumPy, Pandas, nltk, Seaborn, Pytorch, scikit-learn
 - **Java**: (2004-now) Java 1.3/21, Struts/FOP/JSTL/POI, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle

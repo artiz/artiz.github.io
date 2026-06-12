@@ -22,7 +22,7 @@ Wien ¤ Österreich <br/>
 </div>
 </div>
 
-Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: Solution- und Microservices-Architektur, Cloud-Infrastruktur (AWS, Azure, GCP), DevOps und Platform Engineering (Kubernetes, Terraform, CI/CD) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
+Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: GenAI und agentische Systeme (LLM-Agenten, Evaluation und Observability, MCP), Solution- und Microservices-Architektur, Cloud-Infrastruktur (AWS, Azure, GCP), DevOps und Platform Engineering (Kubernetes, Terraform, CI/CD) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
 
 ### [Erfahrung](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
@@ -32,7 +32,12 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 </div>
 </div>
 
-*Stack*: Node.js, React • Java, Quarkus, Flyway • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • Terraform, Kubernetes, Helm • AWS, Azure
+*Stack*: Node.js, React • Java, Quarkus, Flyway • Python • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+
+**AI/ML Engineer** - *GenAI-Demonstratoren für Vertriebs- und Angebotsprozesse*
+
+* Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
+* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP — wiederverwendbar über Regionen und Kanäle hinweg.
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
 
@@ -46,7 +51,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 * Design und Implementierung einer hochsicheren Java REST API auf Basis von Confluent Kafka und Flink-Pipelines. Einführung von NIST 8000 Sicherheitsanforderungen mit automatischer Confluence-Seitengenerierung.
 * Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung.
 
-**DevOps Engineer/Senior Entwickler​** - *Online Sales Forecasting Tool*
+**DevOps Engineer/Senior Entwickler** - *Online Sales Forecasting Tool*
 
 * Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions.
 * Migration der Legacy-Infrastruktur von AWS (RDS und EC2 verwaltet mit CloudFormation) zu privatem OpenShift-Cluster. Einrichtung eines kontinuierlichen Deployment-Systems basierend auf Helm-Charts/Templates und Tekton-Triggers und Pipelines.
@@ -82,7 +87,7 @@ Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerde
 
 Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 
-*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElacticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
+*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
 
 **Crowdfunding-Software** - B2B-Software zur Unterstützung lokaler Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems.
 
@@ -131,7 +136,7 @@ Belarusian National Technical University  <i>Minsk, Belarus</i>
 Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rechnergestütztes Modellierungssystem zur Simulation realer Industrieroboter und ihrer Umgebung, Berechnung der Roboterkinematik, Kollisionsdetektion und analytische Programmierung. Außerdem als Dozent an der BNTU tätig und mehrere IT-bezogene Kurse unterrichtet: Grundlagen der Computernetzwerke, Mathematische Grundlagen der Roboterprogrammierung.
 
 ### Fähigkeiten
-- **JavaScript Full Stack**: (2002-heute), TypeScript, React/redux, Angular, Node.js, Expnress, Next.js, REST/GraphQL 
+- **JavaScript Full Stack**: (2002-heute) TypeScript, React/redux, Angular, Node.js, Express, Next.js, REST/GraphQL
 - **DevOps**: (2015-heute) Docker, Terraform, Kubernetes, AWS, Azure, GCP, Gitlab
 - **Python**: (2008-heute) Django, Flask, FastAPI, SQLAlchemy, Celery, NumPy, Pandas, nltk, Seaborn, Pytorch, scikit-learn
 - **Java**: (2004-heute) Java 1.3/21, Struts/FOP/JSTL/POI, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle
@@ -143,9 +148,9 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informa
 ### Zertifikate
 * Jun 2026: [Microsoft AI & ML Engineering](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)
 * Jan 2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
-* Oct 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
-* May 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
-* Oct 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
+* Okt 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
+* Mai 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
+* Okt 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
 * Aug 2022: [DevOps on AWS](https://coursera.org/share/245636d69ad3646f868b10d707509883)
 * Apr 2017: [Machine Learning and Data Analysis from MIPT/Yandex](https://coursera.org/share/c643a772fe5ce8a01738afd8aff29a93)
 * Sep 2016: [Microsoft Certified Solutions Associate](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc): [Web Applications](assets/MCSA_Web_Applications.pdf)
