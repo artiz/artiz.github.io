@@ -143,7 +143,7 @@ Worked on robot simulation and analytical programming system – complex compute
 
 ### Open Source Projects
 - **[KateChat](https://github.com/artiz/kate-chat)** — Self-hosted, multi-provider LLM chat platform (open ChatGPT alternative). React/TypeScript frontend with Node.js and Rust backends; integrates AWS Bedrock, OpenAI, and Yandex AI with RAG (Docling), MCP tool servers, in-browser Python (Pyodide), and image generation. GraphQL API, WebSocket subscriptions, PostgreSQL/Redis, Docker.
-- **[Fleischwolf](https://github.com/artiz/fleischwolf)** — High-performance Rust reimplementation of Python Docling that converts 20+ document formats (PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio) into a unified `DoclingDocument` for AI/RAG pipelines. Pure-Rust PDF parser with an ONNX layout/TableFormer/OCR stack and Whisper ASR; 2–57× less memory and up to 46× faster than Python, with Node.js/TypeScript bindings.
+- **[docling.rs](https://github.com/docling-project/docling.rs)** — High-performance Rust reimplementation of Python Docling, adopted into the official Docling project, that converts 20+ document formats (PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio) into a unified `DoclingDocument` for AI/RAG pipelines. Pure-Rust PDF parser with an ONNX layout/TableFormer/OCR stack and Whisper ASR; 2–57× less memory and up to 46× faster than Python, with Node.js/TypeScript bindings.
 
 ### Education  
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Computer Science, Robotics
