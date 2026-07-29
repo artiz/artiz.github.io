@@ -40,11 +40,12 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 * Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
 * Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate. Multi-tenant by design, with tenants isolated by their own configuration and agents, and extensible so that new agents, workflows, and channels plug in without touching the core — reusable across regions, tenants, and channels.
 
-**Solution Architect/FullStack** - *MusikFlow — scheduling, billing and contract platform for concert organisers*
+**Solution Architect/FullStack** - *Scheduling, billing and contract platform for concert organisers*
 
 * Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login supports multiple roles with role-specific features, and every query is scoped through explicit per-company access grants that can be gated on a signed contract.
 * Modelled recurring schedules that generate concerts with immutable composition snapshots; double-booking is prevented in the database itself. Added `.ICS` confirmation emails with confirm/cancel deep links and PDF participant and fee reports.
 * End-to-end TypeScript on Bun — GraphQL Yoga API, Prisma/PostgreSQL, React/Redux/Mantine SPA, JWT with Google and Apple OAuth — deployed to AWS ECS Fargate with Terraform/Terragrunt, GitHub Actions continuous delivery, and SES mail via the task role.
+* Built end-to-end with Claude Code — from requirements and data model through API, UI, infrastructure and CI/CD — as a production-scale AI-assisted development case study.
 
 **Senior DevOps/FullStack** - *Web-client for artificial intelligence chatbot system*
 
