@@ -37,7 +37,13 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 **AI/ML Engineer** - *GenAI-Demonstratoren für Vertriebs- und Angebotsprozesse*
 
 * Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
-* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP — wiederverwendbar über Regionen und Kanäle hinweg.
+* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP. Mandantenfähig konzipiert — Mandanten sind mit eigener Konfiguration und eigenen Agenten isoliert — und erweiterbar, sodass neue Agenten, Workflows und Kanäle ohne Eingriff in den Kern angebunden werden — wiederverwendbar über Regionen, Mandanten und Kanäle hinweg.
+
+**Solution Architect/FullStack** - *MusikFlow — Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
+
+* Konzeption und Umsetzung einer mandantenfähigen Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login unterstützt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage wird über Zugriffsrechte je Mandant eingegrenzt, die an einen unterzeichneten Vertrag gekoppelt werden können.
+* Modellierung wiederkehrender Dienstpläne, die Konzerte mit unveränderlichem Besetzungs-Snapshot erzeugen; Doppelbuchungen werden bereits in der Datenbank verhindert. Ergänzt um `.ICS`-Bestätigungs-E-Mails sowie PDF-Berichte zu Teilnehmern und Gagen.
+* Durchgängig TypeScript auf Bun — GraphQL-Yoga-API, Prisma/PostgreSQL, React/Redux/Mantine-SPA, JWT mit Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt, GitHub-Actions-CD und SES-Mailversand über die Task-Rolle.
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
 
@@ -53,8 +59,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 **DevOps Engineer/Senior Entwickler** - *Online Sales Forecasting Tool*
 
-* Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Unterstützung der Skalierung in k8s. Entwicklung eines CI/CD-Frameworks basierend auf Github Actions.
-* Migration der Legacy-Infrastruktur von AWS (RDS und EC2 verwaltet mit CloudFormation) zu privatem OpenShift-Cluster. Einrichtung eines kontinuierlichen Deployment-Systems basierend auf Helm-Charts/Templates und Tekton-Triggers und Pipelines.
+* Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Skalierung in k8s; CI/CD-Framework auf Basis von GitHub Actions. Migration der Legacy-Infrastruktur von AWS (RDS und EC2 mit CloudFormation) auf einen privaten OpenShift-Cluster mit kontinuierlichem Deployment über Helm-Charts sowie Tekton-Trigger und -Pipelines.
 
 ---
 
@@ -67,14 +72,11 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 *Stack*: Node.js (express, restify), ReactJS (TypeScript, redux, lerna, grpc-web), Go lang (GRPC, protobuf), Threedium, Rust, Docker, Kubernetes, Google Cloud Platform, MongoDB, PostgreSQL, Bigtable
 
-Arbeit an großem B2B-Projekt in der Modebranche, bewertet als #1 auf dem US-Markt.
-Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerdefinierten ETL-Engine (Extract, Transform, Load).
+Arbeit an großem B2B-Projekt in der Modebranche (#1 auf dem US-Markt), Integrationsaufgaben und Entwicklung einer benutzerdefinierten ETL-Engine (Extract, Transform, Load).
 
-* Profiling und Refactoring von Node.js-Microservices.
-* Entwicklung einer interaktiven UI für ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC.
-* Design und Implementierung von [Box.com](https://www.box.com/) und [Dropbox](https://www.dropbox.com/) Konnektoren für ETL-Engine (Golang).
-* Integration der excelize-Bibliothek in den ETL-Engine-XSL-Prozessor (Go lang), Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
-* Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit benutzerdefiniertem React-Komponenten.
+* Profiling und Refactoring von Node.js-Microservices; interaktive UI für das ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC.
+* Design und Implementierung von [Box.com](https://www.box.com/)- und [Dropbox](https://www.dropbox.com/)-Konnektoren für die ETL-Engine (Go lang); Integration der excelize-Bibliothek in den XSL-Prozessor samt Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
+* Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit einer benutzerdefinierten React-Komponente.
 
 ---
 
@@ -87,20 +89,10 @@ Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerde
 
 Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 
-*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
+*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, CloudFront), MySQL, Redis, MongoDB, .NET (C#/Managed C++), ASP.NET MVC, C++, COM, WinAPI, ActiveMQ, Python.
 
-**Crowdfunding-Software** - B2B-Software zur Unterstützung lokaler Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems.
-
-* Architektur des Web-Clients/Admin-App
-* Node.js-Background-Worker-Service für Geldtransfers, Zinsberechnung und Finanzprüfung
-* Gemeinsames UT-System für Client/Server, CI-Setup (Bitbucket Pipelines, AWS CloudFormation)
-
-**Medizin: DICOM/ECG-Dateien Parsen und Analyse**
-
-* Implementierung neuer ECG-Dateiformate (Physionet, EFS, ISHNE, HL7)
-* Refactoring der gesamten ECG-Dateiverarbeitungslogik durch Einführung eines universellen Datenladers anstelle von Duplikaten
-* Web-Client zum Hochladen/Anzeigen von DICOM-Bildern, die serverseitig in PNG konvertiert werden (durch C++ CGI). Web-Client verwendet HTML-Canvas-Elemente zur Anzeige und einfachen Bearbeitung: Zoom, WL-Transformation, interaktive Größenmessung
-* Entwicklung eines plattformübergreifenden Intranet-Klinik-Personalsynchronisationstools mit ASP.NET MVC/SignalR
+* **Crowdfunding-Software** — B2B-Plattform für lokale Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems: Architektur von Web-Client und Admin-App, CI-Setup (Bitbucket Pipelines, AWS CloudFormation) sowie ein Node.js-Background-Worker für Geldtransfers, Zinsberechnung und Finanzprüfung.
+* **Medizin: DICOM/ECG-Parsing und -Analyse** — universeller ECG-Datenlader anstelle duplizierter Formatimplementierungen (Physionet, EFS, ISHNE, HL7), Canvas-basierter Web-Client zum Hochladen und Anzeigen von DICOM-Bildern (Zoom, WL-Transformation, interaktive Größenmessung) sowie ein Intranet-Tool zur Klinik-Personalsynchronisation mit ASP.NET MVC/SignalR.
 
 ---
 
@@ -143,8 +135,8 @@ Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rec
 - Durchführung von 500+ technischen Interviews in JavaScript, DevOps, Java, .NET und Golang
 
 ### Open-Source-Projekte
-- **[KateChat](https://github.com/artiz/kate-chat)** — Selbst-gehostete Multi-Provider-LLM-Chat-Plattform (offene ChatGPT-Alternative). React/TypeScript-Frontend mit Node.js- und Rust-Backend; integriert AWS Bedrock, OpenAI und Yandex AI mit RAG (Docling), MCP-Tool-Servern, In-Browser-Python (Pyodide) und Bildgenerierung. GraphQL-API, WebSocket-Subscriptions, PostgreSQL/Redis, Docker.
-- **[docling.rs](https://github.com/docling-project/docling.rs)** — Performante Rust-Neuimplementierung von Python Docling, aufgenommen in das offizielle Docling-Projekt, die über 20 Dokumentformate (PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio) in eine einheitliche `DoclingDocument`-Struktur für KI/RAG-Pipelines umwandelt. Reiner Rust-PDF-Parser mit ONNX-Layout/TableFormer/OCR-Stack und Whisper-ASR; 2–57× weniger Speicher und bis zu 46× schneller als Python, mit Node.js/TypeScript-Bindings.
+- **[KateChat](https://github.com/artiz/kate-chat)** — Selbst-gehostete Multi-Provider-LLM-Chat-Plattform (offene ChatGPT-Alternative). React/TypeScript-Frontend mit Node.js- und Rust-Backend; integriert AWS Bedrock, OpenAI und Yandex AI mit RAG (Docling), MCP-Tool-Servern, In-Browser-Python (Pyodide) und Bildgenerierung. GraphQL-API, WebSocket-Subscriptions, PostgreSQL/Redis.
+- **[docling.rs](https://github.com/docling-project/docling.rs)** — Performante Rust-Neuimplementierung von Python Docling, aufgenommen in das offizielle Docling-Projekt, die über 20 Dokumentformate (PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio) in eine einheitliche `DoclingDocument`-Struktur für KI/RAG-Pipelines umwandelt. Reiner Rust-PDF-Parser mit ONNX-Layout/TableFormer/OCR-Stack und Whisper-ASR; 2–57× weniger Speicher und bis zu 46× schneller als Python, mit Node.js/TypeScript-Bindings. Erzeugt Markdown, docling-JSON und DocLang (`.dclx`) und enthält ein modulares RAG-Subsystem: Chunking, austauschbare Embedder und Vektordatenbanken, Hybrid-/Multi-Query-/HyDE-Retrieval sowie eine REST-API.
 
 ### Ausbildung  
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informatik, Robotik
@@ -162,6 +154,4 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informa
 
 ### Sprachen
 
-* Russisch (Muttersprache)
-* Englisch (verhandlungssicher), IELTS 6.5, CEFR B2
-* Deutsch (beruflich), OIF Integrationsprüfung B1
+Russisch (Muttersprache) • Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 • Deutsch (beruflich), OIF Integrationsprüfung B1
