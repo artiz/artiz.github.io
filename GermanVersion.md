@@ -37,7 +37,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 **AI/ML Engineer** - *GenAI-Demonstratoren für Vertriebs- und Angebotsprozesse*
 
 * Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
-* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP — wiederverwendbar über Regionen und Kanäle hinweg.
+* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP. Mandantenfähig konzipiert — Mandanten sind mit eigener Konfiguration und eigenen Agenten isoliert — und erweiterbar, sodass neue Agenten, Workflows und Kanäle ohne Eingriff in den Kern angebunden werden — wiederverwendbar über Regionen, Mandanten und Kanäle hinweg.
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
 
@@ -87,20 +87,10 @@ Teilnahme an verschiedenen Integrationsaufgaben und Entwicklung einer benutzerde
 
 Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 
-*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
+*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, CloudFront), MySQL, Redis, MongoDB, .NET (C#/Managed C++), ASP.NET MVC, C++, COM, WinAPI, ActiveMQ, Python.
 
-**Crowdfunding-Software** - B2B-Software zur Unterstützung lokaler Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems.
-
-* Architektur des Web-Clients/Admin-App
-* Node.js-Background-Worker-Service für Geldtransfers, Zinsberechnung und Finanzprüfung
-* Gemeinsames UT-System für Client/Server, CI-Setup (Bitbucket Pipelines, AWS CloudFormation)
-
-**Medizin: DICOM/ECG-Dateien Parsen und Analyse**
-
-* Implementierung neuer ECG-Dateiformate (Physionet, EFS, ISHNE, HL7)
-* Refactoring der gesamten ECG-Dateiverarbeitungslogik durch Einführung eines universellen Datenladers anstelle von Duplikaten
-* Web-Client zum Hochladen/Anzeigen von DICOM-Bildern, die serverseitig in PNG konvertiert werden (durch C++ CGI). Web-Client verwendet HTML-Canvas-Elemente zur Anzeige und einfachen Bearbeitung: Zoom, WL-Transformation, interaktive Größenmessung
-* Entwicklung eines plattformübergreifenden Intranet-Klinik-Personalsynchronisationstools mit ASP.NET MVC/SignalR
+* **Crowdfunding-Software** — B2B-Plattform für lokale Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems: Architektur von Web-Client und Admin-App, CI-Setup (Bitbucket Pipelines, AWS CloudFormation) sowie ein Node.js-Background-Worker für Geldtransfers, Zinsberechnung und Finanzprüfung.
+* **Medizin: DICOM/ECG-Parsing und -Analyse** — universeller ECG-Datenlader anstelle duplizierter Formatimplementierungen (Physionet, EFS, ISHNE, HL7), Canvas-basierter Web-Client zum Hochladen und Anzeigen von DICOM-Bildern (Zoom, WL-Transformation, interaktive Größenmessung) sowie ein Intranet-Tool zur Klinik-Personalsynchronisation mit ASP.NET MVC/SignalR.
 
 ---
 

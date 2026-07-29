@@ -38,7 +38,7 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 **AI/ML Engineer** - *GenAI demonstrators for sales and offer processes*
 
 * Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
-* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate — reusable across regions and channels.
+* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate. Multi-tenant by design, with tenants isolated by their own configuration and agents, and extensible so that new agents, workflows, and channels plug in without touching the core — reusable across regions, tenants, and channels.
 
 **Senior DevOps/FullStack** - *Web-client for artificial intelligence chatbot system*
 
@@ -88,18 +88,10 @@ Worked on migration of a legacy frontend application from an Ampersand.JS-based 
 
 Participated in 20+ projects including NLP and text mining tool Intellexer.
 
-*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, Route 53, CloudFront), webpack, jest, pdfkit, aws-sdk, MySQL, Redis, MongoDB, SQLite, .NET (C#/Managed C++), Prism, Unity, WiX, ASP.NET MVC, C++, COM, MAPI, WinAPI, ActiveMQ, Python, Robot Framework.
+*Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, CloudFront), MySQL, Redis, MongoDB, .NET (C#/Managed C++), ASP.NET MVC, C++, COM, WinAPI, ActiveMQ, Python.
 
-**Crowdfunding software** - B2B software to support local businesses with tight integration with the [Dwolla](https://www.dwolla.com/) payments service.
-
-* Designed web client and admin app architecture. CI setup (Bitbucket Pipelines, AWS CloudFormation).
-* Node.js background worker service to perform money transfers, apply interest charges, and perform financial audit.
-
-**Medicine: DICOM/ECG files parsing and analysis**
-
-* Implemented new ECG formats files loading (Physionet, EFS, ISHNE, HL7), introduced universal data loader instead of set of duplicate implementations
-* Web client to upload/view DICOM images with conversion to PNG. The web client uses HTML canvas elements to display converted images and apply simple modifications to them: zoom, WL-transformation, interactive size measuring.
-* Developed a multi-platform intranet clinic personnel synchronization tool on ASP.NET MVC/SignalR.
+* **Crowdfunding software** — B2B platform for local businesses with tight integration of the [Dwolla](https://www.dwolla.com/) payments service: web client and admin app architecture, CI setup (Bitbucket Pipelines, AWS CloudFormation), and a Node.js background worker for money transfers, interest charges, and financial audit.
+* **Medicine: DICOM/ECG parsing and analysis** — universal ECG data loader replacing duplicate per-format implementations (Physionet, EFS, ISHNE, HL7), a canvas-based web client to upload and view DICOM images (zoom, WL-transformation, interactive measuring), and an ASP.NET MVC/SignalR clinic personnel synchronization tool.
 
 ---
 
