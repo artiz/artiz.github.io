@@ -42,8 +42,8 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Solution Architect/FullStack** - *MusikFlow — scheduling, billing and contract platform for concert organisers*
 
-* Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login carries many roles (musician, singer, conductor, backstage, box office, …) with an active-role switch, and every query is scoped through explicit per-company access grants that can be gated on a signed contract.
-* Modelled recurring schedules that generate concerts with immutable composition snapshots; double-booking is prevented in the database itself (PostgreSQL `EXCLUDE` constraint over time ranges). Added `.ICS` confirmation emails with confirm/cancel deep links and PDF participant and fee reports.
+* Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login supports multiple roles with role-specific features, and every query is scoped through explicit per-company access grants that can be gated on a signed contract.
+* Modelled recurring schedules that generate concerts with immutable composition snapshots; double-booking is prevented in the database itself. Added `.ICS` confirmation emails with confirm/cancel deep links and PDF participant and fee reports.
 * End-to-end TypeScript on Bun — GraphQL Yoga API, Prisma/PostgreSQL, React/Redux/Mantine SPA, JWT with Google and Apple OAuth — deployed to AWS ECS Fargate with Terraform/Terragrunt, GitHub Actions continuous delivery, and SES mail via the task role.
 
 **Senior DevOps/FullStack** - *Web-client for artificial intelligence chatbot system*

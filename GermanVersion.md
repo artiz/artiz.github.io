@@ -41,8 +41,8 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 **Solution Architect/FullStack** - *MusikFlow — Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
 
-* Konzeption und Umsetzung einer mandantenfähigen Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login trägt mehrere Rollen mit Rollenumschaltung; jede Abfrage wird über Zugriffsrechte je Mandant eingegrenzt, die an einen unterzeichneten Vertrag gekoppelt werden können.
-* Modellierung wiederkehrender Dienstpläne, die Konzerte mit unveränderlichem Besetzungs-Snapshot erzeugen; Doppelbuchungen verhindert ein PostgreSQL-`EXCLUDE`-Constraint über Zeiträume. Ergänzt um `.ICS`-Bestätigungs-E-Mails sowie PDF-Berichte zu Teilnehmern und Gagen.
+* Konzeption und Umsetzung einer mandantenfähigen Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login unterstützt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage wird über Zugriffsrechte je Mandant eingegrenzt, die an einen unterzeichneten Vertrag gekoppelt werden können.
+* Modellierung wiederkehrender Dienstpläne, die Konzerte mit unveränderlichem Besetzungs-Snapshot erzeugen; Doppelbuchungen werden bereits in der Datenbank verhindert. Ergänzt um `.ICS`-Bestätigungs-E-Mails sowie PDF-Berichte zu Teilnehmern und Gagen.
 * Durchgängig TypeScript auf Bun — GraphQL-Yoga-API, Prisma/PostgreSQL, React/Redux/Mantine-SPA, JWT mit Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt, GitHub-Actions-CD und SES-Mailversand über die Task-Rolle.
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
