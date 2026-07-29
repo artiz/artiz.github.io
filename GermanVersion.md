@@ -39,11 +39,12 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 * Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
 * Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP. Mandantenfähig konzipiert — Mandanten sind mit eigener Konfiguration und eigenen Agenten isoliert — und erweiterbar, sodass neue Agenten, Workflows und Kanäle ohne Eingriff in den Kern angebunden werden — wiederverwendbar über Regionen, Mandanten und Kanäle hinweg.
 
-**Solution Architect/FullStack** - *MusikFlow — Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
+**Solution Architect/FullStack** - *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
 
 * Konzeption und Umsetzung einer mandantenfähigen Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login unterstützt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage wird über Zugriffsrechte je Mandant eingegrenzt, die an einen unterzeichneten Vertrag gekoppelt werden können.
 * Modellierung wiederkehrender Dienstpläne, die Konzerte mit unveränderlichem Besetzungs-Snapshot erzeugen; Doppelbuchungen werden bereits in der Datenbank verhindert. Ergänzt um `.ICS`-Bestätigungs-E-Mails sowie PDF-Berichte zu Teilnehmern und Gagen.
 * Durchgängig TypeScript auf Bun — GraphQL-Yoga-API, Prisma/PostgreSQL, React/Redux/Mantine-SPA, JWT mit Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt, GitHub-Actions-CD und SES-Mailversand über die Task-Rolle.
+* Durchgängig mit Claude Code entwickelt — von Anforderungen und Datenmodell über API und UI bis zu Infrastruktur und CI/CD — als Fallstudie für AI-gestützte Entwicklung im Produktionsmaßstab.
 
 **Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
 
