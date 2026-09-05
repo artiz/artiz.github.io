@@ -50,22 +50,39 @@ Position: Principal Consultant, AI/DevOps/FullStack Software Developer
 
 #### Technologies 
 
-* Nodejs, Typescript, React
-* Python, AWS Bedrock, Langfuse, MCP
+* Nodejs, Typescript, React, Next.js, ReactFlow, Tailwind CSS
+* Python, PydanticAI, Azure Functions, Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, MCP
 * Java, Spring Boot, Quarkus, Gradle, Flyway
 * PostgreSQL, MS SQL Server
 * Apache Kafka, Flink, Redpanda, Confluent
-* Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis, API Management
+* Azure: Kubernetes services, Container Apps, Functions, Cosmos DB, Storage Queues, Service Bus, Key Vault, Logic Apps, Entra ID, Monitor, SQL Databases, Cache for Redis, API Management
 * AWS: CloudFormation, RDS, EC2, S3, EKS, CodeBuild/CodePipeline/CodeDeploy
 * Terraform, Helm, Kubernetes, Docker
 
 #### Projects
 
 
+🧩 *Self-service agentic AI platform – Solution Architect/AI Engineer*
+
+A self-service agentic platform that lets a non-engineer describe an AI agent in chat, get it back as an editable visual workflow on a canvas, publish it, and have real inbound traffic run it. Agents are triggered by four channels — a shared mailbox, embeddable web forms, live phone calls and cron schedules — and can ground their answers in uploaded knowledge bases, call platform tools such as Salesforce case creation, and reach customer systems through authenticated MCP servers. Ships in two shapes from one codebase: a multi-tenant service where one portal serves several customer organisations with their own branding, users and data, and a single-tenant install deployed inside a customer's own Azure subscription. Owned the platform end to end — the Next.js portal and its server-side API, the two Python queue-driven backend services, the realtime voice channel, the multi-tenant data model and the Terraform that stands the whole thing up from an empty subscription.
+
+Stack: TypeScript, Next.js (App Router), React, ReactFlow, Tailwind CSS, Redux, MSAL, SSE, WebRTC, Vitest • Python 3.12, Azure Functions v2, PydanticAI, Pydantic, asyncio, pytest • Azure OpenAI (Responses API, realtime models), Azure AI Foundry (vector stores, file_search, web_search), Whisper, MCP • Azure Container Apps, Functions, Cosmos DB, Storage Queues/Blob, Cache for Redis, Key Vault, Container Registry, Logic Apps, Entra ID/OAuth2, Managed Identity, Application Insights • Terraform, GitHub Actions (OIDC), Docker, Turborepo, AWS Route 53
+
+* Designed and built the full-stack architecture — a Next.js portal holding all server-side platform logic, two Python Azure Function Apps (dispatcher and executor) and four Storage Queues as the only seams between them, so any stage can be run, replaced or debugged in isolation.
+* Built the visual workflow builder on ReactFlow with an autosaving canvas, a streaming assistant that generates workflow JSON from a chat description, and per-node inspectors; defined the workflow JSON contract shared by the canvas, the generation bot, the dispatcher and the executor, so adding a capability means a new node type and a translator rather than a new pipeline.
+* Implemented the agent executor on PydanticAI against the Azure OpenAI Responses API with streamed output, retry/failure classification, cron-scheduled runs and a human-in-the-loop pause/resume primitive backed by Redis.
+* Built the realtime voice channel end to end: an admin phone-number registry, number-to-workflow routing, browser WebRTC sessions minted with short-lived ephemeral tokens so the account key never leaves the server, separate caller-side transcription, an in-call knowledge-search tool whose scope is resolved server-side, and post-call handover of the full transcript to an agent for judgement.
+* Implemented the knowledge layer on Azure AI Foundry vector stores — document upload, ingestion polling, test search and retrieval at run time — with shared and personal visibility rules.
+* Delivered MCP integrations with a full OAuth2 authorization-code flow, tokens encrypted at rest with AES-256-GCM under a Key Vault data key, automatic refresh, and per-person credentials bound to a single workflow so a shared server never means a shared identity.
+* Designed and implemented multi-tenancy across the whole data layer — domain-based tenant resolution, a tenant predicate on every query, an admin-only tenant switcher, and a structural defence where every repository function requires a tenant id and a test fails the build if any query omits it.
+* Built the operational surfaces: agent library with run aggregates, a template catalogue of checked-in starter graphs, live run monitoring over Redis pub/sub → SSE, organisation/administration sections, and the shared React/Tailwind component library translated from design exports.
+* Wrote the Terraform for every Azure resource and the GitHub Actions pipelines that apply it, including OIDC federated credentials, a bootstrap workflow for the state backend, and an environment model where standing up a new customer means creating a GitHub Environment and a tfvars file rather than editing Terraform.
+* Integrated Office 365 mail ingestion via Logic Apps, Salesforce as an agent tool, and a cross-cloud public hostname (Route 53 records bound to an Azure Container App custom domain).
+* Wrote unit and integration tests across both the TypeScript and Python sides, authored the architecture documentation, ADRs and operational runbooks (deploy-from-scratch, mailbox setup, MCP onboarding), and reviewed incoming pull requests.
+
 🧠 *GenAI demonstrators for sales and offer processes – AI/ML Engineer*
 
 * Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
-* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate — reusable across regions and channels.
 
 🤖 *Web-client for artificial intelligence chatbot system*
 
