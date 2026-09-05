@@ -32,12 +32,21 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 </div>
 </div>
 
-*Stack*: Node.js, React • Java, Quarkus, Flyway • Python • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+
+**Solution Architect/AI Engineer** - *Self-Service-Plattform für agentische KI*
+
+* End-to-End-Verantwortung für eine Self-Service-Plattform, auf der Fachanwender ohne Programmierkenntnisse einen KI-Agenten im Chat beschreiben, ihn als bearbeitbaren visuellen Workflow auf einer Canvas zurückerhalten, veröffentlichen und mit echtem eingehenden Traffic betreiben — ausgelöst über ein gemeinsames Postfach, einbettbare Webformulare, Live-Telefonate und Cron-Zeitpläne.
+* Entwurf der Full-Stack-Architektur: ein Next.js-Portal mit der gesamten serverseitigen Plattformlogik, zwei Python Azure Function Apps (Dispatcher und Executor) und vier Storage Queues als einzige Schnittstellen dazwischen, mit einem gemeinsamen Workflow-JSON-Vertrag für ReactFlow-Canvas, Generierungs-Bot, Dispatcher und Executor — eine neue Fähigkeit bedeutet einen neuen Knotentyp und einen Übersetzer, keine neue Pipeline.
+* Implementierung des Agent-Executors auf PydanticAI gegen die Azure OpenAI Responses API mit gestreamter Ausgabe, Retry-/Fehlerklassifizierung, geplanten Läufen und einem Redis-gestützten Human-in-the-Loop-Pause/Resume-Primitiv; Agenten stützen ihre Antworten auf Azure AI Foundry Vector Stores, antworten in der Sprache des Kunden, rufen Plattform-Tools wie die Salesforce-Case-Erstellung und die SAP-Übergabe auf und erreichen Kundensysteme über authentifizierte MCP-Server.
+* Aufbau des Echtzeit-Sprachkanals: Routing von Telefonnummern zu Workflows, Browser-WebRTC-Sitzungen mit kurzlebigen Ephemeral Tokens, sodass der Account-Key nie den Server verlässt, anruferseitige Transkription, Wissenssuche während des Gesprächs und Übergabe des vollständigen Transkripts an einen Agenten nach dem Anruf.
+* Umsetzung der MCP-Integrationen mit vollständigem OAuth2-Authorization-Code-Flow, mit AES-256-GCM unter einem Key-Vault-Datenschlüssel verschlüsselten Tokens, automatischem Refresh und personenbezogenen, an einen einzelnen Workflow gebundenen Zugangsdaten — ein gemeinsamer Server bedeutet nie eine gemeinsame Identität.
+* Konzeption der Mandantenfähigkeit über die gesamte Datenschicht — domainbasierte Mandantenauflösung, ein Mandanten-Prädikat in jeder Abfrage und ein Test, der den Build fehlschlagen lässt, sobald eine Repository-Funktion die Mandanten-ID auslässt — sodass eine Codebasis sowohl als mandantenfähiges Portal mit kundenspezifischem Branding, Benutzern und Daten als auch als Single-Tenant-Installation in der Azure-Subscription des Kunden ausgeliefert wird.
+* Terraform und GitHub-Actions-Pipelines (OIDC Federated Credentials, Bootstrap des State-Backends), die die Plattform aus einer leeren Subscription aufbauen; das Onboarding eines neuen Kunden besteht aus einem GitHub Environment und einer tfvars-Datei. ADRs, Runbooks sowie Unit- und Integrationstests auf TypeScript- und Python-Seite.
 
 **AI/ML Engineer** - *GenAI-Demonstratoren für Vertriebs- und Angebotsprozesse*
 
 * Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
-* Konzeption einer agentischen Multi-Workflow-Plattform: Alle Kommunikationskanäle senden Events in eine zentrale Queue, ein Workflow-bewusster Dispatcher verteilt sie an veröffentlichte KI-Agenten, die Anfragen klassifizieren und Antworten in der Sprache des Kunden entwerfen; Ergebnisse landen hinter einem Human-Review-Gate in Salesforce oder SAP. Mandantenfähig konzipiert — Mandanten sind mit eigener Konfiguration und eigenen Agenten isoliert — und erweiterbar, sodass neue Agenten, Workflows und Kanäle ohne Eingriff in den Kern angebunden werden — wiederverwendbar über Regionen, Mandanten und Kanäle hinweg.
 
 **Solution Architect/FullStack** - *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
 
@@ -54,9 +63,13 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 **Senior Java Entwickler/DevOps** - *Plattform für einheitliches Fahrzeugdaten-Streaming*
 
-* Backend-Microservices-Design, Entwicklung und Bereitstellung (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
-* Design und Implementierung einer hochsicheren Java REST API auf Basis von Confluent Kafka und Flink-Pipelines. Einführung von NIST 8000 Sicherheitsanforderungen mit automatischer Confluence-Seitengenerierung.
-* Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung.
+* Entwurf und Implementierung der Quarkus Management API (Schemata, Datenbestellungen, Verbindungsinformationen, Streaming-Pipelines, Provisionierungsstatus, Plattform-Claims) sowie des Deployment Service, der Kafka-Topics, ACLs und Identity Pools auf Confluent, Azure-Blob-Container für große Nachrichten und Data-Access-Objekte provisioniert.
+* Integration der Plattform mit Confluent Kafka und Schema Registry sowie den Legacy-Fahrzeugdatendiensten des Kunden inklusive Schema-Validierung bei der Aufnahme; Angleichung der Ingestion-API an den Legacy-Vertrag und Korrektur der Kafka-Key-Auswahl für Reihenfolgegarantien.
+* Aufbau der Flink-Pipeline-Persistenz mit reaktivem Hibernate und Flyway, gebündelten Statusprüfungen und automatischem Neustart fehlgeschlagener Jobs; Refactoring des zentralen Flink-Jobs auf byteidentische Legacy-Ausgabe, Redis-gestützter Regel-Cache mit vollständiger Testabdeckung und Upgrade der Laufzeit auf Flink 2.2.
+* Härtung des Zugriffs: mTLS für Datenkonsumenten mit Zertifikatsverwaltung und Kundendokumentation, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter zur Entlastung des API-Gateways sowie Migration des gesamten Storage-Zugriffs von SPN-Credentials auf Managed Identity.
+* Verantwortung für JWT-Richtlinien und Kapazität von Azure API Management: issuer-gesteuerte und gecachte externe Prüfungen beseitigten ~4,9 Mio. redundante Aufrufe pro 12 h, ein gemeinsamer Redis-Token-Cache (99 % Trefferquote, Terraform für fünf Umgebungen) hob die Kapazitätsgrenze von 31 Einheiten auf, und angepasstes Diagnose-Sampling senkte die Log-Analytics-Kosten um ~43 k EUR/Monat.
+* Aufbau des Migrationstools für Flink-Pipelines beim Umzug auf die neue Kubernetes-Plattform (Export, Rewrite, Import, Image-Kopie, Staging-Bereinigung) mit wiederaufnehmbaren Batches und Fehlerberichten; Codierung von Cilium-Netzwerkrichtlinien, Kyverno-konformen Ressourcen, ArgoCD-Anwendungen und Helm-Pins für die Umgebungen dev, int und pre.
+* Leitung von Root-Cause-Analysen bei Produktionsvorfällen mit Regressionstests, Unit- und Integrationstests (Testcontainers, WireMock), Einhaltung der Sicherheitsscans (BlackDuck/ORT) für Abhängigkeiten, Härtung der GitHub-Actions-Workflows (Federated Credentials, keine Klartext-Tokens) sowie Betriebswerkzeuge: Consumer-Lag-Checker, Flink-Job-Monitor, Partition-Limiter.
 
 **DevOps Engineer/Senior Entwickler** - *Online Sales Forecasting Tool*
 

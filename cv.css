@@ -1,12 +1,12 @@
 @page {
     size: A4;
-    margin: 1cm 1cm 1cm 1.6cm;
+    margin: 0.8cm 0.9cm 0.8cm 1.2cm;
 }
 
 body {
     font-family: "Times New Roman", Times, Georgia, serif;
-    font-size: 10pt;
-    line-height: 1.4;
+    font-size: 9pt;
+    line-height: 1.25;
     color: #222;
     max-width: none;
 }
@@ -28,7 +28,7 @@ h3 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 2px;
     margin-top: 0.6em;
-    margin-bottom: 0.2m;
+    margin-bottom: 0.2em;
 }
 
 a {

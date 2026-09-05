@@ -50,22 +50,39 @@ Position: Principal Consultant, AI/DevOps/FullStack Software Developer
 
 #### Technologies 
 
-* Nodejs, Typescript, React
-* Python, AWS Bedrock, Langfuse, MCP
+* Nodejs, Typescript, React, Next.js, ReactFlow, Tailwind CSS
+* Python, PydanticAI, Azure Functions, Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, MCP
 * Java, Spring Boot, Quarkus, Gradle, Flyway
 * PostgreSQL, MS SQL Server
 * Apache Kafka, Flink, Redpanda, Confluent
-* Azure: Kubernetes services, Service Bus, Monitor, SQL Databases, Cache for Redis, API Management
+* Azure: Kubernetes services, Container Apps, Functions, Cosmos DB, Storage Queues, Service Bus, Key Vault, Logic Apps, Entra ID, Monitor, SQL Databases, Cache for Redis, API Management
 * AWS: CloudFormation, RDS, EC2, S3, EKS, CodeBuild/CodePipeline/CodeDeploy
 * Terraform, Helm, Kubernetes, Docker
 
 #### Projects
 
 
+🧩 *Self-service agentic AI platform – Solution Architect/AI Engineer*
+
+A self-service agentic platform that lets a non-engineer describe an AI agent in chat, get it back as an editable visual workflow on a canvas, publish it, and have real inbound traffic run it. Agents are triggered by four channels — a shared mailbox, embeddable web forms, live phone calls and cron schedules — and can ground their answers in uploaded knowledge bases, classify requests and draft replies in the customer's language, call platform tools such as Salesforce case creation and SAP hand-off, and reach customer systems through authenticated MCP servers. Ships in two shapes from one codebase: a multi-tenant service where one portal serves several customer organisations with their own branding, users and data, and a single-tenant install deployed inside a customer's own Azure subscription. Owned the platform end to end — the Next.js portal and its server-side API, the two Python queue-driven backend services, the realtime voice channel, the multi-tenant data model and the Terraform that stands the whole thing up from an empty subscription.
+
+Stack: TypeScript, Next.js (App Router), React, ReactFlow, Tailwind CSS, Redux, MSAL, SSE, WebRTC, Vitest • Python 3.12, Azure Functions v2, PydanticAI, Pydantic, asyncio, pytest • Azure OpenAI (Responses API, realtime models), Azure AI Foundry (vector stores, file_search, web_search), Whisper, MCP • Azure Container Apps, Functions, Cosmos DB, Storage Queues/Blob, Cache for Redis, Key Vault, Container Registry, Logic Apps, Entra ID/OAuth2, Managed Identity, Application Insights • Terraform, GitHub Actions (OIDC), Docker, Turborepo, AWS Route 53
+
+* Designed and built the full-stack architecture — a Next.js portal holding all server-side platform logic, two Python Azure Function Apps (dispatcher and executor) and four Storage Queues as the only seams between them, so any stage can be run, replaced or debugged in isolation.
+* Built the visual workflow builder on ReactFlow with an autosaving canvas, a streaming assistant that generates workflow JSON from a chat description, and per-node inspectors; defined the workflow JSON contract shared by the canvas, the generation bot, the dispatcher and the executor, so adding a capability means a new node type and a translator rather than a new pipeline.
+* Implemented the agent executor on PydanticAI against the Azure OpenAI Responses API with streamed output, retry/failure classification, cron-scheduled runs and a human-in-the-loop pause/resume primitive backed by Redis.
+* Built the realtime voice channel end to end: an admin phone-number registry, number-to-workflow routing, browser WebRTC sessions minted with short-lived ephemeral tokens so the account key never leaves the server, separate caller-side transcription, an in-call knowledge-search tool whose scope is resolved server-side, and post-call handover of the full transcript to an agent for judgement.
+* Implemented the knowledge layer on Azure AI Foundry vector stores — document upload, ingestion polling, test search and retrieval at run time — with shared and personal visibility rules.
+* Delivered MCP integrations with a full OAuth2 authorization-code flow, tokens encrypted at rest with AES-256-GCM under a Key Vault data key, automatic refresh, and per-person credentials bound to a single workflow so a shared server never means a shared identity.
+* Designed and implemented multi-tenancy across the whole data layer — domain-based tenant resolution, a tenant predicate on every query, an admin-only tenant switcher, and a structural defence where every repository function requires a tenant id and a test fails the build if any query omits it.
+* Built the operational surfaces: agent library with run aggregates, a template catalogue of checked-in starter graphs, live run monitoring over Redis pub/sub → SSE, organisation/administration sections, and the shared React/Tailwind component library translated from design exports.
+* Wrote the Terraform for every Azure resource and the GitHub Actions pipelines that apply it, including OIDC federated credentials, a bootstrap workflow for the state backend, and an environment model where standing up a new customer means creating a GitHub Environment and a tfvars file rather than editing Terraform.
+* Integrated Office 365 mail ingestion via Logic Apps, Salesforce and SAP as agent tools, and a cross-cloud public hostname (Route 53 records bound to an Azure Container App custom domain).
+* Wrote unit and integration tests across both the TypeScript and Python sides, authored the architecture documentation, ADRs and operational runbooks (deploy-from-scratch, mailbox setup, MCP onboarding), and reviewed incoming pull requests.
+
 🧠 *GenAI demonstrators for sales and offer processes – AI/ML Engineer*
 
 * Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
-* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate — reusable across regions and channels.
 
 🤖 *Web-client for artificial intelligence chatbot system*
 
@@ -77,9 +94,42 @@ Position: Principal Consultant, AI/DevOps/FullStack Software Developer
 
 🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform) 
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Introduce NIST 8000 security framework requirements with automatic Confluence pages generation. 
-* Develop secured integration with external REST APIs for vehicle data providers with Azure SPN authentication
+Stack: Java, Quarkus, reactive Hibernate, Flyway • Apache Flink 2.2, Confluent Kafka, Schema Registry • Azure Kubernetes Service, API Management, Blob Storage, Key Vault, Postgres, Redis, Log Analytics • Terraform, ArgoCD, Helm, Cilium, Kyverno, GitHub Actions • Testcontainers, WireMock, Grafana
+
+Platform services (Java / Quarkus)
+
+* Designed and implemented Management API endpoints for schemas, data orders, connection info, streaming pipelines, provisioning job status and data-platform claims.
+* Integrated the platform with Confluent Kafka and Schema Registry and the customer's legacy vehicle-data services, including schema validation on ingestion; refactored the ingestion API to match the legacy contract and fixed Kafka key selection for ordering guarantees.
+* Built the Deployment Service provisioning logic: Kafka topics, ACLs and identity pools on Confluent, Azure Blob containers for large messages, and create/update/delete of data-access objects.
+* Implemented Flink pipeline persistence with reactive Hibernate and Flyway, scheduled status checks with batching, and automatic restart of failed jobs.
+* Added mTLS support for data consumers, including certificate handling and customer documentation; implemented an in-app JWT validation path behind an off/shadow/enforce switch to offload the API gateway.
+* Migrated Azure storage access from SPN credentials to workload/managed identity across all environments; introduced per-data-order Grafana dashboards and their lifecycle (create, delete, permissions).
+* Introduced NIST 8000 security framework requirements with automatic Confluence pages generation; tuned service scalability, memory settings, DB replica selection and connection handling for production load.
+
+Flink stream processing
+
+* Refactored the core Flink job to reproduce legacy output byte-for-byte, including complex signal encoding.
+* Designed and implemented a Redis-backed cache for vehicle-data rules in Flink jobs, with full test coverage.
+* Moved Flink jobs to managed identity for storage access and upgraded the runtime to Flink 2.2; unified per-environment CI workflows into one pipeline with a `:main` image tag convention.
+
+Cloud infrastructure (Azure, Terraform, ArgoCD)
+
+* Owned API Management JWT-validation policies: added new issuers, gated the external authorization check by issuer and cached its verdicts, eliminating ~4.9M redundant calls per 12 h.
+* Diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache, measured at a 99% token-cache hit rate; codified it in Terraform for five environments with capacity-based sizing.
+* Cut API Management Log Analytics ingestion costs (~EUR 43k/month) by tuning diagnostic sampling.
+* Managed Postgres replicas, Confluent CKU scaling, Key Vaults and tfstate RBAC in Terraform; fixed secrets leaking into CI logs and hardened GitHub Actions workflows (federated credentials, no plaintext tokens).
+
+Kubernetes platform migration
+
+* Built the Flink pipelines migration tooling (export, rewrite, import, image copy, staging purge) with resumable batches, retries and failure reporting, and shipped it to the target jumphosts.
+* Codified Cilium network policies, Kyverno-compliant resources, checkpoint storage and CI service principals for the new platform; migrated ArgoCD applications, Helm chart pins and in-cluster Postgres wiring for dev, int and pre environments.
+* Configured `externalTrafficPolicy: Local` with pod anti-affinity for load-balancer-backed APIs.
+
+Operations and quality
+
+* Led root-cause analyses of production incidents (stale ArgoCD sync, Grafana token divergence after targeted Terraform applies, soft-deleted pipelines blocking data orders) and delivered fixes with regression tests.
+* Wrote unit and integration tests (Testcontainers, WireMock), stabilised flaky suites and maintained coverage gates; kept dependencies and container images compliant with security scans (BlackDuck, ORT, OSPO findings).
+* Built operational tooling: ADX consumer-lag checker, Flink job monitor, topic partition limiter, connection checker.
 
 
 📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer*

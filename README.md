@@ -33,12 +33,21 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 </div>
 </div>
 
-*Stack*: Node.js, React • Java, Quarkus, Flyway • Python • PostgreSQL, Redis • Apache Kafka, Flink, Confluent • AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+
+**Solution Architect/AI Engineer** - *Self-service agentic AI platform*
+
+* Owned end to end a self-service agentic platform where a non-engineer describes an AI agent in chat, gets it back as an editable visual workflow on a canvas, publishes it, and real inbound traffic runs it — triggered by a shared mailbox, embeddable web forms, live phone calls and cron schedules.
+* Designed the full-stack architecture: a Next.js portal holding all server-side platform logic, two Python Azure Function Apps (dispatcher and executor) and four Storage Queues as the only seams between them, with a single workflow JSON contract shared by the ReactFlow canvas, the generation bot, the dispatcher and the executor — adding a capability means a new node type and a translator, not a new pipeline.
+* Implemented the agent executor on PydanticAI against the Azure OpenAI Responses API with streamed output, retry/failure classification, scheduled runs and a Redis-backed human-in-the-loop pause/resume primitive; agents ground answers in Azure AI Foundry vector stores, reply in the customer's language, call platform tools such as Salesforce case creation and SAP hand-off, and reach customer systems through authenticated MCP servers.
+* Built the realtime voice channel end to end: phone-number-to-workflow routing, browser WebRTC sessions minted with short-lived ephemeral tokens so the account key never leaves the server, caller-side transcription, in-call knowledge search and post-call handover of the full transcript to an agent.
+* Delivered MCP integrations with a full OAuth2 authorization-code flow, tokens encrypted at rest with AES-256-GCM under a Key Vault data key, automatic refresh and per-person credentials bound to a single workflow, so a shared server never means a shared identity.
+* Designed multi-tenancy across the whole data layer — domain-based tenant resolution, a tenant predicate on every query and a test that fails the build if any repository function omits the tenant id — so one codebase ships both as a multi-tenant portal with per-customer branding, users and data and as a single-tenant install inside the customer's own Azure subscription.
+* Wrote the Terraform and GitHub Actions pipelines (OIDC federated credentials, bootstrap of the state backend) that stand the platform up from an empty subscription; onboarding a new customer is a GitHub Environment plus a tfvars file. Authored ADRs, runbooks and unit/integration tests across the TypeScript and Python sides.
 
 **AI/ML Engineer** - *GenAI demonstrators for sales and offer processes*
 
 * Built an LLM-as-a-Judge quality layer for customer-facing chatbots: every conversation turn is traced to Langfuse and scored asynchronously by an AWS Bedrock LLM judge combined with coded metrics, surfacing 9 live quality scores (quality, cost, escalation risk) — designed to plug into any chatbot.
-* Designed an agentic multi-workflow platform: all communication channels emit events onto a single queue, a workflow-aware dispatcher fans them out to published AI agents that classify requests and draft replies in the customer's language; results land in Salesforce or SAP behind a human-review gate. Multi-tenant by design, with tenants isolated by their own configuration and agents, and extensible so that new agents, workflows, and channels plug in without touching the core — reusable across regions, tenants, and channels.
 
 **Solution Architect/FullStack** - *Scheduling, billing and contract platform for concert organisers*
 
@@ -55,8 +64,13 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Senior Java Developer/DevOps** - *Unified vehicles data streaming platform*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Automate Flink pipelines deployment and monitoring.
+* Designed and implemented the Quarkus Management API (schemas, data orders, connection info, streaming pipelines, provisioning status, platform claims) and the Deployment Service that provisions Kafka topics, ACLs and identity pools on Confluent, Azure Blob containers for large messages and data-access objects.
+* Integrated the platform with Confluent Kafka and Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; realigned the ingestion API to the legacy contract and fixed Kafka key selection for ordering guarantees.
+* Built Flink pipeline persistence with reactive Hibernate and Flyway, batched status checks and automatic restart of failed jobs; refactored the core Flink job to reproduce legacy output byte-for-byte, added a Redis-backed rules cache with full test coverage and upgraded the runtime to Flink 2.2.
+* Hardened access: mTLS for data consumers with certificate handling and customer documentation, in-app JWT validation behind an off/shadow/enforce switch to offload the API gateway, and migration of all storage access from SPN credentials to managed identity.
+* Owned Azure API Management JWT policies and capacity: issuer-gated and cached external checks removed ~4.9M redundant calls per 12 h, a shared Redis token cache (99% hit rate, Terraform for five environments) lifted the 31-unit capacity ceiling, and tuned diagnostic sampling cut Log Analytics ingestion by ~EUR 43k/month.
+* Built the Flink pipeline migration tooling for the move to the new Kubernetes platform (export, rewrite, import, image copy, staging purge) with resumable batches and failure reporting, and codified Cilium network policies, Kyverno-compliant resources, ArgoCD applications and Helm pins across dev, int and pre environments.
+* Led root-cause analyses of production incidents with regression tests, wrote unit and integration tests (Testcontainers, WireMock), kept dependencies compliant with BlackDuck/ORT scans, hardened GitHub Actions (federated credentials, no plaintext tokens) and built operational tooling: consumer-lag checker, Flink job monitor, partition limiter.
 
 **DevOps Engineer/Senior Developer** - *Online Sales Forecasting Tool*
 
