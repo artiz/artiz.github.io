@@ -64,8 +64,13 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Senior Java Developer/DevOps** - *Unified vehicles data streaming platform*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Automate Flink pipelines deployment and monitoring.
+* Designed and implemented the Quarkus Management API (schemas, data orders, connection info, streaming pipelines, provisioning status, platform claims) and the Deployment Service that provisions Kafka topics, ACLs and identity pools on Confluent, Azure Blob containers for large messages and data-access objects.
+* Integrated the platform with Confluent Kafka and Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; realigned the ingestion API to the legacy contract and fixed Kafka key selection for ordering guarantees.
+* Built Flink pipeline persistence with reactive Hibernate and Flyway, batched status checks and automatic restart of failed jobs; refactored the core Flink job to reproduce legacy output byte-for-byte, added a Redis-backed rules cache with full test coverage and upgraded the runtime to Flink 2.2.
+* Hardened access: mTLS for data consumers with certificate handling and customer documentation, in-app JWT validation behind an off/shadow/enforce switch to offload the API gateway, and migration of all storage access from SPN credentials to managed identity.
+* Owned Azure API Management JWT policies and capacity: issuer-gated and cached external checks removed ~4.9M redundant calls per 12 h, a shared Redis token cache (99% hit rate, Terraform for five environments) lifted the 31-unit capacity ceiling, and tuned diagnostic sampling cut Log Analytics ingestion by ~EUR 43k/month.
+* Built the Flink pipeline migration tooling for the move to the new Kubernetes platform (export, rewrite, import, image copy, staging purge) with resumable batches and failure reporting, and codified Cilium network policies, Kyverno-compliant resources, ArgoCD applications and Helm pins across dev, int and pre environments.
+* Led root-cause analyses of production incidents with regression tests, wrote unit and integration tests (Testcontainers, WireMock), kept dependencies compliant with BlackDuck/ORT scans, hardened GitHub Actions (federated credentials, no plaintext tokens) and built operational tooling: consumer-lag checker, Flink job monitor, partition limiter.
 
 **DevOps Engineer/Senior Developer** - *Online Sales Forecasting Tool*
 

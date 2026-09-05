@@ -63,9 +63,13 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 20 Jahre
 
 **Senior Java Entwickler/DevOps** - *Plattform für einheitliches Fahrzeugdaten-Streaming*
 
-* Backend-Microservices-Design, Entwicklung und Bereitstellung (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform)
-* Design und Implementierung einer hochsicheren Java REST API auf Basis von Confluent Kafka und Flink-Pipelines. Einführung von NIST 8000 Sicherheitsanforderungen mit automatischer Confluence-Seitengenerierung.
-* Entwicklung einer sicheren Integration mit externen REST-APIs für Fahrzeugdatenanbieter mit Azure SPN-Authentifizierung.
+* Entwurf und Implementierung der Quarkus Management API (Schemata, Datenbestellungen, Verbindungsinformationen, Streaming-Pipelines, Provisionierungsstatus, Plattform-Claims) sowie des Deployment Service, der Kafka-Topics, ACLs und Identity Pools auf Confluent, Azure-Blob-Container für große Nachrichten und Data-Access-Objekte provisioniert.
+* Integration der Plattform mit Confluent Kafka und Schema Registry sowie den Legacy-Fahrzeugdatendiensten des Kunden inklusive Schema-Validierung bei der Aufnahme; Angleichung der Ingestion-API an den Legacy-Vertrag und Korrektur der Kafka-Key-Auswahl für Reihenfolgegarantien.
+* Aufbau der Flink-Pipeline-Persistenz mit reaktivem Hibernate und Flyway, gebündelten Statusprüfungen und automatischem Neustart fehlgeschlagener Jobs; Refactoring des zentralen Flink-Jobs auf byteidentische Legacy-Ausgabe, Redis-gestützter Regel-Cache mit vollständiger Testabdeckung und Upgrade der Laufzeit auf Flink 2.2.
+* Härtung des Zugriffs: mTLS für Datenkonsumenten mit Zertifikatsverwaltung und Kundendokumentation, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter zur Entlastung des API-Gateways sowie Migration des gesamten Storage-Zugriffs von SPN-Credentials auf Managed Identity.
+* Verantwortung für JWT-Richtlinien und Kapazität von Azure API Management: issuer-gesteuerte und gecachte externe Prüfungen beseitigten ~4,9 Mio. redundante Aufrufe pro 12 h, ein gemeinsamer Redis-Token-Cache (99 % Trefferquote, Terraform für fünf Umgebungen) hob die Kapazitätsgrenze von 31 Einheiten auf, und angepasstes Diagnose-Sampling senkte die Log-Analytics-Kosten um ~43 k EUR/Monat.
+* Aufbau des Migrationstools für Flink-Pipelines beim Umzug auf die neue Kubernetes-Plattform (Export, Rewrite, Import, Image-Kopie, Staging-Bereinigung) mit wiederaufnehmbaren Batches und Fehlerberichten; Codierung von Cilium-Netzwerkrichtlinien, Kyverno-konformen Ressourcen, ArgoCD-Anwendungen und Helm-Pins für die Umgebungen dev, int und pre.
+* Leitung von Root-Cause-Analysen bei Produktionsvorfällen mit Regressionstests, Unit- und Integrationstests (Testcontainers, WireMock), Einhaltung der Sicherheitsscans (BlackDuck/ORT) für Abhängigkeiten, Härtung der GitHub-Actions-Workflows (Federated Credentials, keine Klartext-Tokens) sowie Betriebswerkzeuge: Consumer-Lag-Checker, Flink-Job-Monitor, Partition-Limiter.
 
 **DevOps Engineer/Senior Entwickler** - *Online Sales Forecasting Tool*
 

@@ -94,9 +94,42 @@ Stack: TypeScript, Next.js (App Router), React, ReactFlow, Tailwind CSS, Redux, 
 
 🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
 
-* Work on backend microservices design, development, and deployment (Github Actions, ArgoCD, Azure Kubernetes Service, Terraform) 
-* Design and implement highly secured Java REST API on top of Confluent Kafka and Flink pipelines. Introduce NIST 8000 security framework requirements with automatic Confluence pages generation. 
-* Develop secured integration with external REST APIs for vehicle data providers with Azure SPN authentication
+Stack: Java, Quarkus, reactive Hibernate, Flyway • Apache Flink 2.2, Confluent Kafka, Schema Registry • Azure Kubernetes Service, API Management, Blob Storage, Key Vault, Postgres, Redis, Log Analytics • Terraform, ArgoCD, Helm, Cilium, Kyverno, GitHub Actions • Testcontainers, WireMock, Grafana
+
+Platform services (Java / Quarkus)
+
+* Designed and implemented Management API endpoints for schemas, data orders, connection info, streaming pipelines, provisioning job status and data-platform claims.
+* Integrated the platform with Confluent Kafka and Schema Registry and the customer's legacy vehicle-data services, including schema validation on ingestion; refactored the ingestion API to match the legacy contract and fixed Kafka key selection for ordering guarantees.
+* Built the Deployment Service provisioning logic: Kafka topics, ACLs and identity pools on Confluent, Azure Blob containers for large messages, and create/update/delete of data-access objects.
+* Implemented Flink pipeline persistence with reactive Hibernate and Flyway, scheduled status checks with batching, and automatic restart of failed jobs.
+* Added mTLS support for data consumers, including certificate handling and customer documentation; implemented an in-app JWT validation path behind an off/shadow/enforce switch to offload the API gateway.
+* Migrated Azure storage access from SPN credentials to workload/managed identity across all environments; introduced per-data-order Grafana dashboards and their lifecycle (create, delete, permissions).
+* Introduced NIST 8000 security framework requirements with automatic Confluence pages generation; tuned service scalability, memory settings, DB replica selection and connection handling for production load.
+
+Flink stream processing
+
+* Refactored the core Flink job to reproduce legacy output byte-for-byte, including complex signal encoding.
+* Designed and implemented a Redis-backed cache for vehicle-data rules in Flink jobs, with full test coverage.
+* Moved Flink jobs to managed identity for storage access and upgraded the runtime to Flink 2.2; unified per-environment CI workflows into one pipeline with a `:main` image tag convention.
+
+Cloud infrastructure (Azure, Terraform, ArgoCD)
+
+* Owned API Management JWT-validation policies: added new issuers, gated the external authorization check by issuer and cached its verdicts, eliminating ~4.9M redundant calls per 12 h.
+* Diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache, measured at a 99% token-cache hit rate; codified it in Terraform for five environments with capacity-based sizing.
+* Cut API Management Log Analytics ingestion costs (~EUR 43k/month) by tuning diagnostic sampling.
+* Managed Postgres replicas, Confluent CKU scaling, Key Vaults and tfstate RBAC in Terraform; fixed secrets leaking into CI logs and hardened GitHub Actions workflows (federated credentials, no plaintext tokens).
+
+Kubernetes platform migration
+
+* Built the Flink pipelines migration tooling (export, rewrite, import, image copy, staging purge) with resumable batches, retries and failure reporting, and shipped it to the target jumphosts.
+* Codified Cilium network policies, Kyverno-compliant resources, checkpoint storage and CI service principals for the new platform; migrated ArgoCD applications, Helm chart pins and in-cluster Postgres wiring for dev, int and pre environments.
+* Configured `externalTrafficPolicy: Local` with pod anti-affinity for load-balancer-backed APIs.
+
+Operations and quality
+
+* Led root-cause analyses of production incidents (stale ArgoCD sync, Grafana token divergence after targeted Terraform applies, soft-deleted pipelines blocking data orders) and delivered fixes with regression tests.
+* Wrote unit and integration tests (Testcontainers, WireMock), stabilised flaky suites and maintained coverage gates; kept dependencies and container images compliant with security scans (BlackDuck, ORT, OSPO findings).
+* Built operational tooling: ADX consumer-lag checker, Flink job monitor, topic partition limiter, connection checker.
 
 
 📈 *Online Sales Forecasting Tool – DevOps Engineer/Senior Developer*
