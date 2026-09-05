@@ -25,6 +25,10 @@ Vienna ¤ Austria <br/>
 
 Principal consultant and hands-on software architect with 20+ years of experience designing and delivering scalable, cloud-native systems end to end. I lead architecture and engineering across **AI/LLM-powered applications**, **distributed event-driven platforms**, and **full-stack web products**, translating business goals into resilient, well-governed solutions. Core focus areas: GenAI and agentic systems (LLM agents, evaluation and observability, MCP), solution and microservices architecture, cloud infrastructure (AWS, Azure, GCP), DevOps and platform engineering (Kubernetes, Terraform, CI/CD), and real-time data streaming (Kafka, Flink). I pair technical leadership with deep delivery experience — mentoring teams, driving engineering best practices, and shipping production systems that scale.
 
+### Open Source Projects
+- **[KateChat](https://github.com/artiz/kate-chat)** — Self-hosted, multi-provider LLM chat platform (open ChatGPT alternative). React/TypeScript frontend with Node.js and Rust backends; integrates AWS Bedrock, OpenAI, and Yandex AI with RAG (Docling), MCP tool servers, in-browser Python (Pyodide), and image generation. GraphQL API, WebSocket subscriptions, PostgreSQL/Redis, Docker.
+- **[docling.rs](https://github.com/docling-project/docling.rs)** — High-performance Rust reimplementation of Python Docling, adopted into the official Docling project, that converts 20+ document formats (PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio) into a unified `DoclingDocument` for AI/RAG pipelines. Pure-Rust PDF parser with an ONNX layout/TableFormer/OCR stack and Whisper ASR; 2–57× less memory and up to 46× faster than Python, with Node.js/TypeScript bindings. Emits Markdown, docling-JSON and DocLang (`.dclx`) conformant with upstream docling, and ships a pluggable RAG subsystem — chunking, swappable embedders and vector stores, hybrid/multi-query/HyDE retrieval, and an API-key-protected REST service.
+
 ### [Experience](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
 <div>Aug 2022 - Current<br/><strong>Principal Consultant, AI/DevOps/FullStack Software Developer</strong></div>
@@ -37,13 +41,9 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Solution Architect/AI Engineer** - *Self-service agentic AI platform*
 
-* Owned end to end a self-service agentic platform where a non-engineer describes an AI agent in chat, gets it back as an editable visual workflow on a canvas, publishes it, and real inbound traffic runs it — triggered by a shared mailbox, embeddable web forms, live phone calls and cron schedules.
-* Designed the full-stack architecture: a Next.js portal holding all server-side platform logic, two Python Azure Function Apps (dispatcher and executor) and four Storage Queues as the only seams between them, with a single workflow JSON contract shared by the ReactFlow canvas, the generation bot, the dispatcher and the executor — adding a capability means a new node type and a translator, not a new pipeline.
-* Implemented the agent executor on PydanticAI against the Azure OpenAI Responses API with streamed output, retry/failure classification, scheduled runs and a Redis-backed human-in-the-loop pause/resume primitive; agents ground answers in Azure AI Foundry vector stores, reply in the customer's language, call platform tools such as Salesforce case creation and SAP hand-off, and reach customer systems through authenticated MCP servers.
-* Built the realtime voice channel end to end: phone-number-to-workflow routing, browser WebRTC sessions minted with short-lived ephemeral tokens so the account key never leaves the server, caller-side transcription, in-call knowledge search and post-call handover of the full transcript to an agent.
-* Delivered MCP integrations with a full OAuth2 authorization-code flow, tokens encrypted at rest with AES-256-GCM under a Key Vault data key, automatic refresh and per-person credentials bound to a single workflow, so a shared server never means a shared identity.
-* Designed multi-tenancy across the whole data layer — domain-based tenant resolution, a tenant predicate on every query and a test that fails the build if any repository function omits the tenant id — so one codebase ships both as a multi-tenant portal with per-customer branding, users and data and as a single-tenant install inside the customer's own Azure subscription.
-* Wrote the Terraform and GitHub Actions pipelines (OIDC federated credentials, bootstrap of the state backend) that stand the platform up from an empty subscription; onboarding a new customer is a GitHub Environment plus a tfvars file. Authored ADRs, runbooks and unit/integration tests across the TypeScript and Python sides.
+* Owned end to end a self-service agentic platform where a non-engineer describes an AI agent in chat, gets it back as an editable visual workflow, publishes it, and real inbound traffic runs it over a shared mailbox, embeddable web forms, live phone calls (WebRTC with short-lived ephemeral tokens) and cron schedules; agents ground answers in Azure AI Foundry vector stores, reply in the customer's language, hand results to Salesforce and SAP, and reach customer systems through OAuth2-secured MCP servers with tokens encrypted at rest.
+* Designed the architecture: a Next.js portal, two Python Azure Function Apps (dispatcher and executor on PydanticAI over the Azure OpenAI Responses API) and Storage Queues as the only seams between them, tied together by one workflow JSON contract shared by the ReactFlow canvas, the generation bot and the runtime — with streamed output, retry classification and a Redis-backed human-in-the-loop pause/resume primitive.
+* Made it multi-tenant by construction (domain-based tenant resolution, a tenant predicate on every query, a build-failing test for any query that omits it) and shippable either as a shared portal with per-customer branding or as a single-tenant install in the customer's own Azure subscription; Terraform and GitHub Actions with OIDC stand it up from an empty subscription, and onboarding a customer is a GitHub Environment plus a tfvars file.
 
 **AI/ML Engineer** - *GenAI demonstrators for sales and offer processes*
 
@@ -53,8 +53,7 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 * Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login supports multiple roles with role-specific features, and every query is scoped through explicit per-company access grants that can be gated on a signed contract.
 * Modelled recurring schedules that generate concerts with immutable composition snapshots; double-booking is prevented in the database itself. Added `.ICS` confirmation emails with confirm/cancel deep links and PDF participant and fee reports.
-* End-to-end TypeScript on Bun — GraphQL Yoga API, Prisma/PostgreSQL, React/Redux/Mantine SPA, JWT with Google and Apple OAuth — deployed to AWS ECS Fargate with Terraform/Terragrunt, GitHub Actions continuous delivery, and SES mail via the task role.
-* Built end-to-end with Claude Code — from requirements and data model through API, UI, infrastructure and CI/CD — as a production-scale AI-assisted development case study.
+* End-to-end TypeScript on Bun — GraphQL Yoga, Prisma/PostgreSQL, React/Redux/Mantine, Google and Apple OAuth — on AWS ECS Fargate with Terraform/Terragrunt and GitHub Actions; built end to end with Claude Code, from requirements and data model to infrastructure, as a production-scale AI-assisted development case study.
 
 **Senior DevOps/FullStack** - *Web-client for artificial intelligence chatbot system*
 
@@ -64,13 +63,9 @@ Principal consultant and hands-on software architect with 20+ years of experienc
 
 **Senior Java Developer/DevOps** - *Unified vehicles data streaming platform*
 
-* Designed and implemented the Quarkus Management API (schemas, data orders, connection info, streaming pipelines, provisioning status, platform claims) and the Deployment Service that provisions Kafka topics, ACLs and identity pools on Confluent, Azure Blob containers for large messages and data-access objects.
-* Integrated the platform with Confluent Kafka and Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; realigned the ingestion API to the legacy contract and fixed Kafka key selection for ordering guarantees.
-* Built Flink pipeline persistence with reactive Hibernate and Flyway, batched status checks and automatic restart of failed jobs; refactored the core Flink job to reproduce legacy output byte-for-byte, added a Redis-backed rules cache with full test coverage and upgraded the runtime to Flink 2.2.
-* Hardened access: mTLS for data consumers with certificate handling and customer documentation, in-app JWT validation behind an off/shadow/enforce switch to offload the API gateway, and migration of all storage access from SPN credentials to managed identity.
-* Owned Azure API Management JWT policies and capacity: issuer-gated and cached external checks removed ~4.9M redundant calls per 12 h, a shared Redis token cache (99% hit rate, Terraform for five environments) lifted the 31-unit capacity ceiling, and tuned diagnostic sampling cut Log Analytics ingestion by ~EUR 43k/month.
-* Built the Flink pipeline migration tooling for the move to the new Kubernetes platform (export, rewrite, import, image copy, staging purge) with resumable batches and failure reporting, and codified Cilium network policies, Kyverno-compliant resources, ArgoCD applications and Helm pins across dev, int and pre environments.
-* Led root-cause analyses of production incidents with regression tests, wrote unit and integration tests (Testcontainers, WireMock), kept dependencies compliant with BlackDuck/ORT scans, hardened GitHub Actions (federated credentials, no plaintext tokens) and built operational tooling: consumer-lag checker, Flink job monitor, partition limiter.
+* Designed and implemented the Quarkus platform services — the Management API for schemas, data orders, pipelines and provisioning, and the Deployment Service provisioning Kafka topics, ACLs and identity pools on Confluent — integrated with Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion and Kafka key selection fixed for ordering guarantees.
+* Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache, the Flink 2.2 upgrade, and the migration tooling (export, rewrite, import, resumable batches) plus Cilium/Kyverno/ArgoCD/Helm codification for the move to the new Kubernetes platform.
+* Hardened and scaled the Azure edge: mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch, managed identity instead of SPN credentials, and API Management policies with a shared Redis token cache (99% hit rate) that removed ~4.9M redundant calls per 12 h, lifted the 31-unit capacity ceiling and cut Log Analytics ingestion by ~EUR 43k/month.
 
 **DevOps Engineer/Senior Developer** - *Online Sales Forecasting Tool*
 
@@ -92,11 +87,9 @@ Worked on a large B2B project in the fashion industry, evaluated as #1 in the US
 Participated in various integration tasks and custom ETL (extract, transform, load) engine development.
 Worked on migration of a legacy frontend application from an Ampersand.JS-based framework to ReactJS.
 
-* Performed Node.js microservices profiling and code refactoring/optimization.
-* Developed a rich interactive UI for the ETL tool with [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre), and GRPC.
-* Designed and implemented [Box.com](https://www.box.com/) and [Dropbox](https://www.dropbox.com/) connectors for the ETL engine (Go lang).
-* Integrated the excelize library into the ETL engine's XSL processor (Go lang), and fixed several [issues](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) in the library code.
-* Worked on [Threedium](https://threedium.co.uk/) 3D models integration, covering it with a custom React component.
+* Profiled and optimised Node.js microservices; developed a rich interactive UI for the ETL tool with [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre), and GRPC.
+* Designed and implemented [Box.com](https://www.box.com/) and [Dropbox](https://www.dropbox.com/) connectors for the ETL engine (Go lang); integrated the excelize library into its XSL processor and upstreamed several [fixes](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) to the library.
+* Integrated [Threedium](https://threedium.co.uk/) 3D models with a custom React component.
 
 ---
 
@@ -153,10 +146,6 @@ Worked on robot simulation and analytical programming system – complex compute
 - **Python**: (2008-now) Django, Flask, FastAPI, SQLAlchemy, Celery, NumPy, Pandas, nltk, Seaborn, Pytorch, scikit-learn
 - **Java**: (2004-now) Java 1.3/21, Struts/FOP/JSTL/POI, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle
 - Performed 500+ technical interviews in JavaScript, DevOps, Java, .NET, and Golang
-
-### Open Source Projects
-- **[KateChat](https://github.com/artiz/kate-chat)** — Self-hosted, multi-provider LLM chat platform (open ChatGPT alternative). React/TypeScript frontend with Node.js and Rust backends; integrates AWS Bedrock, OpenAI, and Yandex AI with RAG (Docling), MCP tool servers, in-browser Python (Pyodide), and image generation. GraphQL API, WebSocket subscriptions, PostgreSQL/Redis, Docker.
-- **[docling.rs](https://github.com/docling-project/docling.rs)** — High-performance Rust reimplementation of Python Docling, adopted into the official Docling project, that converts 20+ document formats (PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio) into a unified `DoclingDocument` for AI/RAG pipelines. Pure-Rust PDF parser with an ONNX layout/TableFormer/OCR stack and Whisper ASR; 2–57× less memory and up to 46× faster than Python, with Node.js/TypeScript bindings. Emits Markdown, docling-JSON and DocLang (`.dclx`) conformant with upstream docling, and ships a pluggable RAG subsystem — chunking, swappable embedders and vector stores, hybrid/multi-query/HyDE retrieval, and an API-key-protected REST service.
 
 ### Education  
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Computer Science, Robotics
