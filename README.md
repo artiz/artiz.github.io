@@ -18,7 +18,8 @@
 </span>
 <br/>
 Vienna ¤ Austria <br/>
-<a href="mailto:artem.kustikov@gmail.com">artem.kustikov@gmail.com</a> ¤ <a href="tel:+4366493106218">+43 664 9310 6218</a>
+<a href="mailto:artem.kustikov@gmail.com">artem.kustikov@gmail.com</a> ¤ <a href="tel:+4366493106218">+43 664 9310 6218</a> <br/>
+<a href="https://www.freelancermap.at/profil/principal-consultant-ki-devops-fullstack-softwareentwickler">freelancermap.at</a>
 
 </div>
 </div>
