@@ -25,58 +25,62 @@ Wien ¤ Österreich <br/>
 </div>
 </div>
 
-Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: GenAI und agentische Systeme (LLM-Agenten, Evaluation und Observability, MCP), Solution- und Microservices-Architektur, Cloud-Infrastruktur (AWS, Azure, GCP), DevOps und Platform Engineering (Kubernetes, Terraform, CI/CD) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
+Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: Azure-native KI- und Agentenarchitektur (Azure AI Foundry, LLM-Agenten, RAG und Wissenszugriff, Human-in-the-Loop-Workflows, Evaluation und Observability, MCP), Enterprise-Solution- und Microservices-Architektur, Infrastructure as Code und Platform Engineering (Terraform, Kubernetes, CI/CD, Managed Identity und RBAC), Cloud-Infrastruktur (Azure, AWS, GCP) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
 
 ### Open-Source-Projekte
-- **[docling.rs](https://github.com/docling-project/docling.rs)** — Performante Rust-Neuimplementierung von Python Docling, aufgenommen in das offizielle Docling-Projekt, die über 30 Dokumentformate (PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio) in eine einheitliche `DoclingDocument`-Struktur für KI/RAG-Pipelines umwandelt. Reiner Rust-PDF-Parser mit ONNX-Layout/TableFormer/OCR-Stack und Whisper-ASR; 2–57× weniger Speicher und bis zu 46× schneller als Python, mit Node.js/TypeScript-Bindings und LangChain Integration. Erzeugt Markdown, docling-JSON und DocLang (`.dclx`) und enthält ein modulares RAG-Subsystem: Chunking, austauschbare Embedder und Vektordatenbanken, Hybrid-/Multi-Query-/HyDE-Retrieval sowie eine REST-API.
-- **[KateChat](https://github.com/artiz/kate-chat)** — Selbst-gehostete Multi-Provider-LLM-Chat-Plattform (offene ChatGPT-Alternative). React/TypeScript-Frontend mit Node.js- und Rust-Backend; integriert AWS Bedrock, OpenAI und Yandex AI mit RAG (Docling), MCP-Tool-Servern, In-Browser-Python (Pyodide) und Bildgenerierung. GraphQL-API, WebSocket-Subscriptions, PostgreSQL/Redis.
+- **[docling.rs](https://github.com/docling-project/docling.rs)** — Performante Rust-Neuimplementierung von Python Docling, aufgenommen in das offizielle Docling-Projekt, die über 30 Dokumentformate (PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio) in eine einheitliche `DoclingDocument`-Struktur für KI/RAG-Pipelines umwandelt. Reiner Rust-PDF-Parser mit ONNX-Layout/TableFormer/OCR-Stack sowie Node.js/TypeScript-Bindings und LangChain-Integration.
+- **[KateChat](https://github.com/artiz/kate-chat)** — Selbst-gehostete Multi-Provider-LLM-Chat-Plattform (offene ChatGPT-Alternative). React/TypeScript-Frontend mit Node.js- und Rust-Backend; integriert AWS Bedrock, OpenAI und Yandex AI mit RAG (Docling), MCP, In-Browser-Python (Pyodide) und Bildgenerierung. GraphQL-API, WebSocket-Subscriptions, PostgreSQL/Redis.
 
 ### [Erfahrung](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Aug 2022 - Heute<br/><strong>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</strong></div>
+<div>08.2022 - Heute<br/><strong>Principal Consultant, KI/DevOps/FullStack Softwareentwickler</strong></div>
 <div>
 <a href="https://www.reply.com/machine-learning-reply/de">Machine Learning Reply</a>  <i>Wien, Österreich</i>
 </div>
 </div>
 
-*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, AWS Bedrock, Langfuse, MCP • Terraform, Kubernetes, Helm • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Kubernetes, Helm, Azure DevOps • AWS, Azure
 
-**Solution Architect/AI Engineer** - *Self-Service-Plattform für agentische KI*
+**Solution Architect/AI Engineer** ¤ *Self-Service-Plattform für agentische KI* ¤ 01.2026-09.2026
 
-* End-to-End-Verantwortung für eine Self-Service-Plattform, auf der Fachanwender einen KI-Agenten im Chat beschreiben, ihn als bearbeitbaren visuellen Workflow zurückerhalten, veröffentlichen und mit echtem Traffic über ein gemeinsames Postfach, einbettbare Webformulare, Live-Telefonate (WebRTC mit kurzlebigen Ephemeral Tokens) und Cron-Zeitpläne betreiben; Agenten und Modelle laufen auf Azure AI Foundry und stützen sich auf dessen Vector Stores, antworten in der Sprache des Kunden, übergeben Ergebnisse an Salesforce und SAP und erreichen Kundensysteme über OAuth2-gesicherte MCP-Server mit verschlüsselt gespeicherten Tokens.
-* Entwurf der Architektur: ein Next.js-Portal, zwei Python Azure Function Apps (Dispatcher und Executor auf PydanticAI über die Azure OpenAI Responses API) und Storage Queues als einzige Schnittstellen, verbunden durch einen gemeinsamen Workflow-JSON-Vertrag für ReactFlow-Canvas, Generierungs-Bot und Laufzeit — mit gestreamter Ausgabe, Retry-Klassifizierung und einem Redis-gestützten Human-in-the-Loop-Pause/Resume-Primitiv.
-* Mandantenfähigkeit von Grund auf (domainbasierte Mandantenauflösung, Mandanten-Prädikat in jeder Abfrage, Build-brechender Test für jede Abfrage ohne Mandanten-ID) und Auslieferung wahlweise als gemeinsames Portal mit kundenspezifischem Branding oder als Single-Tenant-Installation in der Azure-Subscription des Kunden; Terraform und GitHub Actions mit OIDC bauen die Plattform aus einer leeren Subscription auf, das Kunden-Onboarding besteht aus einem GitHub Environment und einer tfvars-Datei.
+* End-to-End-Verantwortung für eine Self-Service-Plattform: Fachanwender beschreiben einen KI-Agenten im Chat, erhalten ihn als bearbeitbaren visuellen Workflow, veröffentlichen ihn und betreiben ihn mit echtem Traffic über gemeinsames Postfach, einbettbare Webformulare, Live-Telefonate (WebRTC) und Cron-Zeitpläne; Agenten und Modell-Deployments laufen auf **Azure AI Foundry**, Antworten stützen sich auf dessen **Vector Stores** (Upload, Ingestion, Retrieval zur Laufzeit — RAG-Wissensschicht), erfolgen in der Sprache des Kunden, gehen an Salesforce und SAP; Kundensysteme werden über OAuth2-gesicherte **MCP**-Server erreicht (Tokens AES-256-GCM-verschlüsselt, Key-Vault-Schlüssel).
+* Entwurf der Architektur: ein Next.js-Portal, Azure Function Apps (Dispatcher und Executor auf **PydanticAI** über die Azure OpenAI Responses API) und Storage Queues als einzige Schnittstellen zwischen Portal, Generierungs-Bot und Laufzeit — gestreamte Ausgabe, Retry-Klassifizierung und Redis-gestütztes **Human-in-the-Loop**-Pause/Resume.
+* Mandantenfähigkeit von Grund auf (domainbasierte Mandantenauflösung, Mandanten-Prädikat in jeder Abfrage, Build-brechender Test); Auslieferung als gemeinsames Portal mit kundenspezifischem Branding oder als Single-Tenant-Installation beim Kunden, aufgebaut mit **Terraform** für jede Azure-Ressource und **GitHub Actions mit OIDC-Federated-Credentials** — Bootstrap-Workflow für das State-Backend, Entra-ID-App-Registrierungen und Key Vault; das Kunden-Onboarding ist ein GitHub Environment plus tfvars-Datei.
 
-**AI/ML Engineer** - *GenAI-Demonstratoren für Vertriebs- und Angebotsprozesse*
+**Solution Architect/FullStack** ¤ *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern* ¤ 06.2026-09.2026
 
-* Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron durch einen AWS Bedrock LLM-Judge in Kombination mit programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko), einsetzbar mit jedem Chatbot.
+* Mandantenfähige Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login trägt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage ist über Zugriffsrechte je Mandant (**RBAC**) eingegrenzt, koppelbar an einen unterzeichneten Vertrag.
+* Durchgängig TypeScript auf Bun — GraphQL, Prisma/PostgreSQL, React/Redux/Mantine, Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt und GitHub Actions; vollständig mit Claude Code entwickelt, von Anforderungen bis Infrastruktur — Fallstudie für KI-gestützte Entwicklung im Produktionsmaßstab.
 
-**Solution Architect/FullStack** - *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern*
+**AI/ML Engineer** ¤ *LLM-as-a-Judge-Qualitätsbewertung für Chatbots* ¤ 04.2026-06.2026
 
-* Konzeption und Umsetzung einer mandantenfähigen Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login unterstützt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage wird über Zugriffsrechte je Mandant eingegrenzt, die an einen unterzeichneten Vertrag gekoppelt werden können.
-* Modellierung wiederkehrender Dienstpläne, die Konzerte mit unveränderlichem Besetzungs-Snapshot erzeugen; Doppelbuchungen werden bereits in der Datenbank verhindert. Ergänzt um `.ICS`-Bestätigungs-E-Mails sowie PDF-Berichte zu Teilnehmern und Gagen.
-* Durchgängig TypeScript auf Bun — GraphQL Yoga, Prisma/PostgreSQL, React/Redux/Mantine, Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt und GitHub Actions; vollständig mit Claude Code entwickelt, von Anforderungen und Datenmodell bis zur Infrastruktur, als Fallstudie für AI-gestützte Entwicklung im Produktionsmaßstab.
+* Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron von einem AWS Bedrock LLM-Judge plus programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko); **LLM-Evaluation und Observability**, einsetzbar mit jedem Chatbot.
 
-**Senior DevOps/FullStack** - *Web-Client für KI-Chatbot-System*
+**Senior DevOps/FullStack** ¤ *Web-Client für KI-Chatbot-System* ¤ 01.2025-12.2025
 
-* Entwicklung einer robusten und widerstandsfähigen CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.
-* Einführung nahtloser Benutzer-Authentifizierung und rollenbasierter Autorisierung gegen AWS Cognito.
-* Unterstützung von kollaborativen Chats, Arbeitsbereichen, Dokumenten basierend auf WebSockets und WebRTC.
+* Robuste CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.
+* Nahtlose Authentifizierung und **rollenbasierte Autorisierung (RBAC)** gegen AWS Cognito.
+* Pluggable KI-Modell-Unterstützung (AWS Bedrock, OpenAI) mit **RAG**, Bildverarbeitung und Code-Interpretation; kollaborative Chats, Arbeitsbereiche und Dokumente auf Basis von WebSockets und WebRTC.
 
-**Senior Java Entwickler/DevOps** - *Plattform für einheitliches Fahrzeugdaten-Streaming*
+**Senior Java Entwickler/DevOps** ¤ *Plattform für einheitliches Fahrzeugdaten-Streaming* ¤ 06.2024-09.2026
 
-* Entwurf und Implementierung der Quarkus-Plattformdienste — Management API für Schemata, Datenbestellungen, Pipelines und Provisionierung sowie Deployment Service für Kafka-Topics, ACLs und Identity Pools auf Confluent — integriert mit Schema Registry und den Legacy-Fahrzeugdatendiensten des Kunden, mit Schema-Validierung bei der Aufnahme und korrigierter Kafka-Key-Auswahl für Reihenfolgegarantien.
-* Verantwortung für die Flink-Schicht: Pipeline-Persistenz auf reaktivem Hibernate/Flyway mit automatischem Neustart fehlgeschlagener Jobs, byteidentisches Refactoring des zentralen Jobs, Redis-gestützter Regel-Cache, Upgrade auf Flink 2.2 sowie Migrationstool (Export, Rewrite, Import, wiederaufnehmbare Batches) und Cilium/Kyverno/ArgoCD/Helm-Codierung für den Umzug auf die neue Kubernetes-Plattform.
-* Härtung und Skalierung der Azure-Edge: mTLS für Konsumenten, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter, Managed Identity statt SPN-Credentials sowie API-Management-Richtlinien mit gemeinsamem Redis-Token-Cache (99 % Trefferquote), die ~4,9 Mio. redundante Aufrufe pro 12 h beseitigten, die Kapazitätsgrenze von 31 Einheiten aufhoben und zusammen mit angepasstem Diagnose-Sampling die Log-Analytics-Kosten deutlich senkten.
+* Entwurf und Implementierung der Quarkus-Plattformdienste — Management API für Schemata, Datenbestellungen, Pipelines und Provisionierung, Deployment Service für Kafka-Topics, ACLs und Identity Pools auf Confluent — integriert mit Schema Registry und den Legacy-Fahrzeugdatendiensten des Kunden.
+* Verantwortung für die Flink-Schicht: Pipeline-Persistenz auf reaktivem Hibernate/Flyway mit Auto-Restart fehlgeschlagener Jobs, byteidentisches Refactoring des zentralen Jobs, Redis-gestützter Regel-Cache, Migrationstool (Export, Rewrite, Import, wiederaufnehmbare Batches) und **Cilium/Kyverno/ArgoCD/Helm**-Kodifizierung.
+* Härtung und Skalierung der Azure-Edge: mTLS für Konsumenten, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter, **Managed Identity statt SPN-Credentials** in allen Umgebungen sowie API-Management-JWT-Validierung; **Terraform** für fünf Umgebungen inkl. Key Vaults und tfstate-**RBAC**, ausgerollt von GitHub Actions mit Federated Credentials ohne Klartext-Tokens.
 
-**DevOps Engineer/Senior Entwickler** - *Online Sales Forecasting Tool*
+**DevOps Engineer/Senior Entwickler** ¤ *Online Sales Forecasting Tool* ¤ 01.2024-06.2024
 
-* Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Skalierung in k8s; CI/CD-Framework auf Basis von GitHub Actions. Migration der Legacy-Infrastruktur von AWS (RDS und EC2 mit CloudFormation) auf einen privaten OpenShift-Cluster mit kontinuierlichem Deployment über Helm-Charts sowie Tekton-Trigger und -Pipelines.
+* Refactoring bestehender Microservices in Java (Spring Boot), Python (FastAPI) und R (plumber) zur Skalierung in k8s; CI/CD-Framework mit GitHub Actions. Migration der Legacy-Infrastruktur von AWS (RDS, EC2, CloudFormation) auf einen privaten OpenShift-Cluster mit Deployment über Helm-Charts, Tekton-Trigger und -Pipelines.
+
+**Senior FullStack Developer/DevOps Engineer** ¤ *Backend/Infrastruktur für kassenlosen Store* ¤ 08.2022-12.2023
+
+* Integration eines externen In-Store-Computer-Vision-Systems in die Einkaufsreise sowie der Zahlungsanbieter Fiserv, Adyen und PayPal; eigene Whitelist-Lösung zum Sperren nicht unterstützter Zahlungsmethoden.
+* Deployment der Backend-Microservices (AKS, Terraform, Helm), Performance-Arbeit, Elasticsearch-Integration und Vor-Ort-Analytics; Refactoring inkl. verteilter DB-Migrationen als k8s-Jobs mit Init-Containern gegen Konflikte bei parallelen Deployments.
 
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-<div>Mai 2018 - Feb 2022<br/><strong>Systemarchitekt/Senior FullStack Softwareentwickler</strong></div>
+<div>05.2018 - 02.2022<br/><strong>Systemarchitekt/Senior FullStack Softwareentwickler</strong></div>
 <div>
 <a href="https://intetics.com/">Intetics</a>  <i>Minsk, Belarus</i>
 </div>
@@ -87,13 +91,13 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 Arbeit an großem B2B-Projekt in der Modebranche (#1 auf dem US-Markt), Integrationsaufgaben und Entwicklung einer benutzerdefinierten ETL-Engine (Extract, Transform, Load).
 
 * Profiling und Refactoring von Node.js-Microservices; interaktive UI für das ETL-Tool mit [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre) und GRPC.
-* Design und Implementierung von [Box.com](https://www.box.com/)- und [Dropbox](https://www.dropbox.com/)-Konnektoren für die ETL-Engine (Go lang); Integration der excelize-Bibliothek in den XSL-Prozessor samt Behebung mehrerer [Probleme](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz) im Bibliothekscode.
+* Design und Implementierung von [Box.com](https://www.box.com/)- und [Dropbox](https://www.dropbox.com/)-Konnektoren für die ETL-Engine (Go lang); Integration von excelize in den XSL-Prozessor samt mehrerer [Fixes](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz).
 * Integration von [Threedium](https://threedium.co.uk/) 3D-Modellen mit einer benutzerdefinierten React-Komponente.
 
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Okt 2008 - Mai 2018<br/><strong>Systemarchitekt/Senior Softwareentwickler</strong></div>
+<div>10.2008 - 05.2018<br/><strong>Systemarchitekt/Senior Softwareentwickler</strong></div>
 <div>
 <a href="https://www.effectivesoft.com/">EffectiveSoft</a>  <i>Minsk, Belarus</i>
 </div>
@@ -103,13 +107,13 @@ Teilnahme an 20+ Projekten, darunter NLP- und Textmining-Tool Intellexer.
 
 *Stack*: Node.js (express), React, Angular, Ext.js, AWS (EC2, ElasticBeanstalk, RDS, CloudFront), MySQL, Redis, MongoDB, .NET (C#/Managed C++), ASP.NET MVC, C++, COM, WinAPI, ActiveMQ, Python.
 
-* **Crowdfunding-Software** — B2B-Plattform für lokale Unternehmen mit enger Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems: Architektur von Web-Client und Admin-App, CI-Setup (Bitbucket Pipelines, AWS CloudFormation) sowie ein Node.js-Background-Worker für Geldtransfers, Zinsberechnung und Finanzprüfung.
-* **Medizin: DICOM/ECG-Parsing und -Analyse** — universeller ECG-Datenlader anstelle duplizierter Formatimplementierungen (Physionet, EFS, ISHNE, HL7), Canvas-basierter Web-Client zum Hochladen und Anzeigen von DICOM-Bildern (Zoom, WL-Transformation, interaktive Größenmessung) sowie ein Intranet-Tool zur Klinik-Personalsynchronisation mit ASP.NET MVC/SignalR.
+* **Crowdfunding-Software** — B2B-Plattform für lokale Unternehmen mit Integration des [Dwolla](https://www.dwolla.com/) Zahlungssystems: Architektur von Web-Client und Admin-App, CI (Bitbucket Pipelines, AWS CloudFormation) und ein Node.js-Worker für Geldtransfers, Zinsberechnung und Finanzprüfung.
+* **Medizin: DICOM/ECG-Parsing und -Analyse** — universeller ECG-Datenlader anstelle duplizierter Formatimplementierungen (Physionet, EFS, ISHNE, HL7), Canvas-basierter Web-Client für DICOM-Bilder (Zoom, WL-Transformation, Messung) und ein Tool zur Klinik-Personalsynchronisation mit ASP.NET MVC/SignalR.
 
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-<div>Okt 2006 - Okt 2008<br/><strong>Senior Softwareentwickler</strong></div>
+<div>10.2006 - 10.2008<br/><strong>Senior Softwareentwickler</strong></div>
 <div>
 InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Belarus</i>
 </div>
@@ -120,7 +124,7 @@ InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Bela
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Jun 2004 - Sep 2006<br/><strong>Softwareentwickler</strong></div>
+<div>06.2004 - 09.2006<br/><strong>Softwareentwickler</strong></div>
 <div>
 <a href="https://scand.com/">SCAND</a>  <i>Minsk, Belarus</i>
 </div>
@@ -131,34 +135,34 @@ InventionMachine/<a href="https://ihsmarkit.com/">IHS Markit</a>  <i>Minsk, Bela
 ---
 
 <div style="display: flex; flex-direction: row; justify-content: space-between">
-<div>Dez 2002 - Jun 2004<br/><strong>Postgraduierter Student, Lehrer</strong></div>
+<div>12.2002 - 06.2004<br/><strong>Postgraduierter Student, Lehrer</strong></div>
 <div>
 Belarusian National Technical University  <i>Minsk, Belarus</i>
 </div>
 </div>
 
-Arbeit an Robotersimulation und analytischem Programmiersystem – komplexes rechnergestütztes Modellierungssystem zur Simulation realer Industrieroboter und ihrer Umgebung, Berechnung der Roboterkinematik, Kollisionsdetektion und analytische Programmierung. Außerdem als Dozent an der BNTU tätig und mehrere IT-bezogene Kurse unterrichtet: Grundlagen der Computernetzwerke, Mathematische Grundlagen der Roboterprogrammierung.
+Rechnergestütztes Modellierungssystem zur Simulation realer Industrieroboter und ihrer Umgebung: Roboterkinematik, Kollisionsdetektion und analytische Programmierung. Dozent an der BNTU (Grundlagen der Computernetzwerke, Mathematische Grundlagen der Roboterprogrammierung).
 
 ### Fähigkeiten
 - **JavaScript Full Stack**: (2002-heute) TypeScript, React/redux, Angular, Node.js, Express, Next.js, REST/GraphQL
 - **DevOps**: (2015-heute) Docker, Terraform, Kubernetes, AWS, Azure, GCP, Gitlab
-- **Python**: (2008-heute) Django, Flask, FastAPI, SQLAlchemy, Celery, NumPy, Pandas, nltk, Seaborn, Pytorch, scikit-learn
-- **Java**: (2004-heute) Java 1.3/21, Struts/FOP/JSTL/POI, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle
+- **Python**: (2008-heute) Django, Flask, FastAPI, SQLAlchemy, Celery, NumPy, Pandas, Pytorch, scikit-learn
+- **Java**: (2004-heute) Java 1.3/21, JBoss, Tomcat, Spring Framework, Spring Boot, Quarkus, Gradle
 - Durchführung von 500+ technischen Interviews in JavaScript, DevOps, Java, .NET und Golang
 
 ### Ausbildung  
 Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informatik, Robotik
 
 ### Zertifikate
-* Jun 2026: [Microsoft AI & ML Engineering](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)
-* Jan 2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
-* Okt 2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
-* Mai 2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
-* Okt 2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
-* Aug 2022: [DevOps on AWS](https://coursera.org/share/245636d69ad3646f868b10d707509883)
-* Apr 2017: [Machine Learning and Data Analysis from MIPT/Yandex](https://coursera.org/share/c643a772fe5ce8a01738afd8aff29a93)
-* Sep 2016: [Microsoft Certified Solutions Associate](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc): [Web Applications](assets/MCSA_Web_Applications.pdf)
-* Feb 2013: Microsoft Certified Solutions Developer: Web Applications
+* 06.2026: [Microsoft AI & ML Engineering](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)
+* 01.2026: [AWS Generative AI Applications](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)
+* 10.2025: [Confluent Certified Developer for Apache Kafka](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
+* 05.2024: HashiCorp Certified: [Terraform Associate (003)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
+* 10.2023: [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
+* 08.2022: [DevOps on AWS](https://coursera.org/share/245636d69ad3646f868b10d707509883)
+* 04.2017: [Machine Learning and Data Analysis from MIPT/Yandex](https://coursera.org/share/c643a772fe5ce8a01738afd8aff29a93)
+* 09.2016: [MCSA: Web Applications](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc) ([Zertifikat](assets/MCSA_Web_Applications.pdf))
+* 02.2013: Microsoft Certified Solutions Developer: Web Applications
 
 ### Sprachen
 

@@ -40,7 +40,7 @@ Vienna ¤ Austria
 
 ## Experience
 
-### Aug 2022 - Current
+### 08.2022 - Current
 
 [Machine Learning Reply](https://www.reply.com/machine-learning-reply/de/)
 
@@ -145,7 +145,7 @@ Operations and quality
 * Integrate Snyk Code and Snyk Container static application security testing into Azure DevOps CI pipeline.
 
 
-### May 2018 - Feb 2022
+### 05.2018 - 02.2022
 
 [Intetics](https://intetics.com/)
 
@@ -167,7 +167,7 @@ Tasks:
 * Worked on [Threedium](https://threedium.co.uk/) 3D models integration covering it with custom React component
 
 
-### Oct 2008 - May 2018
+### 10.2008 - 05.2018
 
 [EffectiveSoft](https://www.effectivesoft.com/)
 
@@ -333,7 +333,7 @@ Tasks:
 * Participated in performance optimization, implemented caching of business entities, optimized SQL queries
 
 
-### Oct 2006 - Oct 2008
+### 10.2006 - 10.2008
 
 [InventionMachine](https://invention-machine.com/) - now [IHS Markit](https://ihsmarkit.com/)
 
@@ -354,7 +354,7 @@ Tasks:
 * Migration of web-interface of document processing/indexing application from ColdFusion server to ASP.NET 2.0 (C#)
 
 
-### Jun 2004 - Sep 2006
+### 06.2004 - 09.2006
 
 [SCAND](https://scand.com/)
 
@@ -388,7 +388,7 @@ Cross-platform (Windows/Linux) server application for search engines optimizatio
 Stack: C++ (gcc/MSVS); Sockets; boost; zlib; MySQL C++ API; pthread; TCP/IP, HTTP protocols
 
 
-### Dec 2002 - Jun 2004
+### 12.2002 - 06.2004
 
 Belarusian National Technical University
 
@@ -402,11 +402,11 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 ## Certifications
 
-*Jun 2026*
+*06.2026*
 
 * Microsoft AI & ML Engineering ([Coursera](https://www.coursera.org/account/accomplishments/specialization/IJO7N1ZRIVU1)).
 
-*Jan 2026*
+*01.2026*
 
 * AWS Generative AI Applications ([Coursera](https://coursera.org/share/23b43449064c4afbf75a5720870662bd)).
 
@@ -416,37 +416,37 @@ Also worked as teacher in the staff of BNTU and taught several IT-related course
 
 [![CCDAK](assets/CCDAK.png)](https://certificates.confluent.io/edc46443-cd6d-4df4-b16b-cf93cbb12127)
 
-*May 2024*
+*05.2024*
 
 * HashiCorp Certified: Terraform Associate (003)
 
 [![HashiCorp Certified: Terraform Associate (003)](assets/Terraform-Associate.png)](https://www.credly.com/badges/557b7fc7-3b7d-4e0e-a3e9-3b2ae33e5ba2)
 
-*Oct 2023* 
+*10.2023* 
 
 * AWS Certified Solutions Architect – Associate
 
 [![AWS Certified Solutions Architect – Associate](assets/AWS_Certified_Solutions_Architect-Associate.png)](https://www.credly.com/badges/53834e5c-40db-46d0-a6b9-87f5f9e7f628)
 
 
-*Aug 2022*
+*08.2022*
 
 * DevOps on AWS ([Coursera](https://www.coursera.org/specializations/aws-devops)). 
 Credential ID: [E7P44QJ7Q5YY](https://coursera.org/share/245636d69ad3646f868b10d707509883)
 
 
-*Apr 2017* 
+*04.2017* 
 
 * Machine Learning and Data Analysis from MIPT/Yandex ([Coursera](https://www.coursera.org/specializations/machine-learning-data-analysis)). Diploma project - Sentiment Analysis App.
 Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/specialization/certificate/7QJUMHP9B5UX)
 
-*Sep 2016* 
+*09.2016* 
 
 * Microsoft Certified Solutions Associate: Web Applications (Certification Number: [F810-0741](MCSA_Web_Applications.pdf))
 
 [![MCSA Web Applications](assets/MCSA_Web_Applications.png)](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc)
 
-*Feb 2013*
+*02.2013*
 
 * Microsoft Exam #487 Developing Microsoft Azure and Web Services
 * Microsoft Exam #486 Developing ASP.NET MVC Web Applications
@@ -455,14 +455,14 @@ Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/s
 * Microsoft Certified Solutions Developer: Web Applications
 (Certification Number: G091-4454)
 
-*Dec 2012*
+*12.2012*
 
 * Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3
 (Certification Number: E106-1057)
 * Microsoft Certified Professional: Microsoft Certified Professional
 (Certification Number: E106-1062)
 
-*Nov 2004*
+*11.2004*
 
 * Robotics exhibition at VVC (All-russian exhibition centre) - Presented own robot simulation system on "Robotics and mechatronics" conference
 
