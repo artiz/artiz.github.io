@@ -88,11 +88,11 @@ Cloud infrastructure (Azure, Terraform/Terragrunt, Argo CD)
 * Diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache, measured at a 99% token-cache hit rate; codified it in Terraform for five environments with capacity-based sizing.
 * Cut API Management Log Analytics ingestion costs substantially by tuning diagnostic sampling.
 * Managed Postgres replicas, Confluent CKU scaling, Key Vaults and tfstate RBAC in Terraform and Terragrunt; fixed secrets leaking into CI logs and hardened GitHub Actions workflows (federated credentials, no plaintext tokens).
-* Platform monitoring with Prometheus and Grafana; currently introducing Policy as Code for the telemetry platform.
+* Platform monitoring with Prometheus and Grafana; currently introducing Policy as Code with Kyverno for the telemetry platform.
 
 Kubernetes platform migration
 
-* Built the Flink pipelines migration tooling (export, rewrite, import, image copy, staging purge) with resumable batches, retries and failure reporting, and shipped it to the target jumphosts.
+* Built the Flink Pipelines massive migration/update tooling (export, rewrite, import, image copy, staging purge) with resumable batches, retries and failure reporting, and shipped it to the target jumphosts.
 * Codified Cilium network policies, Kyverno-compliant resources, checkpoint storage and CI service principals for the new platform; migrated ArgoCD applications, Helm chart pins and in-cluster Postgres wiring for dev, int and pre environments.
 * Configured `externalTrafficPolicy: Local` with pod anti-affinity for load-balancer-backed APIs.
 

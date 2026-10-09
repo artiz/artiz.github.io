@@ -45,8 +45,8 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 **Senior Java Developer/DevOps** ¤ *Unified vehicles data streaming platform* ¤ 06.2024-Current
 
 * Designed and implemented the Quarkus platform services — a Management API for schemas, data orders, pipelines and provisioning, and a Deployment Service for Kafka topics, ACLs and identity pools on Confluent — integrated with Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; downstream, **Databricks** consumes the streams as **Apache Iceberg** tables.
-* Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache and migration tooling; delivery with **Argo CD/Helm/Cilium/Kyverno** and monitoring with **Prometheus and Grafana**.
-* Hardened and scaled the Azure edge: mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch, **managed identity instead of SPN credentials** and API Management JWT policies; **Terraform/Terragrunt** for five environments incl. Key Vaults and tfstate **RBAC** via GitHub Actions on federated credentials; currently introducing **Policy as Code** for the telemetry platform.
+* Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache and Flink Pipelines massive migration/update tooling; delivery with **Argo CD/Helm/Cilium** and monitoring with **Prometheus and Grafana**.
+* Hardened and scaled the Azure edge: mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch, **managed identity instead of SPN credentials** and API Management JWT policies; **Terraform/Terragrunt** for five environments incl. Key Vaults and tfstate **RBAC** via GitHub Actions on federated credentials; currently introducing **Policy as Code** with **Kyverno** for the telemetry platform.
 
 **Solution Architect/AI Engineer** ¤ *Self-service agentic AI platform* ¤ 01.2026-09.2026
 
