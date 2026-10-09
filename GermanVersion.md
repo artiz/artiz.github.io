@@ -39,7 +39,13 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 </div>
 </div>
 
-*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Kubernetes, Helm, Azure DevOps • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure AI Foundry/OpenAI, AWS Bedrock, LangChain, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
+
+**Senior Java Entwickler/DevOps** ¤ *Plattform für einheitliches Fahrzeugdaten-Streaming* ¤ 06.2024-Heute
+
+* Entwurf und Implementierung der Quarkus-Plattformdienste — Management API für Schemata, Datenbestellungen, Pipelines und Provisionierung, Deployment Service für Kafka-Topics, ACLs und Identity Pools auf Confluent — integriert mit Schema Registry und den Legacy-Fahrzeugdatendiensten des Kunden; nachgelagert konsumiert **Databricks** die Datenströme als **Apache-Iceberg**-Tabellen.
+* Verantwortung für die Flink-Schicht: Pipeline-Persistenz auf reaktivem Hibernate/Flyway mit Auto-Restart fehlgeschlagener Jobs, byteidentisches Refactoring des zentralen Jobs, Redis-gestützter Regel-Cache und Tooling für massenhafte Migration/Aktualisierung von Flink-Pipelines; Auslieferung mit **Argo CD/Helm/Cilium**, Monitoring mit **Prometheus und Grafana**.
+* Härtung und Skalierung der Azure-Edge: mTLS für Konsumenten, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter, **Managed Identity statt SPN-Credentials** sowie API-Management-JWT-Richtlinien; **Terraform/Terragrunt** für fünf Umgebungen inkl. Key Vaults und tfstate-**RBAC** über GitHub Actions mit Federated Credentials; aktuell Einführung von **Policy as Code** mit **Kyverno** für die Telemetrie-Plattform.
 
 **Solution Architect/AI Engineer** ¤ *Self-Service-Plattform für agentische KI* ¤ 01.2026-09.2026
 
@@ -50,7 +56,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 **Solution Architect/FullStack** ¤ *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern* ¤ 06.2026-09.2026
 
 * Mandantenfähige Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login trägt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage ist über Zugriffsrechte je Mandant (**RBAC**) eingegrenzt, koppelbar an einen unterzeichneten Vertrag.
-* Durchgängig TypeScript auf Bun — GraphQL, Prisma/PostgreSQL, React/Redux/Mantine, Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt und GitHub Actions; vollständig mit Claude Code entwickelt, von Anforderungen bis Infrastruktur — Fallstudie für KI-gestützte Entwicklung im Produktionsmaßstab.
+* Durchgängig **TypeScript** auf **Bun** — **GraphQL**, **Prisma/PostgreSQL**, **React/Redux**, **Google-OAuth** — auf **AWS ECS Fargate** mit **Terraform/Terragrunt** und **GitHub Actions**; vollständig mit **Claude Code** entwickelt, von Anforderungen bis Infrastruktur — Fallstudie für KI-gestützte Entwicklung im Produktionsmaßstab.
 
 **AI/ML Engineer** ¤ *LLM-as-a-Judge-Qualitätsbewertung für Chatbots* ¤ 04.2026-06.2026
 
@@ -61,12 +67,6 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 * Robuste CI/CD-Plattform mit integrierten Unit- und e2e-Tests (Playwright) und Feature-Umgebungen.
 * Nahtlose Authentifizierung und **rollenbasierte Autorisierung (RBAC)** gegen AWS Cognito.
 * Pluggable KI-Modell-Unterstützung (AWS Bedrock, OpenAI) mit **RAG**, Bildverarbeitung und Code-Interpretation; kollaborative Chats, Arbeitsbereiche und Dokumente auf Basis von WebSockets und WebRTC.
-
-**Senior Java Entwickler/DevOps** ¤ *Plattform für einheitliches Fahrzeugdaten-Streaming* ¤ 06.2024-09.2026
-
-* Entwurf und Implementierung der Quarkus-Plattformdienste — Management API für Schemata, Datenbestellungen, Pipelines und Provisionierung, Deployment Service für Kafka-Topics, ACLs und Identity Pools auf Confluent — integriert mit Schema Registry und den Legacy-Fahrzeugdatendiensten des Kunden.
-* Verantwortung für die Flink-Schicht: Pipeline-Persistenz auf reaktivem Hibernate/Flyway mit Auto-Restart fehlgeschlagener Jobs, byteidentisches Refactoring des zentralen Jobs, Redis-gestützter Regel-Cache, Migrationstool (Export, Rewrite, Import, wiederaufnehmbare Batches) und **Cilium/Kyverno/ArgoCD/Helm**-Kodifizierung.
-* Härtung und Skalierung der Azure-Edge: mTLS für Konsumenten, In-App-JWT-Validierung hinter einem Off/Shadow/Enforce-Schalter, **Managed Identity statt SPN-Credentials** in allen Umgebungen sowie API-Management-JWT-Validierung; **Terraform** für fünf Umgebungen inkl. Key Vaults und tfstate-**RBAC**, ausgerollt von GitHub Actions mit Federated Credentials ohne Klartext-Tokens.
 
 **DevOps Engineer/Senior Entwickler** ¤ *Online Sales Forecasting Tool* ¤ 01.2024-06.2024
 
