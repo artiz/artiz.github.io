@@ -40,7 +40,13 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 </div>
 </div>
 
-*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Kubernetes, Helm, Azure DevOps • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
+
+**Senior Java Developer/DevOps** ¤ *Unified vehicles data streaming platform* ¤ 06.2024-Current
+
+* Designed and implemented the Quarkus platform services — a Management API for schemas, data orders, pipelines and provisioning, and a Deployment Service for Kafka topics, ACLs and identity pools on Confluent — integrated with Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; downstream, **Databricks** consumes the streams as **Apache Iceberg** tables.
+* Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache and migration tooling; delivery with **Argo CD/Helm/Cilium/Kyverno** and monitoring with **Prometheus and Grafana**.
+* Hardened and scaled the Azure edge: mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch, **managed identity instead of SPN credentials** and API Management JWT policies; **Terraform/Terragrunt** for five environments incl. Key Vaults and tfstate **RBAC** via GitHub Actions on federated credentials; currently introducing **Policy as Code** for the telemetry platform.
 
 **Solution Architect/AI Engineer** ¤ *Self-service agentic AI platform* ¤ 01.2026-09.2026
 
@@ -62,12 +68,6 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 * Develop robust and resilient CI/CD platform with integrated unit and e2e tests (Playwright) and support for feature environments.
 * Introduce seamless user authentication and **role-based authorization (RBAC)** against AWS Cognito.
 * Add pluggable AI model support (AWS Bedrock, OpenAI) with **RAG**, image-processing and code-interpretation plugins; support collaborative chats, workspaces and documents over WebSockets and WebRTC.
-
-**Senior Java Developer/DevOps** ¤ *Unified vehicles data streaming platform* ¤ 06.2024-09.2026
-
-* Designed and implemented the Quarkus platform services — a Management API for schemas, data orders, pipelines and provisioning, and a Deployment Service for Kafka topics, ACLs and identity pools on Confluent — integrated with Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion.
-* Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache, migration tooling (export, rewrite, import, resumable batches) and **Cilium/Kyverno/ArgoCD/Helm** codification.
-* Hardened and scaled the Azure edge: mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch, **managed identity instead of SPN credentials** across all environments, and API Management JWT-validation policies; **Terraform** for five environments including Key Vaults and tfstate **RBAC**, applied by GitHub Actions on federated credentials with no plaintext tokens.
 
 **DevOps Engineer/Senior Developer** ¤ *Online Sales Forecasting Tool* ¤ 01.2024-06.2024
 
