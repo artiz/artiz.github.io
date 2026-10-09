@@ -40,7 +40,7 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 </div>
 </div>
 
-*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure AI Foundry/OpenAI, AWS Bedrock, LangChain, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
 
 **Senior Java Developer/DevOps** ¤ *Unified vehicles data streaming platform* ¤ 06.2024-Current
 
@@ -57,7 +57,7 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 **Solution Architect/FullStack** ¤ *Scheduling, billing and contract platform for concert organisers* ¤ 06.2026-09.2026
 
 * Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login supports multiple roles with role-specific features, and every query is scoped through explicit per-company access grants (**RBAC**) that can be gated on a signed contract.
-* End-to-end TypeScript on Bun — GraphQL, Prisma/PostgreSQL, React/Redux/Mantine, Google and Apple OAuth — on AWS ECS Fargate with Terraform/Terragrunt and GitHub Actions; built end to end with Claude Code, from requirements and data model to infrastructure, as a production-scale AI-assisted development case study.
+* End-to-end **TypeScript** on **Bun** — **GraphQL**, **Prisma/PostgreSQL**, **React/Redux**, **Google OAuth** — on **AWS ECS Fargate** with **Terraform/Terragrunt** and **GitHub Actions**; built end to end with **Claude Code**, from requirements and data model to infrastructure, as a production-scale AI-assisted development case study.
 
 **AI/ML Engineer** ¤ *LLM-as-a-Judge chatbot quality assessor* ¤ 04.2026-06.2026
 

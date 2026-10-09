@@ -39,7 +39,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 </div>
 </div>
 
-*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure OpenAI, Azure AI Foundry, AWS Bedrock, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
+*Stack*: Node.js, React, Next.js • Java, Quarkus, Flyway • Python, PydanticAI • PostgreSQL, Cosmos DB, Redis • Apache Kafka, Flink, Confluent, Databricks • Azure AI Foundry/OpenAI, AWS Bedrock, LangChain, Langfuse, RAG, MCP, A2A • Terraform, Terragrunt, Kubernetes, Helm, Argo CD, Azure DevOps • Prometheus, Grafana • AWS, Azure
 
 **Senior Java Entwickler/DevOps** ¤ *Plattform für einheitliches Fahrzeugdaten-Streaming* ¤ 06.2024-Heute
 
@@ -56,7 +56,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 **Solution Architect/FullStack** ¤ *Plattform für Einteilung, Abrechnung und Verträge von Konzertveranstaltern* ¤ 06.2026-09.2026
 
 * Mandantenfähige Plattform für mehrere rechtlich getrennte Gesellschaften und Veranstaltungsformate: Ein Login trägt mehrere Rollen mit rollenspezifischen Funktionen; jede Abfrage ist über Zugriffsrechte je Mandant (**RBAC**) eingegrenzt, koppelbar an einen unterzeichneten Vertrag.
-* Durchgängig TypeScript auf Bun — GraphQL, Prisma/PostgreSQL, React/Redux/Mantine, Google- und Apple-OAuth — auf AWS ECS Fargate mit Terraform/Terragrunt und GitHub Actions; vollständig mit Claude Code entwickelt, von Anforderungen bis Infrastruktur — Fallstudie für KI-gestützte Entwicklung im Produktionsmaßstab.
+* Durchgängig **TypeScript** auf **Bun** — **GraphQL**, **Prisma/PostgreSQL**, **React/Redux**, **Google-OAuth** — auf **AWS ECS Fargate** mit **Terraform/Terragrunt** und **GitHub Actions**; vollständig mit **Claude Code** entwickelt, von Anforderungen bis Infrastruktur — Fallstudie für KI-gestützte Entwicklung im Produktionsmaßstab.
 
 **AI/ML Engineer** ¤ *LLM-as-a-Judge-Qualitätsbewertung für Chatbots* ¤ 04.2026-06.2026
 
