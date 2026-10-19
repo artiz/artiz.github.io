@@ -84,7 +84,7 @@ Flink stream processing
 
 Cloud infrastructure (Azure, Terraform/Terragrunt, Argo CD)
 
-* Tuned Azure API Management for peaks of ~600K requests per second and deployed its Self-hosted Gateway, cutting average gateway latency from 21 ms to 16 ms.
+* Tuned Azure API Management for ~1.5B requests per day with peaks of ~40K requests per second and deployed its Self-hosted Gateway, cutting average gateway latency from 21 ms to 16 ms.
 * Owned API Management JWT-validation policies: added new issuers, gated the external authorization check by issuer and cached its verdicts, eliminating ~4.9M redundant calls per 12 h.
 * Diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache, measured at a 99% token-cache hit rate; codified it in Terraform for five environments with capacity-based sizing.
 * Cut API Management Log Analytics ingestion costs substantially by tuning diagnostic sampling.
