@@ -480,7 +480,7 @@ Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/s
 ## Languages
 * 🇷🇺 Russian (native) 
 * 🇬🇧 English (full professional), IELTS 6.5, CEFR B2 
-* 🇩🇪 German (professional), OIF Integrationsprüfung B1 
+* 🇩🇪 German (B2, sufficient for professional day-to-day work) 
 
 ## Interests
 

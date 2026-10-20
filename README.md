@@ -167,7 +167,7 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Compute
 
 ### Languages
 
-Russian (native) • English (full professional), IELTS 6.5, CEFR B2 • German (professional), OIF Integrationsprüfung B1
+Russian (native) • English (full professional), IELTS 6.5, CEFR B2 • German (B2, sufficient for professional day-to-day work)
 
 
 
