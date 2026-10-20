@@ -166,4 +166,4 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informa
 
 ### Sprachen
 
-Russisch (Muttersprache) • Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 • Deutsch (beruflich), OIF Integrationsprüfung B1
+Russisch (Muttersprache) • Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 • Deutsch (B2, ausreichend für den professionellen Berufsalltag)
