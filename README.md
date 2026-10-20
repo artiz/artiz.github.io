@@ -165,9 +165,10 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Compute
 * 09.2016: [MCSA: Web Applications](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc) ([certificate](assets/MCSA_Web_Applications.pdf))
 * 02.2013: Microsoft Certified Solutions Developer: Web Applications
 
-### Languages
+### Languages & Work Authorization
 
-Russian (native) • English (full professional), IELTS 6.5, CEFR B2 • German (B2, sufficient for professional day-to-day work)
+Russian (native) • English (full professional), IELTS 6.5, CEFR B2 • German (B2, sufficient for professional day-to-day work)<br/>
+Citizenship: Belarus • Austrian Red-White-Red Card (Rot-Weiß-Rot – Karte), valid until 07.2027 • permanent residence planned
 
 
 

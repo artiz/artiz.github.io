@@ -482,6 +482,11 @@ Credential ID: [7QJUMHP9B5UX](https://www.coursera.org/account/accomplishments/s
 * 🇬🇧 English (full professional), IELTS 6.5, CEFR B2 
 * 🇩🇪 German (B2, sufficient for professional day-to-day work) 
 
+## Work Authorization
+
+* Citizenship: Belarus
+* Austrian Red-White-Red Card (Rot-Weiß-Rot – Karte), valid until 07.2027; switch to permanent residence planned
+
 ## Interests
 
 * Family
