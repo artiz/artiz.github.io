@@ -60,7 +60,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 
 **AI/ML Engineer** ¤ *LLM-as-a-Judge-Qualitätsbewertung für Chatbots* ¤ 04.2026-06.2026
 
-* Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron von einem AWS Bedrock LLM-Judge plus programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko); **LLM-Evaluation und Observability**, einsetzbar mit jedem Chatbot.
+* Aufbau einer LLM-as-a-Judge-Qualitätsschicht für kundenorientierte Chatbots: Jeder Gesprächsschritt wird in Langfuse erfasst und asynchron von einem AWS Bedrock LLM-Judge plus programmierten Metriken bewertet — 9 Live-Qualitätskennzahlen (Qualität, Kosten, Eskalationsrisiko); **LLM-Evaluation und Observability**, für jeden Chatbot.
 
 **Senior DevOps/FullStack** ¤ *Web-Client für KI-Chatbot-System* ¤ 01.2025-12.2025
 
@@ -75,7 +75,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 **Senior FullStack Developer/DevOps Engineer** ¤ *Backend/Infrastruktur für kassenlosen Store* ¤ 08.2022-12.2023
 
 * Integration eines externen In-Store-Computer-Vision-Systems in die Einkaufsreise sowie der Zahlungsanbieter Fiserv, Adyen und PayPal; eigene Whitelist-Lösung zum Sperren nicht unterstützter Zahlungsmethoden.
-* Deployment der Backend-Microservices (AKS, Terraform, Helm), Performance-Arbeit, Elasticsearch-Integration und Vor-Ort-Analytics; Refactoring inkl. verteilter DB-Migrationen als k8s-Jobs mit Init-Containern gegen Konflikte bei parallelen Deployments.
+* Deployment der Backend-Microservices (AKS, Terraform, Helm), Performance-Arbeit, Elasticsearch-Integration und Vor-Ort-Analytics; Refactoring inkl. verteilter DB-Migrationen als k8s-Jobs mit Init-Containern gegen Deployment-Konflikte.
 
 ---
 
@@ -164,6 +164,7 @@ Belarusian National Technical University | Minsk, Belarus  *1997-2002* | Informa
 * 09.2016: [MCSA: Web Applications](https://www.credly.com/badges/0daf0adb-71dc-4fc3-8c5a-203c3e0c0fdc) ([Zertifikat](assets/MCSA_Web_Applications.pdf))
 * 02.2013: Microsoft Certified Solutions Developer: Web Applications
 
-### Sprachen
+### Sprachen & Arbeitsmarktzugang
 
-Russisch (Muttersprache) • Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 • Deutsch (B2, ausreichend für den professionellen Berufsalltag)
+Russisch (Muttersprache) • Englisch (verhandlungssicher), IELTS 6.5, CEFR B2 • Deutsch (B2, ausreichend für den professionellen Berufsalltag)<br/>
+Staatsbürgerschaft: Belarus • Rot-Weiß-Rot – Karte, gültig bis 07.2027 • Umstieg auf Daueraufenthalt geplant
