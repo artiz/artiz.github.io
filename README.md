@@ -8,7 +8,7 @@
 </div>
 <div>
 
-<a href="https://www.linkedin.com/in/artem-kustikov-2635917/">LinkedIn</a>
+<a href="https://www.linkedin.com/in/artem-kustikov/">LinkedIn</a>
 | <a href="https://github.com/artiz/">GitHub</a>
 | <a href="https://www.credly.com/users/artem-kustikov/badges">Credly</a>
 | <a href="https://docs.microsoft.com/en-us/users/artemkustikov-7649/">Microsoft Learning</a>
