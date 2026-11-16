@@ -23,6 +23,9 @@ Wien ¤ Österreich <br/>
 <a href="mailto:artem.kustikov@gmail.com">artem.kustikov@gmail.com</a> ¤ <a href="tel:+4366493106218">+43 664 9310 6218</a>
 
 </div>
+<div class="hide-in-pdf sponsor">
+<a class="sponsor-btn" href="https://buymeacoffee.com/artiz_dev" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3.5v2M12 3.5v2"/></svg><span>Kaffee spendieren</span></a>
+</div>
 </div>
 
 Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahren Erfahrung in der Konzeption und durchgängigen Umsetzung skalierbarer, cloud-nativer Systeme. Ich verantworte Architektur und Engineering für **KI/LLM-gestützte Anwendungen**, **verteilte ereignisgesteuerte Plattformen** und **Full-Stack-Webprodukte** und übersetze Geschäftsziele in widerstandsfähige, gut steuerbare Lösungen. Schwerpunkte: Azure-native KI- und Agentenarchitektur (Azure AI Foundry, LLM-Agenten, RAG und Wissenszugriff, Human-in-the-Loop-Workflows, Evaluation und Observability, MCP), Enterprise-Solution- und Microservices-Architektur, Infrastructure as Code und Platform Engineering (Terraform, Kubernetes, CI/CD, Managed Identity und RBAC), Cloud-Infrastruktur (Azure, AWS, GCP) sowie Echtzeit-Datenströme (Kafka, Flink). Ich verbinde technische Führung mit umfassender Liefererfahrung — Mentoring von Teams, Etablierung von Engineering-Best-Practices und die Bereitstellung skalierbarer Produktionssysteme.
@@ -30,6 +33,7 @@ Principal Consultant und praxisorientierter Softwarearchitekt mit über 15 Jahre
 ### Open-Source-Projekte
 - **[docling.rs](https://github.com/docling-project/docling.rs)** — Performante Rust-Neuimplementierung von Python Docling, aufgenommen in das offizielle Docling-Projekt, die über 30 Dokumentformate (PDF, DOCX, PPTX, XLSX, HTML, EPUB, Bilder, Audio) in eine einheitliche `DoclingDocument`-Struktur für KI/RAG-Pipelines umwandelt. Reiner Rust-PDF-Parser mit ONNX-Layout/TableFormer/OCR-Stack sowie Node.js/TypeScript-Bindings und LangChain-Integration.
 - **[KateChat](https://github.com/artiz/kate-chat)** — Selbst-gehostete Multi-Provider-LLM-Chat-Plattform (offene ChatGPT-Alternative). React/TypeScript-Frontend mit Node.js- und Rust-Backend; integriert AWS Bedrock, OpenAI und Yandex AI mit RAG (Docling), MCP, In-Browser-Python (Pyodide) und Bildgenerierung. GraphQL-API, WebSocket-Subscriptions, PostgreSQL/Redis.
+- **[AZ Budget](https://github.com/artiz/az-budget)** — Android-App für das Haushaltsbudget mit einer Excel-Jahresdatei im Cloud-Ordner des Nutzers als Datenbank. Flutter-App mit Rust-Kern: Beleg-OCR auf dem Gerät mit docling.rs, Import von Kontoauszügen über OpenAI Structured Outputs und ein xlsx-Patcher, der Formeln und Diagramme erhält. Verfügbar bei [Google Play](https://play.google.com/store/apps/details?id=dev.artiz.az_budget).
 
 ### [Erfahrung](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">
