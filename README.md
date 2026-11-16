@@ -24,6 +24,9 @@ Vienna ¤ Austria <br/>
 <a href="mailto:artem.kustikov@gmail.com">artem.kustikov@gmail.com</a> ¤ <a href="tel:+4366493106218">+43 664 9310 6218</a>
 
 </div>
+<div class="hide-in-pdf sponsor">
+<a class="sponsor-btn" href="https://buymeacoffee.com/artiz_dev" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3.5v2M12 3.5v2"/></svg><span>Buy me a coffee</span></a>
+</div>
 </div>
 
 Principal consultant and hands-on software architect with 15+ years of experience designing and delivering scalable, cloud-native systems end to end. I lead architecture and engineering across **AI/LLM-powered applications**, **distributed event-driven platforms**, and **full-stack web products**, translating business goals into resilient, well-governed solutions. Core focus areas: Azure-native AI and agent architecture (Azure AI Foundry, LLM agents, RAG and knowledge retrieval, human-in-the-loop workflows, evaluation and observability, MCP), enterprise solution and microservices architecture, infrastructure as code and platform engineering (Terraform, Kubernetes, CI/CD, managed identity and RBAC), cloud infrastructure (Azure, AWS, GCP), and real-time data streaming (Kafka, Flink). I pair technical leadership with deep delivery experience — mentoring teams, driving engineering best practices, and shipping production systems that scale.
@@ -31,6 +34,7 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 ### Open Source Projects
 - **[docling.rs](https://github.com/docling-project/docling.rs)** — High-performance Rust reimplementation of Python Docling, adopted into the official Docling project; converts 30+ document formats (PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, audio) into a unified `DoclingDocument` for AI/RAG pipelines. Pure-Rust PDF parser with an ONNX layout/TableFormer/OCR stack, Node.js/TypeScript bindings and LangChain integration.
 - **[KateChat](https://github.com/artiz/kate-chat)** — Self-hosted, multi-provider LLM chat platform (open ChatGPT alternative). React/TypeScript frontend with Node.js and Rust backends; integrates AWS Bedrock, OpenAI, and Yandex AI with RAG (Docling), MCP, in-browser Python (Pyodide), and image generation. GraphQL API, WebSocket subscriptions, PostgreSQL/Redis, Docker.
+- **[AZ Budget](https://github.com/artiz/az-budget)** — Android household-budget app that keeps a yearly Excel workbook in the user's cloud folder (Google Drive, Dropbox) as its database. Flutter app with a Rust core: on-device receipt OCR with docling.rs, bank-statement import via OpenAI structured outputs, and an xlsx patcher that preserves formulas and charts. Available on [Google Play](https://play.google.com/store/apps/details?id=dev.artiz.az_budget).
 
 ### [Experience](FullExperience.md)
 <div style="display: flex; flex-direction: row; justify-content: space-between">

@@ -254,7 +254,26 @@ h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: 
   border-radius: 22px;
   box-shadow: 0 0 0 2px var(--accent), 0 0 36px var(--glow);
 }
-.hero > div[style*="flex"] > div:last-child { line-height: 1.9; color: var(--muted); }
+.hero > div[style*="flex"] > div:nth-child(2) { line-height: 1.9; color: var(--muted); }
+/* sponsorship button, top right of the contact card (hidden in print/PDF) */
+.hero > div[style*="flex"] > .sponsor { margin-left: auto; align-self: flex-start; }
+.sponsor-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: border-color .15s ease, color .15s ease, box-shadow .2s ease;
+}
+.sponsor-btn svg { color: var(--accent); flex: none; }
+.sponsor-btn:hover { border-color: var(--border-hover); color: var(--accent-text); text-decoration: none; box-shadow: 0 0 24px -6px var(--glow); }
 
 /* ---------- sections ---------- */
 
@@ -389,6 +408,8 @@ ul.feature-grid > li > strong:first-child {
 ul.feature-grid > li > strong:first-child a { color: var(--text); }
 ul.feature-grid > li > strong:first-child a::after { content: " ↗"; color: var(--accent-text); font-size: .8em; }
 ul.feature-grid > li > strong:first-child a:hover { color: var(--accent-text); text-decoration: none; }
+/* an odd last card spans the full row instead of leaving a gap */
+ul.feature-grid > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
 /* certifications in two columns */
 .section-certs .card ul { columns: 2; column-gap: 32px; margin: 0; }
@@ -424,6 +445,7 @@ ul.feature-grid > li > strong:first-child a:hover { color: var(--accent-text); t
   .page { padding: 36px 16px 32px; }
   .card, ul.feature-grid > li { padding: 20px; }
   .hero > div[style*="flex"] { padding: 18px; }
+  .hero > div[style*="flex"] > .sponsor { margin-left: 0; }
   ul.feature-grid { grid-template-columns: 1fr; }
   .section-certs .card ul { columns: 1; }
 }
