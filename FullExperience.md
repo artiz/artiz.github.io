@@ -64,7 +64,7 @@ Position: Principal Consultant, AI/DevOps/FullStack Software Developer
 
 🚗 *Unified vehicles data streaming platform – Senior Java Developer/DevOps*
 
-Stack: Java, Quarkus, reactive Hibernate, Flyway • Apache Flink 2.2, Confluent Kafka, Schema Registry • Databricks, Apache Iceberg • Azure Kubernetes Service, API Management, Blob Storage, Key Vault, Postgres, Redis, Log Analytics • Terraform, Terragrunt, Argo CD, Helm, Cilium, Kyverno, Policy as Code, GitHub Actions • Prometheus, Grafana • Testcontainers, WireMock
+Stack: Java, Quarkus, reactive Hibernate, Flyway • Apache Flink 2.3, Confluent Kafka, Schema Registry • Databricks, Apache Iceberg • Azure Kubernetes Service, API Management, Blob Storage, Key Vault, Postgres, Redis, Log Analytics • Terraform, Terragrunt, Argo CD, Helm, Cilium, Kyverno, Policy as Code, GitHub Actions • Prometheus, Grafana • Testcontainers, WireMock
 
 Platform services (Java / Quarkus)
 
@@ -80,12 +80,12 @@ Flink stream processing
 
 * Refactored the core Flink job to reproduce legacy output byte-for-byte, including complex signal encoding.
 * Designed and implemented a Redis-backed cache for vehicle-data rules in Flink jobs, with full test coverage.
-* Moved Flink jobs to managed identity for storage access and upgraded the runtime to Flink 2.2; unified per-environment CI workflows into one pipeline with a `:main` image tag convention.
+* Moved Flink jobs to managed identity for storage access and upgraded the runtime to Flink 2.3 (mass upgrade); unified per-environment CI workflows into one pipeline with a `:main` image tag convention.
 
 Cloud infrastructure (Azure, Terraform/Terragrunt, Argo CD)
 
 * Tuned Azure API Management for ~1.5B requests per day with peaks of ~40K requests per second and deployed its Self-hosted Gateway, cutting average gateway latency from 21 ms to 16 ms.
-* Owned API Management JWT-validation policies: added new issuers, gated the external authorization check by issuer and cached its verdicts, eliminating ~4.9M redundant calls per 12 h.
+* Owned API Management JWT-validation policies: added new issuers, gated the external authorization check by issuer and cached its verdicts, eliminating ~5M redundant calls per 12 h.
 * Diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache, measured at a 99% token-cache hit rate; codified it in Terraform for five environments with capacity-based sizing.
 * Cut API Management Log Analytics ingestion costs substantially by tuning diagnostic sampling.
 * Managed Postgres replicas, Confluent CKU scaling, Key Vaults and tfstate RBAC in Terraform and Terragrunt; fixed secrets leaking into CI logs and hardened GitHub Actions workflows (federated credentials, no plaintext tokens).
@@ -121,6 +121,12 @@ Stack: TypeScript, Next.js (App Router), React, ReactFlow, Tailwind CSS, Redux, 
 * Wrote the Terraform for every Azure resource and the GitHub Actions pipelines that apply it, including OIDC federated credentials, a bootstrap workflow for the state backend, and an environment model where standing up a new customer means creating a GitHub Environment and a tfvars file rather than editing Terraform.
 * Integrated Office 365 mail ingestion via Logic Apps, Salesforce and SAP as agent tools, and a cross-cloud public hostname (Route 53 records bound to an Azure Container App custom domain).
 * Wrote unit and integration tests across both the TypeScript and Python sides, authored the architecture documentation, ADRs and operational runbooks (deploy-from-scratch, mailbox setup, MCP onboarding), and reviewed incoming pull requests.
+
+🎤 *Scheduling, billing and contract platform for concert organisers – Solution Architect/FullStack*
+
+* Designed and built a multi-tenant platform serving several legally separate companies and event formats: one login supports multiple roles with role-specific features, and every query is scoped through explicit per-company access grants (RBAC) that can be gated on a signed contract.
+* Implemented a visual concert venue editor, localized contract generation with a custom template engine, an SMS notification system and integration with the external Palisis ticketing and reservation system.
+* End-to-end TypeScript on Bun — GraphQL, Prisma/PostgreSQL, React/Redux, Google OAuth — on AWS ECS Fargate with Terraform/Terragrunt and GitHub Actions; built end to end with Claude Code as a production-scale AI-assisted development case study.
 
 🧠 *GenAI demonstrators for sales and offer processes – AI/ML Engineer*
 
