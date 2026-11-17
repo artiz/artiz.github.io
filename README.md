@@ -51,12 +51,20 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 * Designed and implemented the Quarkus platform services — a Management API for schemas, data orders, pipelines and provisioning, and a Deployment Service for Kafka topics, ACLs and identity pools on Confluent — integrated with Schema Registry and the customer's legacy vehicle-data services, with schema validation on ingestion; downstream, **Databricks** consumes the streams as **Apache Iceberg** tables.
 * Owned the Flink layer: pipeline persistence on reactive Hibernate/Flyway with automatic restart of failed jobs, a byte-for-byte refactor of the core job, a Redis-backed rules cache and Flink Pipelines massive migration/update tooling; delivery with **Argo CD/Helm/Cilium** and monitoring with **Prometheus and Grafana**.
 * Hardened and scaled the Azure edge at **~1.5B requests/day** with peaks of **~40K req/s**: tuned **Azure API Management** and deployed its **Self-hosted Gateway**, cutting average latency from 21 to 16 ms; mTLS for consumers, in-app JWT validation behind an off/shadow/enforce switch and **managed identity instead of SPN credentials**; **Terraform/Terragrunt** for five environments incl. Key Vaults and tfstate **RBAC** via GitHub Actions on federated credentials; currently introducing **Policy as Code** with **Kyverno** for the telemetry platform.
+* Cut gateway load and cost: gated the external authorization check by token issuer and cached its verdicts in API Management policies, eliminating **~4.9M redundant calls per 12 h**; diagnosed the API Management capacity ceiling (31 units at 99%) and introduced a shared external Redis cache with a **99% token-cache hit rate**, sized per environment in Terraform; tuned diagnostic sampling to cut Log Analytics ingestion costs.
+* Migrated to the customer's new Kubernetes platform: Cilium network policies, Kyverno-compliant resources, checkpoint storage and CI service principals as code; Argo CD applications, Helm chart pins and in-cluster Postgres for the dev, int and pre environments; Flink jobs upgraded to **Flink 2.2** and switched to managed identity.
+* Operations and quality: led root-cause analyses of production incidents and shipped fixes with regression tests; unit and integration tests with **Testcontainers** and **WireMock** behind coverage gates; security-scan compliance (BlackDuck, ORT) and **NIST 8000** security requirements with generated Confluence documentation; tooling for consumer lag, Flink job health and topic partitions.
+* Platform API details: Management API endpoints for connection info, provisioning job status and data-platform claims; refactored the ingestion API to the legacy contract and fixed Kafka key selection for ordering guarantees; Azure Blob containers for large messages; per-data-order Grafana dashboards with their own lifecycle and permissions.
 
 **Solution Architect/AI Engineer** ¤ *Self-service agentic AI platform* ¤ 01.2026-09.2026
 
 * Owned end to end a self-service agentic platform where a non-engineer describes an AI agent in chat, gets it back as an editable visual workflow, publishes it, and real inbound traffic runs it over a shared mailbox, embeddable web forms, live phone calls (WebRTC) and cron schedules; agents and model deployments run on **Azure AI Foundry** and ground answers in its **vector stores** (upload, ingestion, run-time retrieval — a RAG knowledge layer), reply in the customer's language, hand results to Salesforce and SAP, and reach customer systems through OAuth2-secured **MCP** servers with tokens AES-256-GCM-encrypted under a Key Vault data key.
 * Designed the architecture: a Next.js portal, Azure Function Apps (dispatcher and executor on **PydanticAI** over the Azure OpenAI Responses API) and Storage Queues as the only seams between portal, generation bot and runtime — streamed output, retry classification and a Redis-backed **human-in-the-loop** pause/resume primitive.
 * Made it multi-tenant by construction (domain-based tenant resolution, a tenant predicate on every query, a build-failing test for any query that omits it) and shippable either as a shared portal with per-customer branding or as a single-tenant install in the customer's own Azure subscription; **Terraform** covers every Azure resource and **GitHub Actions with OIDC federated credentials** apply it — bootstrap workflow for the state backend, Entra ID app registrations and Key Vault, with customer onboarding reduced to one GitHub Environment plus a tfvars file.
+* Built the visual workflow builder on **ReactFlow**: an autosaving canvas, a streaming assistant that generates workflow JSON from a chat description, and per-node inspectors; one JSON contract is shared by canvas, generation bot, dispatcher and executor, so a new capability is a new node type rather than a new pipeline.
+* Built the realtime voice channel end to end: phone-number registry and number-to-workflow routing, browser **WebRTC** sessions on short-lived ephemeral tokens so the account key never leaves the server, caller-side transcription, a server-scoped in-call knowledge-search tool, and post-call handover of the full transcript to an agent.
+* Operational surfaces and delivery: agent library with run aggregates, template catalogue, live run monitoring over Redis pub/sub and **SSE**, Office 365 mail ingestion via Logic Apps; unit and integration tests on the TypeScript and Python sides, architecture documentation, **ADRs** and operational runbooks.
+* Integrations: MCP servers on a full OAuth2 authorization-code flow with automatic token refresh and per-person credentials bound to a single workflow, so a shared server never means a shared identity; Salesforce case creation and SAP hand-off as agent tools; a shared React/Tailwind component library and a cross-cloud public hostname (Route 53 records bound to an Azure Container App custom domain).
 
 **Solution Architect/FullStack** ¤ *Scheduling, billing and contract platform for concert organisers* ¤ 06.2026-09.2026
 
@@ -72,15 +80,18 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 * Develop robust and resilient CI/CD platform with integrated unit and e2e tests (Playwright) and support for feature environments.
 * Introduce seamless user authentication and **role-based authorization (RBAC)** against AWS Cognito.
 * Add pluggable AI model support (AWS Bedrock, OpenAI) with **RAG**, image-processing and code-interpretation plugins; support collaborative chats, workspaces and documents over WebSockets and WebRTC.
+* Performance testing and source-code quality reviews to keep the application fast, secure and robust.
 
 **DevOps Engineer/Senior Developer** ¤ *Online Sales Forecasting Tool* ¤ 01.2024-06.2024
 
 * Refactor API and ML inference microservices in Java (Spring Boot), Python (FastAPI) and R (plumber) for k8s deployment, with a GitHub Actions CI/CD framework. Migrate legacy infrastructure from AWS (RDS and EC2 on CloudFormation) to a private OpenShift cluster with continuous deployment on Helm charts, Tekton triggers and pipelines.
+* Optimised Docker image builds and versioning, added health checks and external configuration, and wrote a custom GitHub Action for HTTP polling in deployment pipelines.
 
 **Senior FullStack Developer/DevOps Engineer** ¤ *Cashier-free store backend/infrastructure* ¤ 08.2022-12.2023
 
 * Integrate an external in-store computer vision system into the shopping journey and the payment providers Fiserv, Adyen and PayPal; custom whitelist system to block unsupported payment methods.
 * Backend microservices deployment (Azure Kubernetes Service, Terraform, Helm), performance work, Elasticsearch integration and on-site analytics; refactoring incl. distributed DB migrations as k8s jobs with init-containers to avoid conflicts at parallel deployments.
+* Integrated **Snyk Code** and **Snyk Container** security testing (SAST) into the Azure DevOps CI pipeline.
 
 ---
 
@@ -95,7 +106,7 @@ Principal consultant and hands-on software architect with 15+ years of experienc
 
 Large B2B project in the fashion industry, evaluated as #1 in the US market: integration tasks, a custom ETL engine, and migration of a legacy Ampersand.JS frontend to ReactJS.
 
-* Profiled and optimised Node.js microservices; developed a rich interactive UI for the ETL tool with [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre), and GRPC.
+* Profiled and optimised Node.js microservices, cutting synchronous code execution in public REST API methods by ~90%; developed a rich interactive UI for the ETL tool with [React Flow](https://reactflow.dev/), [dagre](https://www.findbestopensource.com/product/dagrejs-dagre), and GRPC.
 * Designed and implemented [Box.com](https://www.box.com/) and [Dropbox](https://www.dropbox.com/) connectors for the ETL engine (Go lang); integrated excelize into its XSL processor and upstreamed several [fixes](https://github.com/qax-os/excelize/pulls?q=is%3Apr+is%3Amerged+artiz).
 * Integrated [Threedium](https://threedium.co.uk/) 3D models with a custom React component.
 
@@ -114,6 +125,9 @@ Participated in 20+ projects including NLP and text mining tool Intellexer.
 
 * **Crowdfunding software** — B2B platform for local businesses integrating the [Dwolla](https://www.dwolla.com/) payments service: web client and admin app architecture, CI (Bitbucket Pipelines, AWS CloudFormation) and a Node.js worker for money transfers, interest charges and financial audit.
 * **Medicine: DICOM/ECG parsing and analysis** — universal ECG data loader replacing per-format implementations (Physionet, EFS, ISHNE, HL7), a canvas-based web client for DICOM images (zoom, WL-transformation, measuring) and an ASP.NET MVC/SignalR clinic personnel sync tool.
+* **Online 360° video player/editor** — interactive video presentations with 360°/VR support: web and mobile app architecture, a custom Angular player component and a video streaming platform on Amazon S3/CloudFront.
+* **Microsoft Exchange integration** — e-mail archiving and processing products around MS Exchange, Outlook and Veritas Enterprise Vault: an Enterprise Vault filter in C# and C++14/COM that forwards parsed messages to ActiveMQ, and a profiled, optimised Compound File reader/writer in .NET.
+* **Cross-platform Cordova apps** — offline-first mobile apps handling 10–20 MB of JSON on the device through a custom async cache on the iOS file system, with a modular REST API and Redis response caching on the backend.
 
 ---
 
